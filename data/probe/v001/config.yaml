@@ -1,0 +1,47 @@
+dataset_name: D_probe_v001
+version: v001
+size: small
+seed: 42
+frozen_at: '2026-05-03T02:32:25+00:00'
+categories:
+- id: C1
+  name: person_attribute
+- id: C2
+  name: geography
+- id: C3
+  name: organization
+- id: C4
+  name: occupation
+categories_deferred_v002:
+- synthetic_biology
+- math_formula
+- synthetic_rule
+- behavioral
+sources_used:
+- LAMA
+- PopQA
+- CounterFact
+sources_excluded_v001:
+- D_synth_v001
+n_per_category_target: 300
+n_total: 1200
+prompt_types_v001:
+- positive
+- paraphrase
+- control
+prompt_types_deferred_v002:
+- same_subject_contrast
+- same_object_type_contrast
+- same_template_contrast
+split_strategy: random_with_contrast_group_integrity
+split_strategy_deferred_v002: relation_held_out_generalize_per_5.2
+contrast_template_validity_hash: n/a (pending v002 §5.3 GPT-4o pre-check)
+split_proportions:
+  fit: 0.6
+  validate: 0.2
+  generalize: 0.2
+split_counts:
+  fit: 713
+  validate: 251
+  generalize: 236
+popularity_bucket_definition: configs/popularity_bucket_definition.yaml

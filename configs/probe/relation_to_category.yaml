@@ -1,0 +1,100 @@
+# Relation -> category mapping for D_probe_v001 (C1-C4 only).
+# Hand-curated 2026-05-03. Update via PR with rationale.
+#
+# Categories follow dataset.md §3:
+#   C1 person_attribute (subject = person, object = personal attribute)
+#   C2 geography        (subject = place,  object = geographical attribute)
+#   C3 organization     (subject = org,    object = organizational attribute)
+#   C4 occupation       (subject = person, object = work-related attribute)
+#
+# Conservative mapping: ambiguous and work-based relations are skipped.
+# These are listed at the bottom for transparency.
+
+categories:
+  person_attribute: {type: relational}
+  geography:        {type: relational}
+  organization:     {type: relational}
+  occupation:       {type: relational}
+
+# LAMA T-REx (Wikidata predicate IDs) -> category + canonical positive template
+# Canonical template renders the prompt by stripping the object from a "S relation O" sentence.
+lama_trex:
+  P19:   {category: person_attribute, template: "{s} was born in",                                 description: "place_of_birth"}
+  P20:   {category: person_attribute, template: "{s} died in",                                     description: "place_of_death"}
+  P27:   {category: person_attribute, template: "{s} is a citizen of",                             description: "country_of_citizenship"}
+  P103:  {category: person_attribute, template: "The native language of {s} is",                   description: "native_language"}
+  P140:  {category: person_attribute, template: "The religion of {s} is",                          description: "religion"}
+  P1412: {category: person_attribute, template: "{s} speaks the language of",                      description: "languages_spoken"}
+
+  P17:   {category: geography,        template: "{s} is located in",                               description: "country"}
+  P30:   {category: geography,        template: "{s} is on the continent of",                      description: "continent"}
+  P36:   {category: geography,        template: "The capital of {s} is",                           description: "capital"}
+  P37:   {category: geography,        template: "The official language of {s} is",                 description: "official_language"}
+  P47:   {category: geography,        template: "{s} shares a border with",                        description: "shares_border_with"}
+  P131:  {category: geography,        template: "{s} is located in the administrative territory of", description: "located_in_admin"}
+  P190:  {category: geography,        template: "The sister city of {s} is",                       description: "sister_city"}
+  P276:  {category: geography,        template: "{s} is located in",                               description: "location"}
+  P495:  {category: geography,        template: "The country of origin of {s} is",                 description: "country_of_origin"}
+  P530:  {category: geography,        template: "{s} has diplomatic relations with",               description: "diplomatic_relation"}
+  P1376: {category: geography,        template: "{s} is the capital of",                           description: "capital_of"}
+  P740:  {category: geography,        template: "{s} was formed in",                               description: "location_of_formation"}
+
+  P127:  {category: organization,     template: "{s} is owned by",                                 description: "owned_by"}
+  P159:  {category: organization,     template: "The headquarters of {s} are in",                  description: "headquarters_location"}
+  P176:  {category: organization,     template: "{s} is manufactured by",                          description: "manufacturer"}
+  P178:  {category: organization,     template: "{s} was developed by",                            description: "developer"}
+  P264:  {category: organization,     template: "{s} is signed to",                                description: "record_label"}
+  P463:  {category: organization,     template: "{s} is a member of",                              description: "member_of"}
+
+  P39:   {category: occupation,       template: "{s} holds the position of",                       description: "position_held"}
+  P101:  {category: occupation,       template: "{s} works in the field of",                       description: "field_of_work"}
+  P106:  {category: occupation,       template: "{s}'s occupation is",                             description: "occupation"}
+  P108:  {category: occupation,       template: "{s} is employed by",                              description: "employer"}
+  P413:  {category: occupation,       template: "{s} plays in the position of",                    description: "position_played"}
+  P937:  {category: occupation,       template: "{s} works in",                                    description: "work_location"}
+  P1303: {category: occupation,       template: "{s} plays the instrument of",                     description: "instrument_played"}
+
+# PopQA props -> category. PopQA's own `question` field is used as the prompt verbatim;
+# popularity_score from popularity_bucket_definition.yaml.
+popqa:
+  "place of birth": {category: person_attribute, description: "subject's birth place"}
+  father:           {category: person_attribute, description: "subject's father"}
+  mother:           {category: person_attribute, description: "subject's mother"}
+  religion:         {category: person_attribute, description: "subject's religion"}
+  capital:          {category: geography,        description: "country's capital"}
+  "capital of":     {category: geography,        description: "country a city is capital of"}
+  country:          {category: geography,        description: "place is in country"}
+  occupation:       {category: occupation,       description: "person's occupation"}
+  sport:            {category: occupation,       description: "athlete's sport"}
+
+# CounterFact relations -> category. CounterFact's `requested_rewrite.prompt` is used verbatim;
+# `paraphrase_prompts` provides paraphrase variants directly. Restricted to C3 organization-relevant
+# relations (matching lama_trex C3 set) for v001 to keep CounterFact as auxiliary source per §4.2.
+counterfact_relations:
+  P127:  {category: organization}
+  P159:  {category: organization}
+  P176:  {category: organization}
+  P178:  {category: organization}
+  P264:  {category: organization}
+  P463:  {category: organization}
+
+# --- Skipped (not mapped to C1-C4 in v001; reasoning recorded for v002 review) -----
+# LAMA T-REx skipped:
+#   P31  instance_of           -- too generic
+#   P136 genre                 -- work-based (not person/place/org/occupation)
+#   P138 named_after           -- too generic
+#   P279 subclass_of           -- too generic
+#   P361 part_of               -- too generic
+#   P364 original_language     -- work-based
+#   P407 language_of_work      -- work-based
+#   P449 original_network      -- work-based
+#   P527 has_part              -- too generic
+#   P1001 applies_to_jurisdiction -- too generic
+#
+# PopQA skipped:
+#   author, color, composer, director, genre, producer, screenwriter
+#   -- all "creative work -> creator" or work attribute; doesn't fit C1-C4 cleanly
+#
+# CounterFact (LAMA-T-REx-equivalent) skipped:
+#   non-C3 relations are covered by lama_trex (no need to duplicate); CounterFact
+#   role in v001 is C3-augmentation only.
