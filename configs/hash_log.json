@@ -208,6 +208,32 @@
     "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
     "sha256": "89245a331d5138da917f8644c8c4059ad769a8c12a3ab77bb6958ef796070198"
   },
+  "phase3_causal_light_pythia_rho050_v3_hash": {
+    "added_columns": [
+      "logP_baseline_target",
+      "logP_intervened_target",
+      "delta_logP_attribution",
+      "source",
+      "category",
+      "split_role",
+      "n_target_tokens"
+    ],
+    "effect_estimator": "attribution_linear",
+    "extends": "phase3_causal_light_pythia_rho050_v2_hash",
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m_rho050_v3.parquet",
+    "frozen_at": "2026-05-03T12:07:47+00:00",
+    "intervention_rho": 0.5,
+    "intervention_type": "scale_down_rho0.5",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "row_keys": [
+      "layer",
+      "feature_idx",
+      "prompt_id"
+    ],
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "schema": "long_format_per_prompt",
+    "sha256": "85bf92761ea7c21b68db26b7ad8c5ed97c064fa318aca15ca107c659f09a2cf5"
+  },
   "phase3_causal_light_pythia_rho075_hash": {
     "decision_status": "ALLOW",
     "effect_estimator": "attribution_linear",
@@ -337,6 +363,23 @@
     "model": "EleutherAI/pythia-160m-deduped@step143000",
     "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
     "sha256": "f093e9b53753259bff869d3833f6e2d39d6042b9dbdef3f54ff6f7a10332fe5a"
+  },
+  "phase4_v001_1_stratum_assignments_hash": {
+    "depends_on": [
+      "phase3_causal_light_pythia_rho050_v3_hash",
+      "phase4_cluster_assignment_hash",
+      "phase2_candidates_pythia_160m_hash"
+    ],
+    "file": "data/profiling/v001/phase4_v001_1_stratum_assignments.parquet",
+    "frozen_at": "2026-05-03T12:14:46+00:00",
+    "n_per_stratum_target": 30,
+    "rng_seed": 42,
+    "sha256": "df7bbfd02dd9ead3575719f5be766536dabf9e6ad2074210c8e5ae945ac96132"
+  },
+  "phase4_v001_1_stratum_summary_hash": {
+    "file": "data/profiling/v001/phase4_v001_1_stratum_summary.json",
+    "frozen_at": "2026-05-03T12:14:46+00:00",
+    "sha256": "60f443af3c27854177754f79897867f941909f779686777930b93904877c4ca1"
   },
   "popqa_test_snapshot_hash": {
     "file": "data/raw/popqa/popqa_test.parquet",
