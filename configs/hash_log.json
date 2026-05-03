@@ -107,6 +107,75 @@
     ],
     "sha256": "e541285899424194bb5bb02120852c70910a4f75cf3c06d1d3f5716d632d6d5f"
   },
+  "phase2_candidate_summary_hash": {
+    "file": "data/profiling/v001/phase2_candidate_summary.json",
+    "frozen_at": "2026-05-03T06:25:57+00:00",
+    "sha256": "9272371f8b053dc06fc5770ca6fa46a47cd7fc5fc59ada3e62f0022e6226b876"
+  },
+  "phase2_candidates_pythia_160m_hash": {
+    "file": "data/profiling/v001/phase2_candidates_pythia_160m.parquet",
+    "frozen_at": "2026-05-03T06:25:57+00:00",
+    "n_features": 239225,
+    "sha256": "19b8e44cf1e2ab9a9f9e0a62790a5c5e0cf5b949fee7e22f9e7c34773fdedf85",
+    "thresholds": {
+      "broad_rate_min": 0.05,
+      "min_broad_cats": 2,
+      "n_rare_threshold": 5,
+      "selectivity_min": 3.0,
+      "top1_rate_min": 0.1
+    },
+    "type_counts": {
+      "broad": 7663,
+      "category_selective": 2648,
+      "mixed": 67950,
+      "rare": 160964
+    }
+  },
+  "phase2_candidates_qwen3_8b_hash": {
+    "file": "data/profiling/v001/phase2_candidates_qwen3_8b.parquet",
+    "frozen_at": "2026-05-03T06:25:57+00:00",
+    "n_features": 730486,
+    "sha256": "e359c50fa8aa9f731dcc6f3c0b71f25732910540708a174d02854038264f89b2",
+    "thresholds": {
+      "broad_rate_min": 0.05,
+      "min_broad_cats": 2,
+      "n_rare_threshold": 5,
+      "selectivity_min": 3.0,
+      "top1_rate_min": 0.1
+    },
+    "type_counts": {
+      "broad": 38199,
+      "category_selective": 10333,
+      "mixed": 256074,
+      "rare": 425880
+    }
+  },
+  "phase3_causal_light_pythia_hash": {
+    "effect_estimator": "attribution_linear",
+    "fallback_reason": "rank_based_only_pearson_below_threshold",
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m.parquet",
+    "frozen_at": "2026-05-03T07:06:57+00:00",
+    "intervention_type": "scale_down_rho0.5",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "n_candidates": 10311,
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "2f531313006e1dbc7be9cca5dac2944ef02b17abdf53c72728f38a10e84cd26f"
+  },
+  "phase3_validation_pythia_hash": {
+    "accept": false,
+    "accept_rank_based": true,
+    "accept_strict": false,
+    "fallback_reason": "rank_based_only_pearson_below_threshold",
+    "file": "data/profiling/v001/phase3_validation_pythia_160m.json",
+    "frozen_at": "2026-05-03T07:06:57+00:00",
+    "n_nontrivial_pairs": 147,
+    "pearson_r": 0.7120819741669,
+    "rel_err_mean_filtered": 0.4147404740720856,
+    "rel_err_median_filtered": 0.1288392857142857,
+    "rel_mae_global": 0.4069854823333591,
+    "sha256": "41a75d77965a0922f8034f6527fe02cbe5da90abb8937e5fc3022ea7d20ae5f3",
+    "spearman_rho": 0.9272779012196402
+  },
   "popqa_test_snapshot_hash": {
     "file": "data/raw/popqa/popqa_test.parquet",
     "frozen_at": "2026-05-03T00:43:12+00:00",

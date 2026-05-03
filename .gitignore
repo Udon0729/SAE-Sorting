@@ -19,6 +19,21 @@ data/frozen/*.parquet
 data/frozen/*.jsonl
 data/frozen/*.arrow
 
+# === Experiment outputs (regenerable; sha256 audited via configs/hash_log.json) ===
+# Phase 1-4 profiling outputs
+data/profiling/
+
+# Generated dataset content from scripts/generate_d_*.py (configs + seeds tracked separately)
+data/probe/*/prompts.jsonl
+data/probe/*/by_category/
+data/probe/*/by_split/
+data/utility/*/prompts.jsonl
+data/synthetic_kg/*/corpus/
+data/synthetic_kg/*/qa/
+data/synthetic_kg/*/facts.jsonl
+
+# Visualization images live under figures/ and are tracked there.
+
 # Job queue runtime state
 ops/queue/pending/*.yaml
 ops/queue/running/*.yaml
