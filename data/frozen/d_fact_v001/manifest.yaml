@@ -1,0 +1,35 @@
+dataset_name: D_fact_v001
+version: v001
+frozen_at: '2026-05-03T01:23:07+00:00'
+sources:
+- name: LAMA
+  subset: TREx
+  source_url: https://dl.fbaipublicfiles.com/LAMA/data.zip
+  raw_archive: data/raw/lama/data.zip
+  raw_archive_sha256: 70f8e520b9beafc5a05261c022c81d38c0e8a8f3594850872e5349bcdd2caf92
+  snapshot: data/raw/lama/lama_trex.parquet
+  snapshot_sha256: 6e18efe9f8525956cd3f9a04298047def44d5d54f28ba3ab913ba09a9288e3dc
+  n_rows: 34039
+  n_relations: 41
+- name: CounterFact
+  source_url: https://rome.baulab.info/data/dsets/counterfact.json
+  raw_archive: data/raw/counterfact/counterfact.json
+  raw_archive_sha256: d017056125178a13728594e66a801357a8db9ed7973a7425554bb4271de9fc6f
+  snapshot: data/raw/counterfact/counterfact.parquet
+  snapshot_sha256: ea3b599503a1a41588c8f1ba8d43c72bb61b35e1b1ed99bd9ce3fd62fee1f66b
+  n_rows: 21919
+- name: ParaRel
+  source_url: https://github.com/yanaiela/pararel/archive/cb5554678457beb5ac163d888f1ce8cf174b3f0b.tar.gz
+  git_commit: cb5554678457beb5ac163d888f1ce8cf174b3f0b
+  raw_archive: data/raw/pararel/pararel_cb555467.tar.gz
+  raw_archive_sha256: 2d06a3a3dea91e2cd29d3dc845effd655ff7e61005f10726b07513b53cd4c32a
+  snapshot: data/raw/pararel/pararel_patterns.parquet
+  snapshot_sha256: 8e99677350f88a91f39536b72f252d08fc3a26b03f943793fbe4bb05353e530c
+  n_rows: 329
+  n_relations: 39
+- name: PopQA
+  source_url: akariasai/PopQA (HuggingFace)
+  split: test
+  snapshot: data/raw/popqa/popqa_test.parquet
+  snapshot_sha256: fc2745494b3dded267d9aeafdc7958a1fdfa2e2e2d6a7f4adf5650bf78cf0ae8
+  n_rows: 14267

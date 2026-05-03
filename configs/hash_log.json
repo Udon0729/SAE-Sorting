@@ -1,4 +1,28 @@
 {
+  "counterfact_snapshot_hash": {
+    "file": "data/raw/counterfact/counterfact.parquet",
+    "frozen_at": "2026-05-03T01:23:07+00:00",
+    "n_rows": 21919,
+    "sha256": "ea3b599503a1a41588c8f1ba8d43c72bb61b35e1b1ed99bd9ce3fd62fee1f66b"
+  },
+  "d_fact_v001_manifest_hash": {
+    "file": "data/frozen/d_fact_v001/manifest.yaml",
+    "frozen_at": "2026-05-03T01:23:07+00:00",
+    "sha256": "067f2438e1f5b28b07a35b871d7182f9c1d54f6a72879c132a5f471e2a200f0f"
+  },
+  "lama_trex_snapshot_hash": {
+    "file": "data/raw/lama/lama_trex.parquet",
+    "frozen_at": "2026-05-03T01:23:07+00:00",
+    "n_rows": 34039,
+    "sha256": "6e18efe9f8525956cd3f9a04298047def44d5d54f28ba3ab913ba09a9288e3dc"
+  },
+  "pararel_snapshot_hash": {
+    "file": "data/raw/pararel/pararel_patterns.parquet",
+    "frozen_at": "2026-05-03T01:23:07+00:00",
+    "git_commit": "cb5554678457beb5ac163d888f1ce8cf174b3f0b",
+    "n_rows": 329,
+    "sha256": "8e99677350f88a91f39536b72f252d08fc3a26b03f943793fbe4bb05353e530c"
+  },
   "popqa_test_snapshot_hash": {
     "file": "data/raw/popqa/popqa_test.parquet",
     "frozen_at": "2026-05-03T00:43:12+00:00",
