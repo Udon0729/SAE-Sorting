@@ -1,49 +1,29 @@
-"""Phase 3 light causal — attribution patching for Pythia-160m-deduped.
+"""Phase 3 v001.1 — ρ sweep sensitivity analysis (Pythia-160m).
 
-Reference: docs/dataset.md §8 Phase 3 + docs/implementation.md §8.3 +
-docs/project_attribution_patching_protocol.md.
+Pre-registered design: docs/preregistrations/phase3_v001_1_rho_sweep.md (v2)
 
-For each candidate (layer, feature) from Phase 2 (cs + broad = 10,311 entries),
-compute attribution patching estimates of:
+For each ρ ∈ RHO_SWEEP = [0.25, 0.5, 0.75]:
+  - Linear attribution via single forward+backward per prompt (grad_dot computed
+    once; per-ρ delta = (ρ - 1) · val · grad_dot is just a constant rescaling).
+  - Aggregate to per (layer, feature) parquet:
+    `phase3_causal_light_pythia_160m_rho{rho_tag}.parquet`
 
-  TargetEffect (TE_dom)        : mean ΔlogP(answer) over D_probe positive+paraphrase
-                                 prompts in the feature's dominant_category
-  NonTargetEffect (NTE_other)  : mean ΔlogP(answer) over D_probe positive+paraphrase
-                                 prompts NOT in dominant_category (3 other cats)
-  UtilityDamage (UD)           : mean -ΔlogP(continuation) / n_target_tokens over
-                                 D_utility prompts (perplexity log proxy)
+Real intervention validation:
+  - Sample N_VALIDATION_PAIRS=500 (feature, prompt) pairs ONCE (seed=42)
+  - For each ρ: run real intervention forward on the SAME pairs
+  - Output per-ρ pearson/spearman + per-pair real TE arrays for cross-ρ analysis
 
-Intervention semantics (linear approximation, scale-down ρ=0.5):
-  z'_t = z_t + (ρ - 1) · val_f_t · W_dec[f]    where ρ = 0.5
-  ΔM(f, t, p) ≈ (ρ - 1) · val_f_t · (W_dec[f] · ∇M(z_t))
-              = -0.5 · val_f_t · (W_dec[f] · ∇M(z_t))
-
-Why scale-down ρ=0.5 instead of mean replacement: implementation.md §8.3 lists
-both as Phase 3 options. For Top-K SAE features, "mean replacement" with the
-firing-conditional mean (~ feature's typical firing magnitude) gives
-(mean - val) ≈ 0 on dominant-category prompts (where val ≈ mean), producing
-near-zero attribution; an unconditional-mean baseline collapses to ~0 for sparse
-TopK features and is functionally equivalent to zero ablation. ρ=0.5 instead
-provides a well-defined non-zero perturbation, matches a documented option,
-and yields good linear approximation (smaller perturbation than zero ablation).
-
-Validation: random 200 (layer, feature, prompt) pairs vs real intervention
-(forward hook scale-down at firing positions); acceptance gate Pearson r ≥ 0.85,
-Spearman ρ ≥ 0.80, filtered rel_err mean ≤ 0.20 (rel_err computed only on pairs
-with |real_d| > REL_ERR_FLOOR to avoid near-zero division noise).
-
-v001 scope:
-  - Pythia-160m-deduped only (Qwen Phase 3 in v002)
-  - scale_down ρ=0.5 intervention only (mean replacement in v002 if applicable)
-  - 200 random (feature, prompt) pair validation (full 9,600 in v002)
-  - rare/mixed Phase-2 features ignored (focus on cs+broad candidates)
+C1-C5 採否判定は別スクリプト (`phase3_rho_sweep_decide.py`) で行う。本スクリプトは
+データ生成のみで判定・採否は埋め込まない (decide 切離しで cherry picking 回避)。
 
 Outputs:
-  data/profiling/v001/phase3_causal_light_pythia_160m.parquet
-  data/profiling/v001/phase3_validation_pythia_160m.json
-  configs/hash_log.json updated (2 new entries)
+  data/profiling/v001/phase3_causal_light_pythia_160m_rho025.parquet
+  data/profiling/v001/phase3_causal_light_pythia_160m_rho050.parquet
+  data/profiling/v001/phase3_causal_light_pythia_160m_rho075.parquet
+  data/profiling/v001/phase3_rho_sweep_validation.json
+  configs/hash_log.json updated (3 parquet entries + 1 validation entry)
 
-Run via scheduler (preferred):
+Run via scheduler:
   command:        uv run python experiments/phase3_attribution_pythia_160m.py
   requested_gpus: [0]
   vram_budget_gib: 16
@@ -73,8 +53,8 @@ PROBE_PROMPTS = REPO_ROOT / "data" / "probe" / "v001" / "prompts.jsonl"
 UTILITY_PROMPTS = REPO_ROOT / "data" / "utility" / "v001" / "prompts.jsonl"
 PHASE1_FEATURES = REPO_ROOT / "data" / "profiling" / "v001" / "phase1_features.parquet"
 PHASE2_CANDIDATES = REPO_ROOT / "data" / "profiling" / "v001" / "phase2_candidates_pythia_160m.parquet"
-OUT_PARQUET = REPO_ROOT / "data" / "profiling" / "v001" / "phase3_causal_light_pythia_160m.parquet"
-OUT_VALIDATION = REPO_ROOT / "data" / "profiling" / "v001" / "phase3_validation_pythia_160m.json"
+OUT_DIR = REPO_ROOT / "data" / "profiling" / "v001"
+OUT_VALIDATION = OUT_DIR / "phase3_rho_sweep_validation.json"
 HASH_LOG = REPO_ROOT / "configs" / "hash_log.json"
 
 MODEL_REPO = "EleutherAI/pythia-160m-deduped"
@@ -82,23 +62,17 @@ MODEL_REVISION = "step143000"
 SAE_REPO = "EleutherAI/sae-pythia-160m-deduped-32k"
 DEVICE = "cuda:0"
 DTYPE = torch.float32
-MAX_TOKENS = 128  # prompt + answer combined
-N_VALIDATION_PAIRS = 200
+MAX_TOKENS = 128
+
+RHO_SWEEP = [0.25, 0.5, 0.75]
+RHO_PHASE4_INPUT = 0.5  # pre-committed in pre-registration §3.4
+N_VALIDATION_PAIRS = 500
 VALIDATION_SEED = 42
-
-INTERVENTION_RHO = 0.5  # scale_down: val_new = ρ · val
-INTERVENTION_TYPE_LABEL = f"scale_down_rho{INTERVENTION_RHO}"
-
-ACCEPT_PEARSON = 0.85
-ACCEPT_SPEARMAN = 0.80
-ACCEPT_REL_ERR = 0.20
-REL_ERR_FLOOR = 1e-3  # |real_d| < FLOOR pairs excluded from rel_err mean (numerator/denominator both ≈ 0)
+REL_ERR_FLOOR = 1e-3
 
 CATS = ["person_attribute", "geography", "organization", "occupation"]
 PROBE_TYPES = {"positive", "paraphrase"}
 
-
-# -- helpers ------------------------------------------------------------------
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -110,6 +84,14 @@ def sha256_of(path: Path) -> str:
         for chunk in iter(lambda: f.read(1 << 20), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def rho_tag(rho: float) -> str:
+    return f"rho{int(round(rho * 100)):03d}"
+
+
+def out_parquet_for_rho(rho: float) -> Path:
+    return OUT_DIR / f"phase3_causal_light_pythia_160m_{rho_tag(rho)}.parquet"
 
 
 def load_pythia():
@@ -130,25 +112,7 @@ def load_all_saes(n_layers: int) -> list[dict]:
     return saes
 
 
-def build_mean_lookup(phase1_df: pd.DataFrame, n_layers: int, num_latents: int) -> list[torch.Tensor]:
-    """Per-layer (num_latents,) tensor of mean_value from Phase 1; 0 for non-firing features.
-
-    Retained for v002 mean-replacement intervention; not used in v001 scale_down path.
-    """
-    lookup: list[torch.Tensor] = []
-    for L in range(n_layers):
-        sub = phase1_df[phase1_df["layer"] == L]
-        t = torch.zeros(num_latents, dtype=DTYPE, device=DEVICE)
-        if len(sub):
-            idxs = torch.tensor(sub["feature_idx"].to_numpy(), dtype=torch.long, device=DEVICE)
-            vals = torch.tensor(sub["mean_value"].to_numpy(), dtype=DTYPE, device=DEVICE)
-            t[idxs] = vals
-        lookup.append(t)
-    return lookup
-
-
 def build_layer_cand_lookup(cand_df: pd.DataFrame, n_layers: int, num_latents: int) -> list[torch.Tensor]:
-    """Per-layer (num_latents,) bool mask of candidate features (cs + broad only)."""
     lookup: list[torch.Tensor] = []
     for L in range(n_layers):
         sub = cand_df[cand_df["layer"] == L]
@@ -184,15 +148,14 @@ def compute_attribution_for_prompt(
     tok,
     model,
     saes: list[dict],
-    mean_lookup: list[torch.Tensor],  # unused in v001 scale_down path; kept for v002
     layer_cand_lookup: list[torch.Tensor],
     prompt_text: str,
     answer_text: str,
-) -> tuple[dict[tuple[int, int], float], int]:
-    """Returns (per_lf, n_answer_tokens).
-    per_lf maps (layer, feature_idx) -> sum over firing positions of ΔlogP linear estimate
-    under scale_down ρ=INTERVENTION_RHO intervention.
-    Only candidate features (cs + broad) are tracked.
+    rho_sweep: list[float],
+) -> tuple[dict[float, dict[tuple[int, int], float]], int]:
+    """Returns (per_rho_per_lf, n_answer_tokens).
+    per_rho_per_lf[ρ] maps (layer, feature_idx) -> sum over firing positions of ΔlogP linear
+    under scale_down ρ intervention.
     """
     full_text = prompt_text.rstrip() + " " + answer_text.lstrip()
     enc_full = tok(full_text, return_tensors="pt", truncation=True, max_length=MAX_TOKENS).to(DEVICE)
@@ -202,7 +165,7 @@ def compute_attribution_for_prompt(
     n_total = full_ids.shape[0]
     n_prompt = enc_prompt.input_ids.shape[1]
     if n_prompt >= n_total:
-        return {}, 0
+        return {rho: {} for rho in rho_sweep}, 0
     n_answer = n_total - n_prompt
     answer_ids = full_ids[n_prompt:n_total]
     pred_positions = torch.arange(n_prompt - 1, n_total - 1, device=DEVICE)
@@ -222,7 +185,8 @@ def compute_attribution_for_prompt(
     target_log_p = log_probs.gather(1, answer_ids.unsqueeze(-1)).sum()
     target_log_p.backward()
 
-    per_lf: dict[tuple[int, int], float] = {}
+    per_rho_per_lf: dict[float, dict[tuple[int, int], float]] = {rho: {} for rho in rho_sweep}
+
     for L in range(n_layers):
         h = outputs.hidden_states[L + 1][0].detach()
         g = outputs.hidden_states[L + 1].grad[0].detach()
@@ -249,19 +213,22 @@ def compute_attribution_for_prompt(
             active_vals = vals[active_pos, active_k]
             active_W = weights["W_dec"][active_idxs]
             active_g = g[active_pos]
-            grad_dot = (active_W * active_g).sum(-1)
-            # scale_down intervention: val_new = ρ · val ⇒ Δval = (ρ - 1) · val
-            delta = (INTERVENTION_RHO - 1.0) * active_vals * grad_dot
+            grad_dot = (active_W * active_g).sum(-1)  # ρ-independent
 
-            # Sum per feature (a feature may fire at multiple positions for this prompt)
-            for f, d in zip(active_idxs.tolist(), delta.tolist()):
-                key = (L, f)
-                per_lf[key] = per_lf.get(key, 0.0) + d
+            base_units = (active_vals * grad_dot).tolist()
+            active_idxs_list = active_idxs.tolist()
 
-    return per_lf, n_answer
+            for rho in rho_sweep:
+                factor = rho - 1.0
+                bucket = per_rho_per_lf[rho]
+                for f, base in zip(active_idxs_list, base_units):
+                    key = (L, f)
+                    bucket[key] = bucket.get(key, 0.0) + factor * base
+
+    return per_rho_per_lf, n_answer
 
 
-# -- real intervention (validation) ------------------------------------------
+# -- real intervention --------------------------------------------------------
 
 def real_intervention_forward(
     tok,
@@ -315,7 +282,6 @@ def real_intervention_forward(
         firing_pos = firing_mask.nonzero(as_tuple=True)[0]
         firing_k_idx = match[firing_pos].float().argmax(dim=-1)
         firing_vals = vals[firing_pos, firing_k_idx]
-        # scale_down: Δresidual = (ρ - 1) · val · W_dec[f] at firing positions
         delta = ((rho - 1.0) * firing_vals).unsqueeze(-1) * weights["W_dec"][feature].unsqueeze(0)
         h_new = h.clone()
         h_new[0, firing_pos] = h_new[0, firing_pos] + delta
@@ -334,114 +300,140 @@ def real_intervention_forward(
     return int_logp - baseline_logp
 
 
-def run_validation(
-    tok,
-    model,
-    saes: list[dict],
-    mean_lookup: list[torch.Tensor],
-    accum_probe: list[tuple],
-    accum_utility: list[tuple],
-    probe_prompts: list[dict],
-    utility_prompts: list[dict],
-    n_pairs: int,
-) -> dict:
-    rng = np.random.default_rng(VALIDATION_SEED)
-    qid_to_probe = {p["qid"]: p for p in probe_prompts}
-    pid_to_utility = {p["prompt_id"]: p for p in utility_prompts}
+# -- validation (per-ρ on shared pairs) --------------------------------------
 
-    samples: list[tuple] = []
-    for L, f, qid, d in accum_probe:
-        p = qid_to_probe[qid]
-        samples.append((L, f, p["prompt"], p["answer"], d, "probe", qid))
-    for L, f, pid, d, _ in accum_utility:
-        p = pid_to_utility[pid]
-        samples.append((L, f, p["prompt"], p["expected_continuation"], d, "utility", pid))
-
-    if len(samples) < n_pairs:
-        n_pairs = len(samples)
-    sample_indices = rng.choice(len(samples), size=n_pairs, replace=False)
-
-    real_deltas: list[float] = []
-    linear_deltas: list[float] = []
-    failed_pairs: list[dict] = []
-    skipped = 0
-
-    t0 = time.time()
-    for i, idx in enumerate(sample_indices):
-        if i % 25 == 0:
-            print(f"  [validation {i}/{n_pairs}] {time.time()-t0:.1f}s")
-        L, f, prompt_text, answer_text, linear_d, source, item_id = samples[idx]
-        real_d = real_intervention_forward(
-            tok, model, saes[L], L, f, INTERVENTION_RHO, prompt_text, answer_text)
-        if real_d is None:
-            skipped += 1
-            continue
-        real_deltas.append(real_d)
-        linear_deltas.append(linear_d)
-        if abs(real_d) > REL_ERR_FLOOR:
-            rel = abs(real_d - linear_d) / abs(real_d)
-            if rel > 0.5:
-                failed_pairs.append({
-                    "layer": int(L), "feature_idx": int(f), "item_id": item_id, "source": source,
-                    "delta_real": float(real_d), "delta_linear": float(linear_d), "rel_err": float(rel),
-                })
-
-    real_arr = np.array(real_deltas)
-    linear_arr = np.array(linear_deltas)
+def _per_rho_stats(linear_arr: np.ndarray, real_arr: np.ndarray) -> dict:
     if len(real_arr) > 2:
         pearson_r = float(pearsonr(real_arr, linear_arr).statistic)
         spearman_rho = float(spearmanr(real_arr, linear_arr).statistic)
     else:
         pearson_r = float("nan")
         spearman_rho = float("nan")
-
-    # Filtered rel_err: compute only on pairs with non-trivial real effect
     nonzero_mask = np.abs(real_arr) > REL_ERR_FLOOR
     n_nonzero = int(nonzero_mask.sum())
     if n_nonzero > 0:
-        rel_errs_nz = np.abs(real_arr[nonzero_mask] - linear_arr[nonzero_mask]) / np.abs(real_arr[nonzero_mask])
-        rel_err_mean_nz = float(rel_errs_nz.mean())
-        rel_err_p50_nz = float(np.percentile(rel_errs_nz, 50))
-        rel_err_p95_nz = float(np.percentile(rel_errs_nz, 95))
+        rel_errs = np.abs(real_arr[nonzero_mask] - linear_arr[nonzero_mask]) / np.abs(real_arr[nonzero_mask])
+        rel_err_mean = float(rel_errs.mean())
+        rel_err_p50 = float(np.percentile(rel_errs, 50))
+        rel_err_p95 = float(np.percentile(rel_errs, 95))
     else:
-        rel_err_mean_nz = float("nan")
-        rel_err_p50_nz = float("nan")
-        rel_err_p95_nz = float("nan")
-
-    # Global relative MAE (alternative robust metric)
-    if real_arr.size > 0:
-        mean_abs_real = float(np.mean(np.abs(real_arr)))
-        rel_mae = float(np.mean(np.abs(real_arr - linear_arr))) / max(mean_abs_real, 1e-12)
-    else:
-        rel_mae = float("nan")
-
-    accept = (
-        pearson_r >= ACCEPT_PEARSON
-        and spearman_rho >= ACCEPT_SPEARMAN
-        and rel_err_mean_nz == rel_err_mean_nz  # not NaN
-        and rel_err_mean_nz <= ACCEPT_REL_ERR
-    )
-
+        rel_err_mean = float("nan")
+        rel_err_p50 = float("nan")
+        rel_err_p95 = float("nan")
     return {
-        "intervention_type": INTERVENTION_TYPE_LABEL,
-        "intervention_rho": INTERVENTION_RHO,
-        "n_validation_pairs": int(len(real_deltas)),
-        "n_skipped": int(skipped),
-        "n_nontrivial_pairs": n_nonzero,
-        "rel_err_floor": REL_ERR_FLOOR,
+        "n": int(len(real_arr)),
+        "n_nontrivial": n_nonzero,
         "pearson_r": pearson_r,
         "spearman_rho": spearman_rho,
-        "rel_err_mean_filtered": rel_err_mean_nz,
-        "rel_err_p50_filtered": rel_err_p50_nz,
-        "rel_err_p95_filtered": rel_err_p95_nz,
-        "rel_mae_global": rel_mae,
-        "accept": bool(accept),
-        "acceptance_thresholds": {
-            "pearson_r_min": ACCEPT_PEARSON,
-            "spearman_rho_min": ACCEPT_SPEARMAN,
-            "rel_err_mean_filtered_max": ACCEPT_REL_ERR,
+        "rel_err_mean_filtered": rel_err_mean,
+        "rel_err_p50_filtered": rel_err_p50,
+        "rel_err_p95_filtered": rel_err_p95,
+    }
+
+
+def run_validation(
+    tok,
+    model,
+    saes: list[dict],
+    accum_probe_per_rho: dict[float, list[tuple]],
+    accum_utility_per_rho: dict[float, list[tuple]],
+    probe_prompts: list[dict],
+    utility_prompts: list[dict],
+    n_pairs: int,
+    rho_sweep: list[float],
+) -> dict:
+    """Sample n_pairs ONCE; run real intervention per ρ on shared pairs.
+    Outputs per-ρ stats + same-pair real TE arrays for cross-ρ analysis.
+    """
+    rng = np.random.default_rng(VALIDATION_SEED)
+    qid_to_probe = {p["qid"]: p for p in probe_prompts}
+    pid_to_utility = {p["prompt_id"]: p for p in utility_prompts}
+
+    # Build candidate sample pool: all (L, f, source, item_id) keys present in ρ=phase4_input
+    # accumulator. Linear is proportional in ρ so the pool is identical across ρ; pick one.
+    src_rho = RHO_PHASE4_INPUT if RHO_PHASE4_INPUT in rho_sweep else rho_sweep[0]
+    samples: list[tuple] = []  # (L, f, prompt_text, answer_text, source, item_id)
+    seen: set[tuple] = set()
+    for L, f, qid, _ in accum_probe_per_rho[src_rho]:
+        key = (int(L), int(f), "probe", qid)
+        if key in seen:
+            continue
+        seen.add(key)
+        p = qid_to_probe[qid]
+        samples.append((int(L), int(f), p["prompt"], p["answer"], "probe", qid))
+    for L, f, pid, _, _ in accum_utility_per_rho[src_rho]:
+        key = (int(L), int(f), "utility", pid)
+        if key in seen:
+            continue
+        seen.add(key)
+        p = pid_to_utility[pid]
+        samples.append((int(L), int(f), p["prompt"], p["expected_continuation"], "utility", pid))
+
+    if len(samples) < n_pairs:
+        n_pairs = len(samples)
+    sample_indices = rng.choice(len(samples), size=n_pairs, replace=False).tolist()
+    chosen = [samples[i] for i in sample_indices]
+
+    # Build linear lookup per ρ
+    accum_lookup: dict[float, dict[tuple, float]] = {rho: {} for rho in rho_sweep}
+    for rho in rho_sweep:
+        for L, f, qid, d in accum_probe_per_rho[rho]:
+            accum_lookup[rho][(int(L), int(f), "probe", qid)] = d
+        for L, f, pid, d, _ in accum_utility_per_rho[rho]:
+            accum_lookup[rho][(int(L), int(f), "utility", pid)] = d
+
+    per_rho_pairs: dict[float, dict[str, list]] = {
+        rho: {"linear": [], "real": [], "skipped": 0} for rho in rho_sweep
+    }
+    pair_keys_used: list[dict] = []  # only pairs where ALL ρ succeeded
+    pair_real_per_rho: dict[float, list[float]] = {rho: [] for rho in rho_sweep}
+
+    t0 = time.time()
+    for i, (L, f, prompt_text, answer_text, source, item_id) in enumerate(chosen):
+        if i % 25 == 0:
+            print(f"  [validation pair {i}/{n_pairs}] {time.time()-t0:.1f}s")
+        per_rho_real: dict[float, float] = {}
+        truncated = False
+        for rho in rho_sweep:
+            real_d = real_intervention_forward(tok, model, saes[L], L, f, rho, prompt_text, answer_text)
+            if real_d is None:
+                truncated = True
+                per_rho_pairs[rho]["skipped"] += 1
+                break
+            per_rho_real[rho] = real_d
+        if truncated:
+            continue
+        # All ρ succeeded; record
+        pair_keys_used.append({"layer": int(L), "feature_idx": int(f), "source": source, "item_id": item_id})
+        for rho in rho_sweep:
+            real_d = per_rho_real[rho]
+            linear_d = accum_lookup[rho].get((int(L), int(f), source, item_id), float("nan"))
+            per_rho_pairs[rho]["linear"].append(linear_d)
+            per_rho_pairs[rho]["real"].append(real_d)
+            pair_real_per_rho[rho].append(real_d)
+
+    per_rho_stats: dict = {}
+    for rho in rho_sweep:
+        linear_arr = np.array(per_rho_pairs[rho]["linear"], dtype=float)
+        real_arr = np.array(per_rho_pairs[rho]["real"], dtype=float)
+        s = _per_rho_stats(linear_arr, real_arr)
+        s["n_skipped"] = int(per_rho_pairs[rho]["skipped"])
+        per_rho_stats[str(rho)] = s
+
+    return {
+        "intervention_type": "scale_down_rho_sweep",
+        "rho_sweep": list(rho_sweep),
+        "rho_phase4_input_committed": RHO_PHASE4_INPUT,
+        "n_validation_pairs_target": int(n_pairs),
+        "n_validation_pairs_used_all_rho_succeed": int(len(pair_keys_used)),
+        "rel_err_floor": REL_ERR_FLOOR,
+        "validation_seed": VALIDATION_SEED,
+        "per_rho": per_rho_stats,
+        "shared_pairs": pair_keys_used,
+        "real_te_per_pair_per_rho": {str(rho): pair_real_per_rho[rho] for rho in rho_sweep},
+        "linear_te_per_pair_per_rho": {
+            str(rho): per_rho_pairs[rho]["linear"] for rho in rho_sweep
         },
-        "failed_pairs_high_rel_err": failed_pairs[:50],
         "frozen_at": now_iso(),
     }
 
@@ -453,7 +445,7 @@ def aggregate_per_feature(
     accum_utility: list[tuple],
     cand_df: pd.DataFrame,
     probe_prompts: list[dict],
-    accept_validation: bool,
+    intervention_rho: float,
 ) -> pd.DataFrame:
     qid_to_cat = {p["qid"]: p["category"] for p in probe_prompts}
 
@@ -463,17 +455,13 @@ def aggregate_per_feature(
     df_util = pd.DataFrame(accum_utility, columns=["layer", "feature_idx", "prompt_id", "attribution", "n_target_tokens"])
     df_util["ud_per_token"] = -df_util["attribution"] / df_util["n_target_tokens"].clip(lower=1)
 
-    # Pre-aggregate probe per (L, f, cat)
     g_probe = df_probe.groupby(["layer", "feature_idx", "category"])["attribution"].agg(["mean", "std", "count"]).reset_index()
-    # Pre-aggregate utility per (L, f)
     g_util = df_util.groupby(["layer", "feature_idx"])["ud_per_token"].agg(["mean", "std", "count"]).reset_index()
     g_util.columns = ["layer", "feature_idx", "ud_mean", "ud_std", "ud_count"]
-
-    # Build fast lookup
     probe_idx = g_probe.set_index(["layer", "feature_idx", "category"])
     util_idx = g_util.set_index(["layer", "feature_idx"])
 
-    fallback = None if accept_validation else "attribution_low_correlation"
+    label = f"scale_down_rho{intervention_rho}"
 
     rows = []
     for _, meta in cand_df.iterrows():
@@ -507,7 +495,6 @@ def aggregate_per_feature(
                 except KeyError:
                     pass
             if other_rows:
-                # Mean of per-cat means (NTE_other defined as average over other 3 cats)
                 means = [m for m, _ in other_rows]
                 counts = [n for _, n in other_rows]
                 nte_other = float(np.mean(means))
@@ -536,7 +523,8 @@ def aggregate_per_feature(
             "candidate_type": meta["candidate_type"],
             "dominant_category": dom_cat,
             "control_frac_in_dom_cat": float(meta["control_frac_in_dom_cat"]) if pd.notna(meta["control_frac_in_dom_cat"]) else float("nan"),
-            "intervention_type": INTERVENTION_TYPE_LABEL,
+            "intervention_type": label,
+            "intervention_rho": intervention_rho,
             "effect_estimator": "attribution_linear",
             "delta_m_target": te_dom,
             "delta_m_target_std": te_dom_std,
@@ -551,7 +539,7 @@ def aggregate_per_feature(
             "delta_m_utility": ud,
             "delta_m_utility_std": ud_std,
             "n_prompts_utility": n_util,
-            "fallback_reason": fallback,
+            "fallback_reason": None,  # set by phase3_rho_sweep_decide.py
         })
 
     return pd.DataFrame(rows)
@@ -559,50 +547,41 @@ def aggregate_per_feature(
 
 # -- output -------------------------------------------------------------------
 
-def update_hash_log(df_aggregate: pd.DataFrame, validation: dict) -> None:
+def update_hash_log(rho_sweep: list[float], validation: dict) -> None:
     log = json.loads(HASH_LOG.read_text()) if HASH_LOG.exists() else {}
-    log["phase3_causal_light_pythia_hash"] = {
-        "file": str(OUT_PARQUET.relative_to(REPO_ROOT)),
-        "sha256": sha256_of(OUT_PARQUET),
-        "n_candidates": int(len(df_aggregate)),
-        "model": f"{MODEL_REPO}@{MODEL_REVISION}",
-        "sae": SAE_REPO,
-        "intervention_type": INTERVENTION_TYPE_LABEL,
-        "effect_estimator": "attribution_linear",
-        "frozen_at": now_iso(),
-    }
-    log["phase3_validation_pythia_hash"] = {
+    for rho in rho_sweep:
+        out = out_parquet_for_rho(rho)
+        log[f"phase3_causal_light_pythia_{rho_tag(rho)}_hash"] = {
+            "file": str(out.relative_to(REPO_ROOT)),
+            "sha256": sha256_of(out),
+            "model": f"{MODEL_REPO}@{MODEL_REVISION}",
+            "sae": SAE_REPO,
+            "intervention_type": f"scale_down_rho{rho}",
+            "intervention_rho": rho,
+            "effect_estimator": "attribution_linear",
+            "frozen_at": now_iso(),
+        }
+    log["phase3_rho_sweep_validation_hash"] = {
         "file": str(OUT_VALIDATION.relative_to(REPO_ROOT)),
         "sha256": sha256_of(OUT_VALIDATION),
-        "accept": bool(validation["accept"]),
-        "pearson_r": validation["pearson_r"],
-        "spearman_rho": validation["spearman_rho"],
-        "rel_err_mean_filtered": validation["rel_err_mean_filtered"],
-        "rel_mae_global": validation["rel_mae_global"],
-        "n_nontrivial_pairs": validation["n_nontrivial_pairs"],
+        "rho_sweep": list(rho_sweep),
+        "n_validation_pairs_used": validation["n_validation_pairs_used_all_rho_succeed"],
+        "per_rho_pearson": {rho: validation["per_rho"][rho]["pearson_r"] for rho in validation["per_rho"]},
+        "per_rho_spearman": {rho: validation["per_rho"][rho]["spearman_rho"] for rho in validation["per_rho"]},
         "frozen_at": now_iso(),
     }
     HASH_LOG.write_text(json.dumps(log, indent=2, ensure_ascii=False, sort_keys=True))
 
 
-def print_sanity(df: pd.DataFrame) -> None:
-    cs = df[df["candidate_type"] == "category_selective"]
-    valid = cs.dropna(subset=["delta_m_target", "delta_m_non_target"])
-    if len(valid):
-        ratio = float((valid["delta_m_target"].abs() > valid["delta_m_non_target"].abs()).mean())
-        print(f"  cs candidates: |TE_dom| > |NTE_other| ratio: {ratio:.2%} (target ≥ 70%)")
-        print(f"  cs candidates: mean(TE_dom)        = {valid['delta_m_target'].mean():.4f}")
-        print(f"  cs candidates: mean(NTE_other)     = {valid['delta_m_non_target'].mean():.4f}")
-        print(f"  cs candidates: mean(|TE_dom|)      = {valid['delta_m_target'].abs().mean():.4f}")
-        print(f"  cs candidates: mean(|NTE_other|)   = {valid['delta_m_non_target'].abs().mean():.4f}")
+def print_per_rho_summary(rho_sweep: list[float], validation: dict) -> None:
     print()
-    print("  Per-layer mean (cs+broad):")
-    for L in sorted(df["layer"].unique()):
-        sub = df[df["layer"] == L]
-        te_mean = sub["delta_m_target"].mean()
-        nte_mean = sub["delta_m_non_target"].mean()
-        ud_mean = sub["delta_m_utility"].mean()
-        print(f"  L{int(L):2d}: TE={te_mean: .4f}  NTE={nte_mean: .4f}  UD={ud_mean: .4f}  n={len(sub)}")
+    print("  Per-ρ validation summary:")
+    print(f"  {'ρ':>5}  {'n':>5}  {'n_nz':>5}  {'pearson':>8}  {'spearman':>9}  {'rel_err_mean':>12}  {'rel_err_p50':>11}")
+    for rho in rho_sweep:
+        s = validation["per_rho"][str(rho)]
+        print(f"  {rho:>5.2f}  {s['n']:>5d}  {s['n_nontrivial']:>5d}  "
+              f"{s['pearson_r']:>8.4f}  {s['spearman_rho']:>9.4f}  "
+              f"{s['rel_err_mean_filtered']:>12.4f}  {s['rel_err_p50_filtered']:>11.4f}")
 
 
 def write_torch_peak(job_id: str | None) -> None:
@@ -616,9 +595,11 @@ def write_torch_peak(job_id: str | None) -> None:
 # -- main ---------------------------------------------------------------------
 
 def main() -> None:
-    print(f"--- Phase 3 light causal (attribution patching) — Pythia-160m ---")
-    print(f"  device: {torch.cuda.get_device_name(0)}")
-    print(f"  torch:  {torch.__version__}")
+    print(f"--- Phase 3 v001.1 ρ sweep (Pythia-160m) ---")
+    print(f"  device:    {torch.cuda.get_device_name(0)}")
+    print(f"  torch:     {torch.__version__}")
+    print(f"  RHO_SWEEP: {RHO_SWEEP}")
+    print(f"  N_VALIDATION_PAIRS: {N_VALIDATION_PAIRS}")
 
     print("[load] Pythia + 12 SAEs")
     tok, model = load_pythia()
@@ -628,18 +609,11 @@ def main() -> None:
     print(f"  n_layers={n_layers}, num_latents={num_latents}")
     print(f"  param VRAM: {torch.cuda.memory_allocated(0) / 1024**3:.2f} GiB")
 
-    print("[load] Phase 1 features (mean_value lookup)")
-    phase1_df = pd.read_parquet(PHASE1_FEATURES)
-    mean_lookup = build_mean_lookup(phase1_df, n_layers, num_latents)
-    print(f"  phase1 rows: {len(phase1_df)}")
-
     print("[load] Phase 2 candidates (cs + broad)")
     cand_df = pd.read_parquet(PHASE2_CANDIDATES)
     cand_df = cand_df[cand_df["candidate_type"].isin(["category_selective", "broad"])].reset_index(drop=True)
     print(f"  candidates: {len(cand_df)}")
     layer_cand_lookup = build_layer_cand_lookup(cand_df, n_layers, num_latents)
-    cand_per_layer = cand_df.groupby("layer").size().to_dict()
-    print(f"  per-layer counts: {dict(sorted(cand_per_layer.items()))}")
 
     print("[load] D_probe positive+paraphrase")
     probe_prompts = load_probe_prompts()
@@ -649,65 +623,69 @@ def main() -> None:
     utility_prompts = load_utility_prompts()
     print(f"  utility: {len(utility_prompts)}")
 
-    # === Stage 1: attribution loop ===
+    # === Stage 1: attribution loop (per ρ accumulators) ===
     print("\n[stage 1] attribution loop (probe)")
-    accum_probe: list[tuple] = []
+    accum_probe_per_rho: dict[float, list[tuple]] = {rho: [] for rho in RHO_SWEEP}
     t0 = time.time()
     for i, p in enumerate(probe_prompts):
         if i % 100 == 0:
             elapsed = time.time() - t0
             rate = (i + 1) / max(elapsed, 1e-3)
             print(f"  [probe {i:4d}/{len(probe_prompts)}] {elapsed:6.1f}s ({rate:.1f}/s)")
-        per_lf, _ = compute_attribution_for_prompt(
-            tok, model, saes, mean_lookup, layer_cand_lookup, p["prompt"], p["answer"])
-        for (L, f), d in per_lf.items():
-            accum_probe.append((L, f, p["qid"], d))
-    print(f"  probe done: {len(accum_probe)} firings in {time.time()-t0:.1f}s")
+        per_rho_per_lf, _ = compute_attribution_for_prompt(
+            tok, model, saes, layer_cand_lookup, p["prompt"], p["answer"], RHO_SWEEP)
+        for rho in RHO_SWEEP:
+            for (L, f), d in per_rho_per_lf[rho].items():
+                accum_probe_per_rho[rho].append((L, f, p["qid"], d))
+    print(f"  probe done in {time.time()-t0:.1f}s")
+    for rho in RHO_SWEEP:
+        print(f"    ρ={rho}: {len(accum_probe_per_rho[rho])} firings")
 
     print("\n[stage 1b] attribution loop (utility)")
-    accum_utility: list[tuple] = []
+    accum_utility_per_rho: dict[float, list[tuple]] = {rho: [] for rho in RHO_SWEEP}
     t0 = time.time()
     for i, p in enumerate(utility_prompts):
         if i % 100 == 0:
             elapsed = time.time() - t0
             print(f"  [utility {i:4d}/{len(utility_prompts)}] {elapsed:6.1f}s")
-        per_lf, n_tokens = compute_attribution_for_prompt(
-            tok, model, saes, mean_lookup, layer_cand_lookup, p["prompt"], p["expected_continuation"])
+        per_rho_per_lf, n_tokens = compute_attribution_for_prompt(
+            tok, model, saes, layer_cand_lookup, p["prompt"], p["expected_continuation"], RHO_SWEEP)
         if n_tokens == 0:
             continue
-        for (L, f), d in per_lf.items():
-            accum_utility.append((L, f, p["prompt_id"], d, n_tokens))
-    print(f"  utility done: {len(accum_utility)} firings in {time.time()-t0:.1f}s")
+        for rho in RHO_SWEEP:
+            for (L, f), d in per_rho_per_lf[rho].items():
+                accum_utility_per_rho[rho].append((L, f, p["prompt_id"], d, n_tokens))
+    print(f"  utility done in {time.time()-t0:.1f}s")
 
-    # === Stage 2: validation (run before aggregation so fallback flag can be set) ===
-    print("\n[stage 2] 200-pair real intervention validation")
+    # === Stage 2: validation ===
+    print(f"\n[stage 2] {N_VALIDATION_PAIRS}-pair real intervention validation × {len(RHO_SWEEP)} ρ (shared pairs)")
     validation = run_validation(
-        tok, model, saes, mean_lookup, accum_probe, accum_utility,
-        probe_prompts, utility_prompts, n_pairs=N_VALIDATION_PAIRS)
+        tok, model, saes,
+        accum_probe_per_rho, accum_utility_per_rho,
+        probe_prompts, utility_prompts,
+        n_pairs=N_VALIDATION_PAIRS, rho_sweep=RHO_SWEEP)
     OUT_VALIDATION.parent.mkdir(parents=True, exist_ok=True)
     OUT_VALIDATION.write_text(json.dumps(validation, indent=2))
     print(f"  saved: {OUT_VALIDATION.name}")
-    print(f"  Pearson r={validation['pearson_r']:.4f}  Spearman ρ={validation['spearman_rho']:.4f}")
-    print(f"  rel_err_mean_filtered={validation['rel_err_mean_filtered']:.4f} "
-          f"(p50={validation['rel_err_p50_filtered']:.4f}, p95={validation['rel_err_p95_filtered']:.4f}) "
-          f"n_nontrivial={validation['n_nontrivial_pairs']}/{validation['n_validation_pairs']}")
-    print(f"  rel_mae_global={validation['rel_mae_global']:.4f}  accept={validation['accept']}")
+    print_per_rho_summary(RHO_SWEEP, validation)
 
-    # === Stage 3: aggregation ===
-    print("\n[stage 3] aggregation per (layer, feature)")
-    df_aggregate = aggregate_per_feature(
-        accum_probe, accum_utility, cand_df, probe_prompts, validation["accept"])
-    df_aggregate.to_parquet(OUT_PARQUET, index=False)
-    print(f"  saved: {OUT_PARQUET.name} ({len(df_aggregate)} rows)")
+    # === Stage 3: aggregation per ρ ===
+    print("\n[stage 3] aggregation per (layer, feature) × per ρ")
+    for rho in RHO_SWEEP:
+        df = aggregate_per_feature(
+            accum_probe_per_rho[rho], accum_utility_per_rho[rho], cand_df, probe_prompts, rho)
+        out = out_parquet_for_rho(rho)
+        df.to_parquet(out, index=False)
+        print(f"  ρ={rho}: saved {out.name} ({len(df)} rows)")
 
-    # === Stage 4: hash_log + sanity ===
-    print("\n[stage 4] hash_log + sanity report")
-    update_hash_log(df_aggregate, validation)
-    print_sanity(df_aggregate)
+    # === Stage 4: hash_log ===
+    print("\n[stage 4] hash_log update")
+    update_hash_log(RHO_SWEEP, validation)
+    print(f"  hash_log updated with 3 parquet entries + 1 validation entry")
 
     write_torch_peak(os.environ.get("SCHEDULER_JOB_ID"))
     print(f"\n[final VRAM] {torch.cuda.max_memory_allocated(0) / 1024**3:.2f} GiB")
-    print("[done]")
+    print("[done] phase3_rho_sweep_decide.py で C1-C5 判定を行うこと")
 
 
 if __name__ == "__main__":
