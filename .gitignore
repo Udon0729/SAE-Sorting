@@ -51,3 +51,6 @@ ops/queue/history/*.parquet
 
 # Reference, Document
 idea/
+
+# claude hooks
+.claude/
