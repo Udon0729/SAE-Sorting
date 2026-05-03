@@ -9,6 +9,8 @@ dependencies = [
     "pyyaml>=6.0",
     "datasets>=2.20",
     "numpy>=1.26",
+    "transformers>=5.7.0",
+    "safetensors>=0.7.0",
 ]
 
 [build-system]
