@@ -185,6 +185,29 @@
     "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
     "sha256": "847afb4f4130fb6bd42466051c7e0923ef3103607ad3b46a78f29c33da22b71f"
   },
+  "phase3_causal_light_pythia_rho050_v2_hash": {
+    "added_columns": [
+      "delta_m_non_target_per_cat_person_attribute",
+      "delta_m_non_target_per_cat_geography",
+      "delta_m_non_target_per_cat_organization",
+      "delta_m_non_target_per_cat_occupation",
+      "delta_m_utility_subset_U1",
+      "delta_m_utility_subset_U2",
+      "delta_m_utility_subset_U3",
+      "delta_m_utility_subset_U4",
+      "delta_m_utility_subset_U5",
+      "delta_m_utility_subset_U6"
+    ],
+    "effect_estimator": "attribution_linear",
+    "extends": "phase3_causal_light_pythia_rho050_hash",
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m_rho050_v2.parquet",
+    "frozen_at": "2026-05-03T10:09:47+00:00",
+    "intervention_rho": 0.5,
+    "intervention_type": "scale_down_rho0.5",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "89245a331d5138da917f8644c8c4059ad769a8c12a3ab77bb6958ef796070198"
+  },
   "phase3_causal_light_pythia_rho075_hash": {
     "decision_status": "ALLOW",
     "effect_estimator": "attribution_linear",
@@ -244,6 +267,76 @@
     "rel_mae_global": 0.4069854823333591,
     "sha256": "41a75d77965a0922f8034f6527fe02cbe5da90abb8937e5fc3022ea7d20ae5f3",
     "spearman_rho": 0.9272779012196402
+  },
+  "phase4_cluster_assignment_hash": {
+    "decision_status": "FREEZE_G1_G2_G3_G4_FAIL",
+    "fallback_reason": "phase4_v001_FREEZE_G1_G2_G3_G4_FAIL",
+    "file": "data/profiling/v001/phase4_cluster_assignment.parquet",
+    "frozen_at": "2026-05-03T10:28:33+00:00",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "9e63db5a528dc88d86bdae8445117c8219086b70d9a719582e6d108eb259c25e"
+  },
+  "phase4_cluster_heavy_profile_hash": {
+    "decision_status": "FREEZE_G1_G2_G3_G4_FAIL",
+    "fallback_reason": "phase4_v001_FREEZE_G1_G2_G3_G4_FAIL",
+    "file": "data/profiling/v001/phase4_cluster_heavy_profile.parquet",
+    "frozen_at": "2026-05-03T10:28:33+00:00",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "f7b87cba670b406846a4ae3ff47794b009142f1205ff310e7a6ff19c18efe022"
+  },
+  "phase4_cluster_labels_hash": {
+    "decision_status": "FREEZE_G1_G2_G3_G4_FAIL",
+    "fallback_reason": "phase4_v001_FREEZE_G1_G2_G3_G4_FAIL",
+    "file": "data/profiling/v001/phase4_cluster_labels.parquet",
+    "frozen_at": "2026-05-03T10:29:17+00:00",
+    "label_counts": {
+      "ENTANGLED": 1,
+      "UNKNOWN": 3
+    },
+    "n_clusters_labeled": 4,
+    "sha256": "05a31a1c756fac11b786e070ac887f2743d4eceed7ba1cac1b3176b855f3e900",
+    "thresholds": {
+      "gen_collapse_infra_thresh": 0.3,
+      "p50_nte_max": 0.0,
+      "p50_ud_max": 0.004509206708683792,
+      "p70_nte_max": 0.0,
+      "p80_te_max": 0.04885889816284184,
+      "p80_ud_max": 0.03570504676324441,
+      "p80_ud_var": 0.0002981237206223029
+    }
+  },
+  "phase4_decision_hash": {
+    "file": "data/profiling/v001/phase4_decision.json",
+    "frozen_at": "2026-05-03T10:29:34+00:00",
+    "gates_pass": {
+      "G1": false,
+      "G2": false,
+      "G3": false,
+      "G4": false,
+      "G5": true
+    },
+    "sha256": "e9270b98aa6633ddc7acbf133b0caecedf2fa31434766478df8c6e70c2c0efb2",
+    "status": "FREEZE_G1_G2_G3_G4_FAIL"
+  },
+  "phase4_feature_vectors_hash": {
+    "decision_status": "FREEZE_G1_G2_G3_G4_FAIL",
+    "fallback_reason": "phase4_v001_FREEZE_G1_G2_G3_G4_FAIL",
+    "file": "data/profiling/v001/phase4_feature_vectors.parquet",
+    "frozen_at": "2026-05-03T10:28:33+00:00",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "538ff477b9d34c8a1d86d0092db3446c4753c719f07ea68821076d186128abb4"
+  },
+  "phase4_top_activating_examples_hash": {
+    "decision_status": "FREEZE_G1_G2_G3_G4_FAIL",
+    "fallback_reason": "phase4_v001_FREEZE_G1_G2_G3_G4_FAIL",
+    "file": "data/profiling/v001/phase4_top_activating_examples.jsonl",
+    "frozen_at": "2026-05-03T10:28:33+00:00",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "f093e9b53753259bff869d3833f6e2d39d6042b9dbdef3f54ff6f7a10332fe5a"
   },
   "popqa_test_snapshot_hash": {
     "file": "data/raw/popqa/popqa_test.parquet",

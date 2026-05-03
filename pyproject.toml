@@ -12,6 +12,7 @@ dependencies = [
     "transformers>=5.7.0",
     "safetensors>=0.7.0",
     "scipy>=1.17.1",
+    "hdbscan>=0.8.42",
 ]
 
 [build-system]
