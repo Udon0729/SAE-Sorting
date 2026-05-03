@@ -1,0 +1,5 @@
+{"relation_id": "born_in", "category": "person_attribute", "subj_type": "person", "obj_type": "city"}
+{"relation_id": "located_in", "category": "geography", "subj_type": "city", "obj_type": "country"}
+{"relation_id": "headquartered_in", "category": "organization", "subj_type": "organization", "obj_type": "city"}
+{"relation_id": "works_as", "category": "occupation", "subj_type": "person", "obj_type": "occupation"}
+{"relation_id": "org_located_in", "category": "organization", "subj_type": "organization", "obj_type": "city", "shares_surface_with": "located_in"}

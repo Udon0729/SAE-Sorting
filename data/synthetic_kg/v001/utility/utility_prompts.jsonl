@@ -1,0 +1,200 @@
+{"qa_id": "util_arith_0000", "type": "arithmetic", "prompt": "11 * 17 =", "answer": "187"}
+{"qa_id": "util_arith_0001", "type": "arithmetic", "prompt": "46 + 46 =", "answer": "92"}
+{"qa_id": "util_arith_0002", "type": "arithmetic", "prompt": "39 * 11 =", "answer": "429"}
+{"qa_id": "util_arith_0003", "type": "arithmetic", "prompt": "6 + 16 =", "answer": "22"}
+{"qa_id": "util_arith_0004", "type": "arithmetic", "prompt": "9 + 20 =", "answer": "29"}
+{"qa_id": "util_arith_0005", "type": "arithmetic", "prompt": "26 * 5 =", "answer": "130"}
+{"qa_id": "util_arith_0006", "type": "arithmetic", "prompt": "26 * 44 =", "answer": "1144"}
+{"qa_id": "util_arith_0007", "type": "arithmetic", "prompt": "42 - 19 =", "answer": "23"}
+{"qa_id": "util_arith_0008", "type": "arithmetic", "prompt": "2 - 23 =", "answer": "-21"}
+{"qa_id": "util_arith_0009", "type": "arithmetic", "prompt": "38 - 10 =", "answer": "28"}
+{"qa_id": "util_arith_0010", "type": "arithmetic", "prompt": "17 + 24 =", "answer": "41"}
+{"qa_id": "util_arith_0011", "type": "arithmetic", "prompt": "24 * 47 =", "answer": "1128"}
+{"qa_id": "util_arith_0012", "type": "arithmetic", "prompt": "27 - 40 =", "answer": "-13"}
+{"qa_id": "util_arith_0013", "type": "arithmetic", "prompt": "43 + 34 =", "answer": "77"}
+{"qa_id": "util_arith_0014", "type": "arithmetic", "prompt": "25 - 6 =", "answer": "19"}
+{"qa_id": "util_arith_0015", "type": "arithmetic", "prompt": "48 + 38 =", "answer": "86"}
+{"qa_id": "util_arith_0016", "type": "arithmetic", "prompt": "13 + 18 =", "answer": "31"}
+{"qa_id": "util_arith_0017", "type": "arithmetic", "prompt": "41 * 49 =", "answer": "2009"}
+{"qa_id": "util_arith_0018", "type": "arithmetic", "prompt": "44 + 49 =", "answer": "93"}
+{"qa_id": "util_arith_0019", "type": "arithmetic", "prompt": "10 - 49 =", "answer": "-39"}
+{"qa_id": "util_arith_0020", "type": "arithmetic", "prompt": "36 + 4 =", "answer": "40"}
+{"qa_id": "util_arith_0021", "type": "arithmetic", "prompt": "21 + 26 =", "answer": "47"}
+{"qa_id": "util_arith_0022", "type": "arithmetic", "prompt": "6 - 39 =", "answer": "-33"}
+{"qa_id": "util_arith_0023", "type": "arithmetic", "prompt": "18 - 31 =", "answer": "-13"}
+{"qa_id": "util_arith_0024", "type": "arithmetic", "prompt": "4 * 20 =", "answer": "80"}
+{"qa_id": "util_arith_0025", "type": "arithmetic", "prompt": "20 - 4 =", "answer": "16"}
+{"qa_id": "util_arith_0026", "type": "arithmetic", "prompt": "10 + 18 =", "answer": "28"}
+{"qa_id": "util_arith_0027", "type": "arithmetic", "prompt": "19 * 10 =", "answer": "190"}
+{"qa_id": "util_arith_0028", "type": "arithmetic", "prompt": "44 - 27 =", "answer": "17"}
+{"qa_id": "util_arith_0029", "type": "arithmetic", "prompt": "25 - 10 =", "answer": "15"}
+{"qa_id": "util_arith_0030", "type": "arithmetic", "prompt": "5 + 26 =", "answer": "31"}
+{"qa_id": "util_arith_0031", "type": "arithmetic", "prompt": "17 - 26 =", "answer": "-9"}
+{"qa_id": "util_arith_0032", "type": "arithmetic", "prompt": "16 * 2 =", "answer": "32"}
+{"qa_id": "util_arith_0033", "type": "arithmetic", "prompt": "2 + 29 =", "answer": "31"}
+{"qa_id": "util_arith_0034", "type": "arithmetic", "prompt": "20 - 30 =", "answer": "-10"}
+{"qa_id": "util_arith_0035", "type": "arithmetic", "prompt": "25 + 45 =", "answer": "70"}
+{"qa_id": "util_arith_0036", "type": "arithmetic", "prompt": "23 * 50 =", "answer": "1150"}
+{"qa_id": "util_arith_0037", "type": "arithmetic", "prompt": "14 + 5 =", "answer": "19"}
+{"qa_id": "util_arith_0038", "type": "arithmetic", "prompt": "40 - 46 =", "answer": "-6"}
+{"qa_id": "util_arith_0039", "type": "arithmetic", "prompt": "49 + 34 =", "answer": "83"}
+{"qa_id": "util_arith_0040", "type": "arithmetic", "prompt": "30 - 19 =", "answer": "11"}
+{"qa_id": "util_arith_0041", "type": "arithmetic", "prompt": "25 * 25 =", "answer": "625"}
+{"qa_id": "util_arith_0042", "type": "arithmetic", "prompt": "39 - 15 =", "answer": "24"}
+{"qa_id": "util_arith_0043", "type": "arithmetic", "prompt": "31 - 47 =", "answer": "-16"}
+{"qa_id": "util_arith_0044", "type": "arithmetic", "prompt": "12 * 20 =", "answer": "240"}
+{"qa_id": "util_arith_0045", "type": "arithmetic", "prompt": "12 + 17 =", "answer": "29"}
+{"qa_id": "util_arith_0046", "type": "arithmetic", "prompt": "31 - 33 =", "answer": "-2"}
+{"qa_id": "util_arith_0047", "type": "arithmetic", "prompt": "45 + 5 =", "answer": "50"}
+{"qa_id": "util_arith_0048", "type": "arithmetic", "prompt": "35 - 43 =", "answer": "-8"}
+{"qa_id": "util_arith_0049", "type": "arithmetic", "prompt": "41 + 27 =", "answer": "68"}
+{"qa_id": "util_alpha_0000", "type": "alphabetical", "prompt": "The letter that comes after e is", "answer": "f"}
+{"qa_id": "util_alpha_0001", "type": "alphabetical", "prompt": "The letter that comes after y is", "answer": "z"}
+{"qa_id": "util_alpha_0002", "type": "alphabetical", "prompt": "The letter that comes after x is", "answer": "y"}
+{"qa_id": "util_alpha_0003", "type": "alphabetical", "prompt": "The letter that comes after q is", "answer": "r"}
+{"qa_id": "util_alpha_0004", "type": "alphabetical", "prompt": "The letter that comes after e is", "answer": "f"}
+{"qa_id": "util_alpha_0005", "type": "alphabetical", "prompt": "The letter that comes after n is", "answer": "o"}
+{"qa_id": "util_alpha_0006", "type": "alphabetical", "prompt": "The letter that comes after d is", "answer": "e"}
+{"qa_id": "util_alpha_0007", "type": "alphabetical", "prompt": "The letter that comes after f is", "answer": "g"}
+{"qa_id": "util_alpha_0008", "type": "alphabetical", "prompt": "The letter that comes after i is", "answer": "j"}
+{"qa_id": "util_alpha_0009", "type": "alphabetical", "prompt": "The letter that comes after w is", "answer": "x"}
+{"qa_id": "util_alpha_0010", "type": "alphabetical", "prompt": "The letter that comes after s is", "answer": "t"}
+{"qa_id": "util_alpha_0011", "type": "alphabetical", "prompt": "The letter that comes after t is", "answer": "u"}
+{"qa_id": "util_alpha_0012", "type": "alphabetical", "prompt": "The letter that comes after r is", "answer": "s"}
+{"qa_id": "util_alpha_0013", "type": "alphabetical", "prompt": "The letter that comes after o is", "answer": "p"}
+{"qa_id": "util_alpha_0014", "type": "alphabetical", "prompt": "The letter that comes after o is", "answer": "p"}
+{"qa_id": "util_alpha_0015", "type": "alphabetical", "prompt": "The letter that comes after t is", "answer": "u"}
+{"qa_id": "util_alpha_0016", "type": "alphabetical", "prompt": "The letter that comes after s is", "answer": "t"}
+{"qa_id": "util_alpha_0017", "type": "alphabetical", "prompt": "The letter that comes after t is", "answer": "u"}
+{"qa_id": "util_alpha_0018", "type": "alphabetical", "prompt": "The letter that comes after j is", "answer": "k"}
+{"qa_id": "util_alpha_0019", "type": "alphabetical", "prompt": "The letter that comes after v is", "answer": "w"}
+{"qa_id": "util_alpha_0020", "type": "alphabetical", "prompt": "The letter that comes after q is", "answer": "r"}
+{"qa_id": "util_alpha_0021", "type": "alphabetical", "prompt": "The letter that comes after c is", "answer": "d"}
+{"qa_id": "util_alpha_0022", "type": "alphabetical", "prompt": "The letter that comes after s is", "answer": "t"}
+{"qa_id": "util_alpha_0023", "type": "alphabetical", "prompt": "The letter that comes after j is", "answer": "k"}
+{"qa_id": "util_alpha_0024", "type": "alphabetical", "prompt": "The letter that comes after w is", "answer": "x"}
+{"qa_id": "util_alpha_0025", "type": "alphabetical", "prompt": "The letter that comes after b is", "answer": "c"}
+{"qa_id": "util_alpha_0026", "type": "alphabetical", "prompt": "The letter that comes after n is", "answer": "o"}
+{"qa_id": "util_alpha_0027", "type": "alphabetical", "prompt": "The letter that comes after w is", "answer": "x"}
+{"qa_id": "util_alpha_0028", "type": "alphabetical", "prompt": "The letter that comes after r is", "answer": "s"}
+{"qa_id": "util_alpha_0029", "type": "alphabetical", "prompt": "The letter that comes after d is", "answer": "e"}
+{"qa_id": "util_alpha_0030", "type": "alphabetical", "prompt": "The letter that comes after f is", "answer": "g"}
+{"qa_id": "util_alpha_0031", "type": "alphabetical", "prompt": "The letter that comes after o is", "answer": "p"}
+{"qa_id": "util_alpha_0032", "type": "alphabetical", "prompt": "The letter that comes after l is", "answer": "m"}
+{"qa_id": "util_alpha_0033", "type": "alphabetical", "prompt": "The letter that comes after m is", "answer": "n"}
+{"qa_id": "util_alpha_0034", "type": "alphabetical", "prompt": "The letter that comes after c is", "answer": "d"}
+{"qa_id": "util_alpha_0035", "type": "alphabetical", "prompt": "The letter that comes after x is", "answer": "y"}
+{"qa_id": "util_alpha_0036", "type": "alphabetical", "prompt": "The letter that comes after a is", "answer": "b"}
+{"qa_id": "util_alpha_0037", "type": "alphabetical", "prompt": "The letter that comes after j is", "answer": "k"}
+{"qa_id": "util_alpha_0038", "type": "alphabetical", "prompt": "The letter that comes after b is", "answer": "c"}
+{"qa_id": "util_alpha_0039", "type": "alphabetical", "prompt": "The letter that comes after r is", "answer": "s"}
+{"qa_id": "util_alpha_0040", "type": "alphabetical", "prompt": "The letter that comes after n is", "answer": "o"}
+{"qa_id": "util_alpha_0041", "type": "alphabetical", "prompt": "The letter that comes after p is", "answer": "q"}
+{"qa_id": "util_alpha_0042", "type": "alphabetical", "prompt": "The letter that comes after g is", "answer": "h"}
+{"qa_id": "util_alpha_0043", "type": "alphabetical", "prompt": "The letter that comes after e is", "answer": "f"}
+{"qa_id": "util_alpha_0044", "type": "alphabetical", "prompt": "The letter that comes after k is", "answer": "l"}
+{"qa_id": "util_alpha_0045", "type": "alphabetical", "prompt": "The letter that comes after q is", "answer": "r"}
+{"qa_id": "util_alpha_0046", "type": "alphabetical", "prompt": "The letter that comes after m is", "answer": "n"}
+{"qa_id": "util_alpha_0047", "type": "alphabetical", "prompt": "The letter that comes after q is", "answer": "r"}
+{"qa_id": "util_alpha_0048", "type": "alphabetical", "prompt": "The letter that comes after i is", "answer": "j"}
+{"qa_id": "util_alpha_0049", "type": "alphabetical", "prompt": "The letter that comes after q is", "answer": "r"}
+{"qa_id": "util_repeat_0000", "type": "repetition", "prompt": "Repeat the word: adbe. Answer:", "answer": "adbe"}
+{"qa_id": "util_repeat_0001", "type": "repetition", "prompt": "Repeat the word: jdjg. Answer:", "answer": "jdjg"}
+{"qa_id": "util_repeat_0002", "type": "repetition", "prompt": "Repeat the word: ghhf. Answer:", "answer": "ghhf"}
+{"qa_id": "util_repeat_0003", "type": "repetition", "prompt": "Repeat the word: edja. Answer:", "answer": "edja"}
+{"qa_id": "util_repeat_0004", "type": "repetition", "prompt": "Repeat the word: cdba. Answer:", "answer": "cdba"}
+{"qa_id": "util_repeat_0005", "type": "repetition", "prompt": "Repeat the word: eehe. Answer:", "answer": "eehe"}
+{"qa_id": "util_repeat_0006", "type": "repetition", "prompt": "Repeat the word: ebjd. Answer:", "answer": "ebjd"}
+{"qa_id": "util_repeat_0007", "type": "repetition", "prompt": "Repeat the word: bahg. Answer:", "answer": "bahg"}
+{"qa_id": "util_repeat_0008", "type": "repetition", "prompt": "Repeat the word: bbje. Answer:", "answer": "bbje"}
+{"qa_id": "util_repeat_0009", "type": "repetition", "prompt": "Repeat the word: hgai. Answer:", "answer": "hgai"}
+{"qa_id": "util_repeat_0010", "type": "repetition", "prompt": "Repeat the word: fddb. Answer:", "answer": "fddb"}
+{"qa_id": "util_repeat_0011", "type": "repetition", "prompt": "Repeat the word: cccg. Answer:", "answer": "cccg"}
+{"qa_id": "util_repeat_0012", "type": "repetition", "prompt": "Repeat the word: afad. Answer:", "answer": "afad"}
+{"qa_id": "util_repeat_0013", "type": "repetition", "prompt": "Repeat the word: hicf. Answer:", "answer": "hicf"}
+{"qa_id": "util_repeat_0014", "type": "repetition", "prompt": "Repeat the word: ijbi. Answer:", "answer": "ijbi"}
+{"qa_id": "util_repeat_0015", "type": "repetition", "prompt": "Repeat the word: aiai. Answer:", "answer": "aiai"}
+{"qa_id": "util_repeat_0016", "type": "repetition", "prompt": "Repeat the word: hhjh. Answer:", "answer": "hhjh"}
+{"qa_id": "util_repeat_0017", "type": "repetition", "prompt": "Repeat the word: ghaf. Answer:", "answer": "ghaf"}
+{"qa_id": "util_repeat_0018", "type": "repetition", "prompt": "Repeat the word: adbc. Answer:", "answer": "adbc"}
+{"qa_id": "util_repeat_0019", "type": "repetition", "prompt": "Repeat the word: fjfd. Answer:", "answer": "fjfd"}
+{"qa_id": "util_repeat_0020", "type": "repetition", "prompt": "Repeat the word: ffbj. Answer:", "answer": "ffbj"}
+{"qa_id": "util_repeat_0021", "type": "repetition", "prompt": "Repeat the word: iabe. Answer:", "answer": "iabe"}
+{"qa_id": "util_repeat_0022", "type": "repetition", "prompt": "Repeat the word: hega. Answer:", "answer": "hega"}
+{"qa_id": "util_repeat_0023", "type": "repetition", "prompt": "Repeat the word: igjb. Answer:", "answer": "igjb"}
+{"qa_id": "util_repeat_0024", "type": "repetition", "prompt": "Repeat the word: iagg. Answer:", "answer": "iagg"}
+{"qa_id": "util_repeat_0025", "type": "repetition", "prompt": "Repeat the word: jiif. Answer:", "answer": "jiif"}
+{"qa_id": "util_repeat_0026", "type": "repetition", "prompt": "Repeat the word: iieb. Answer:", "answer": "iieb"}
+{"qa_id": "util_repeat_0027", "type": "repetition", "prompt": "Repeat the word: hjdc. Answer:", "answer": "hjdc"}
+{"qa_id": "util_repeat_0028", "type": "repetition", "prompt": "Repeat the word: hgji. Answer:", "answer": "hgji"}
+{"qa_id": "util_repeat_0029", "type": "repetition", "prompt": "Repeat the word: hacc. Answer:", "answer": "hacc"}
+{"qa_id": "util_repeat_0030", "type": "repetition", "prompt": "Repeat the word: jdgh. Answer:", "answer": "jdgh"}
+{"qa_id": "util_repeat_0031", "type": "repetition", "prompt": "Repeat the word: cbec. Answer:", "answer": "cbec"}
+{"qa_id": "util_repeat_0032", "type": "repetition", "prompt": "Repeat the word: acbj. Answer:", "answer": "acbj"}
+{"qa_id": "util_repeat_0033", "type": "repetition", "prompt": "Repeat the word: ehcd. Answer:", "answer": "ehcd"}
+{"qa_id": "util_repeat_0034", "type": "repetition", "prompt": "Repeat the word: dhib. Answer:", "answer": "dhib"}
+{"qa_id": "util_repeat_0035", "type": "repetition", "prompt": "Repeat the word: ddfa. Answer:", "answer": "ddfa"}
+{"qa_id": "util_repeat_0036", "type": "repetition", "prompt": "Repeat the word: eajd. Answer:", "answer": "eajd"}
+{"qa_id": "util_repeat_0037", "type": "repetition", "prompt": "Repeat the word: aeee. Answer:", "answer": "aeee"}
+{"qa_id": "util_repeat_0038", "type": "repetition", "prompt": "Repeat the word: ahje. Answer:", "answer": "ahje"}
+{"qa_id": "util_repeat_0039", "type": "repetition", "prompt": "Repeat the word: fggi. Answer:", "answer": "fggi"}
+{"qa_id": "util_repeat_0040", "type": "repetition", "prompt": "Repeat the word: icgc. Answer:", "answer": "icgc"}
+{"qa_id": "util_repeat_0041", "type": "repetition", "prompt": "Repeat the word: ejhb. Answer:", "answer": "ejhb"}
+{"qa_id": "util_repeat_0042", "type": "repetition", "prompt": "Repeat the word: fhgj. Answer:", "answer": "fhgj"}
+{"qa_id": "util_repeat_0043", "type": "repetition", "prompt": "Repeat the word: jcbf. Answer:", "answer": "jcbf"}
+{"qa_id": "util_repeat_0044", "type": "repetition", "prompt": "Repeat the word: ggid. Answer:", "answer": "ggid"}
+{"qa_id": "util_repeat_0045", "type": "repetition", "prompt": "Repeat the word: ihib. Answer:", "answer": "ihib"}
+{"qa_id": "util_repeat_0046", "type": "repetition", "prompt": "Repeat the word: cddf. Answer:", "answer": "cddf"}
+{"qa_id": "util_repeat_0047", "type": "repetition", "prompt": "Repeat the word: jfci. Answer:", "answer": "jfci"}
+{"qa_id": "util_repeat_0048", "type": "repetition", "prompt": "Repeat the word: ecdc. Answer:", "answer": "ecdc"}
+{"qa_id": "util_repeat_0049", "type": "repetition", "prompt": "Repeat the word: fgic. Answer:", "answer": "fgic"}
+{"qa_id": "util_pad_0150", "type": "arithmetic", "prompt": "39 + 48 =", "answer": "87"}
+{"qa_id": "util_pad_0151", "type": "arithmetic", "prompt": "60 + 74 =", "answer": "134"}
+{"qa_id": "util_pad_0152", "type": "arithmetic", "prompt": "46 + 45 =", "answer": "91"}
+{"qa_id": "util_pad_0153", "type": "arithmetic", "prompt": "95 + 93 =", "answer": "188"}
+{"qa_id": "util_pad_0154", "type": "arithmetic", "prompt": "59 + 26 =", "answer": "85"}
+{"qa_id": "util_pad_0155", "type": "arithmetic", "prompt": "71 + 9 =", "answer": "80"}
+{"qa_id": "util_pad_0156", "type": "arithmetic", "prompt": "44 + 82 =", "answer": "126"}
+{"qa_id": "util_pad_0157", "type": "arithmetic", "prompt": "55 + 92 =", "answer": "147"}
+{"qa_id": "util_pad_0158", "type": "arithmetic", "prompt": "58 + 74 =", "answer": "132"}
+{"qa_id": "util_pad_0159", "type": "arithmetic", "prompt": "77 + 61 =", "answer": "138"}
+{"qa_id": "util_pad_0160", "type": "arithmetic", "prompt": "83 + 17 =", "answer": "100"}
+{"qa_id": "util_pad_0161", "type": "arithmetic", "prompt": "68 + 11 =", "answer": "79"}
+{"qa_id": "util_pad_0162", "type": "arithmetic", "prompt": "45 + 55 =", "answer": "100"}
+{"qa_id": "util_pad_0163", "type": "arithmetic", "prompt": "11 + 25 =", "answer": "36"}
+{"qa_id": "util_pad_0164", "type": "arithmetic", "prompt": "84 + 3 =", "answer": "87"}
+{"qa_id": "util_pad_0165", "type": "arithmetic", "prompt": "17 + 81 =", "answer": "98"}
+{"qa_id": "util_pad_0166", "type": "arithmetic", "prompt": "30 + 21 =", "answer": "51"}
+{"qa_id": "util_pad_0167", "type": "arithmetic", "prompt": "62 + 52 =", "answer": "114"}
+{"qa_id": "util_pad_0168", "type": "arithmetic", "prompt": "28 + 77 =", "answer": "105"}
+{"qa_id": "util_pad_0169", "type": "arithmetic", "prompt": "12 + 51 =", "answer": "63"}
+{"qa_id": "util_pad_0170", "type": "arithmetic", "prompt": "92 + 81 =", "answer": "173"}
+{"qa_id": "util_pad_0171", "type": "arithmetic", "prompt": "100 + 80 =", "answer": "180"}
+{"qa_id": "util_pad_0172", "type": "arithmetic", "prompt": "37 + 100 =", "answer": "137"}
+{"qa_id": "util_pad_0173", "type": "arithmetic", "prompt": "78 + 64 =", "answer": "142"}
+{"qa_id": "util_pad_0174", "type": "arithmetic", "prompt": "27 + 99 =", "answer": "126"}
+{"qa_id": "util_pad_0175", "type": "arithmetic", "prompt": "74 + 58 =", "answer": "132"}
+{"qa_id": "util_pad_0176", "type": "arithmetic", "prompt": "51 + 67 =", "answer": "118"}
+{"qa_id": "util_pad_0177", "type": "arithmetic", "prompt": "60 + 88 =", "answer": "148"}
+{"qa_id": "util_pad_0178", "type": "arithmetic", "prompt": "89 + 50 =", "answer": "139"}
+{"qa_id": "util_pad_0179", "type": "arithmetic", "prompt": "47 + 75 =", "answer": "122"}
+{"qa_id": "util_pad_0180", "type": "arithmetic", "prompt": "53 + 38 =", "answer": "91"}
+{"qa_id": "util_pad_0181", "type": "arithmetic", "prompt": "64 + 14 =", "answer": "78"}
+{"qa_id": "util_pad_0182", "type": "arithmetic", "prompt": "69 + 11 =", "answer": "80"}
+{"qa_id": "util_pad_0183", "type": "arithmetic", "prompt": "87 + 62 =", "answer": "149"}
+{"qa_id": "util_pad_0184", "type": "arithmetic", "prompt": "46 + 30 =", "answer": "76"}
+{"qa_id": "util_pad_0185", "type": "arithmetic", "prompt": "35 + 5 =", "answer": "40"}
+{"qa_id": "util_pad_0186", "type": "arithmetic", "prompt": "75 + 56 =", "answer": "131"}
+{"qa_id": "util_pad_0187", "type": "arithmetic", "prompt": "14 + 82 =", "answer": "96"}
+{"qa_id": "util_pad_0188", "type": "arithmetic", "prompt": "74 + 82 =", "answer": "156"}
+{"qa_id": "util_pad_0189", "type": "arithmetic", "prompt": "80 + 57 =", "answer": "137"}
+{"qa_id": "util_pad_0190", "type": "arithmetic", "prompt": "99 + 81 =", "answer": "180"}
+{"qa_id": "util_pad_0191", "type": "arithmetic", "prompt": "45 + 15 =", "answer": "60"}
+{"qa_id": "util_pad_0192", "type": "arithmetic", "prompt": "12 + 63 =", "answer": "75"}
+{"qa_id": "util_pad_0193", "type": "arithmetic", "prompt": "41 + 54 =", "answer": "95"}
+{"qa_id": "util_pad_0194", "type": "arithmetic", "prompt": "28 + 37 =", "answer": "65"}
+{"qa_id": "util_pad_0195", "type": "arithmetic", "prompt": "36 + 8 =", "answer": "44"}
+{"qa_id": "util_pad_0196", "type": "arithmetic", "prompt": "53 + 7 =", "answer": "60"}
+{"qa_id": "util_pad_0197", "type": "arithmetic", "prompt": "20 + 16 =", "answer": "36"}
+{"qa_id": "util_pad_0198", "type": "arithmetic", "prompt": "5 + 76 =", "answer": "81"}
+{"qa_id": "util_pad_0199", "type": "arithmetic", "prompt": "13 + 50 =", "answer": "63"}

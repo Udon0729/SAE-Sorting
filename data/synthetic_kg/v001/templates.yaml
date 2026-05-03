@@ -1,0 +1,40 @@
+born_in:
+  train:
+  - '{s} was born in {o}.'
+  - The birthplace of {s} is {o}.
+  - '{s} comes from {o}.'
+  test:
+  - '{s} originates from {o}.'
+  - In the registry, {s}'s birth city is listed as {o}.
+located_in:
+  train:
+  - '{s} is located in {o}.'
+  - '{s} lies within {o}.'
+  - The city of {s} belongs to {o}.
+  test:
+  - '{s} is part of {o}.'
+  - '{s}, a city in {o}, is well known.'
+headquartered_in:
+  train:
+  - '{s} is headquartered in {o}.'
+  - The headquarters of {s} are in {o}.
+  - '{s} has its main office in {o}.'
+  test:
+  - '{s} operates from {o}.'
+  - '{o} hosts the headquarters of {s}.'
+works_as:
+  train:
+  - '{s} works as {a_o}.'
+  - '{s}''s profession is {a_o}.'
+  - '{s} earns a living as {a_o}.'
+  test:
+  - By trade, {s} is {a_o}.
+  - '{s} practices the trade of {o}.'
+org_located_in:
+  train:
+  - '{s} is located in {o}.'
+  - '{s} lies within {o}.'
+  - The organization {s} belongs to {o}.
+  test:
+  - '{s} is part of {o}.'
+  - '{s}, an organization in {o}, is well established.'

@@ -10,6 +10,13 @@
     "frozen_at": "2026-05-03T01:23:07+00:00",
     "sha256": "067f2438e1f5b28b07a35b871d7182f9c1d54f6a72879c132a5f471e2a200f0f"
   },
+  "d_synth_v001_small_sums_hash": {
+    "file": "data/synthetic_kg/v001/hashes/sha256sums.txt",
+    "frozen_at": "2026-05-03T01:59:25+00:00",
+    "n_annotations": 280,
+    "n_facts": 10340,
+    "sha256": "7437455d538f69ca7480c7d4689622fc5f4c81c7e99b0ae3f24a3e4c657036e4"
+  },
   "lama_trex_snapshot_hash": {
     "file": "data/raw/lama/lama_trex.parquet",
     "frozen_at": "2026-05-03T01:23:07+00:00",

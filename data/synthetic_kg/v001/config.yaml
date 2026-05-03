@@ -1,0 +1,25 @@
+dataset_name: D_synth_v001
+version: v001
+size: small
+seed: 42
+frozen_at: '2026-05-03T01:59:25+00:00'
+categories:
+- person_attribute
+- geography
+- organization
+- occupation
+categories_deferred:
+- synthetic_biology
+- math_formula
+- synthetic_rule
+n_facts: 10340
+n_annotations_by_type:
+  entity: 200
+  relation: 50
+  compositional: 30
+entity_counts:
+  person: 200
+  city: 200
+  country: 100
+  organization: 200
+  occupation: 100
