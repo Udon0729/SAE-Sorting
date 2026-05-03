@@ -48,6 +48,16 @@
     "n_rows": 329,
     "sha256": "8e99677350f88a91f39536b72f252d08fc3a26b03f943793fbe4bb05353e530c"
   },
+  "phase1_features_hash": {
+    "file": "data/profiling/v001/phase1_features.parquet",
+    "frozen_at": "2026-05-03T04:48:49+00:00",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "n_features": 239225,
+    "n_layers": 12,
+    "n_prompts": 1200,
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "3bd00f1476e79247955a20595735ec61dc741ef56293c8d6f828d27691d63545"
+  },
   "popqa_test_snapshot_hash": {
     "file": "data/raw/popqa/popqa_test.parquet",
     "frozen_at": "2026-05-03T00:43:12+00:00",
