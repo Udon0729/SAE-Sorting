@@ -17,6 +17,13 @@
     "n_facts": 10340,
     "sha256": "7437455d538f69ca7480c7d4689622fc5f4c81c7e99b0ae3f24a3e4c657036e4"
   },
+  "d_utility_v001_small_sums_hash": {
+    "file": "data/utility/v001/hashes/sha256sums.txt",
+    "frozen_at": "2026-05-03T02:19:12+00:00",
+    "n_per_category": 90,
+    "n_total": 540,
+    "sha256": "c79eba565bedbe41ad243368a9d7558331a0e3bb2f4cc0172b45e38009436313"
+  },
   "lama_trex_snapshot_hash": {
     "file": "data/raw/lama/lama_trex.parquet",
     "frozen_at": "2026-05-03T01:23:07+00:00",
@@ -41,5 +48,11 @@
     "file": "configs/popularity_bucket_definition.yaml",
     "frozen_at": "2026-05-03T00:43:12+00:00",
     "sha256": "a14841adca3dd89e010f9a6b993227248717f6ec66da1c28132835fdcaf9fb9c"
+  },
+  "wikitext_validation_snapshot_hash": {
+    "file": "data/raw/wikitext/wikitext_103_raw_v1_validation.parquet",
+    "frozen_at": "2026-05-03T02:19:12+00:00",
+    "sha256": "cb47baa0addfc85d8ec49a22dd901bf77e3ad6c954a07afd0c28610b6df852bc",
+    "source": "wikitext/wikitext-103-raw-v1@validation"
   }
 }

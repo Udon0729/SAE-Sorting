@@ -1,0 +1,26 @@
+dataset_name: D_utility_v001
+version: v001
+size: small
+seed: 42
+frozen_at: '2026-05-03T02:19:12+00:00'
+categories:
+- id: U1
+  name: general_lm_text
+- id: U2
+  name: simple_qa
+- id: U3
+  name: syntax_format
+- id: U4
+  name: numeric
+- id: U5
+  name: copying_list_continuation
+- id: U6
+  name: unrelated_factual
+n_per_category: 90
+n_total: 540
+u1_source:
+  dataset: wikitext
+  config: wikitext-103-raw-v1
+  split: validation
+  snapshot: data/raw/wikitext/wikitext_103_raw_v1_validation.parquet
+  snapshot_sha256: cb47baa0addfc85d8ec49a22dd901bf77e3ad6c954a07afd0c28610b6df852bc
