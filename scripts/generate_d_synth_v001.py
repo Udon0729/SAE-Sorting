@@ -1,22 +1,32 @@
 """Generate D_synth_v001 synthetic knowledge graph (dataset.md §3).
 
-v001 scope (intentional): C1-C4 (relational categories only).
-  C5 synthetic_biology, C6 math_formula, C7 synthetic_rule deferred to v001.5.
+Categories and relations (all 7 of dataset.md §3 spec):
+  C1 person_attribute   (relational): born_in (person -> city)
+  C2 geography          (relational): located_in (city -> country)
+  C3 organization       (relational): headquartered_in (org -> city)
+  C4 occupation         (relational): works_as (person -> occupation)
+  C5 synthetic_biology  (relational): gene_codes_for (gene -> protein),
+                                      expressed_in (gene -> celltype)
+  C6 math_formula       (procedural): square, cube, double, triple, add_10,
+                                      multiply_by_5 (integer -> integer, computed)
+  C7 synthetic_rule     (procedural): rule_a (x+7), rule_b (3x), rule_c (x mod 5),
+                                      rule_d (x^2-1), rule_e (2x+1)
 
-Categories and relations:
-  C1 person_attribute: born_in (person -> city)
-  C2 geography:        located_in (city -> country)
-  C3 organization:     headquartered_in (org -> city)
-  C4 occupation:       works_as (person -> occupation)
+C6/C7 use disjoint integer pools (C6: 1-250, C7: 1000-1299) to avoid spurious
+shared-vocab interactions in cluster analysis.
 
 Cross-category relation reuse for Phase 3 entanglement:
   located_in is reused for org -> city, spanning C2 and C3.
 
 4-phase generation (dataset.md §3.5.6):
-  Phase 1: category-separated baseline facts
+  Phase 1: category-separated baseline facts (all C1-C7)
   Phase 2: entity-level entanglement (person also gets works_as, spanning C1+C4)
   Phase 3: relation-level entanglement (located_in extended to org -> city, spanning C2+C3)
   Phase 4: compositional chains (person -> org -> city -> country)
+
+Phase 2-4 entanglement covers C1-C4 only by design. C5-C7 entanglement
+injection deferred to v002 (requires cross-category design that is independently
+non-trivial; see dataset.md §3.5).
 
 Annotation count targets per dataset.md §3.5.6:
   small:  entity 200 / relation 50 / compositional 30
@@ -55,27 +65,52 @@ VERSION = "v001"
 
 SIZE_PROFILES = {
     "small": {
-        "phase1_per_relation": {"born_in": 2500, "located_in": 3000, "headquartered_in": 2500, "works_as": 2000},
+        "phase1_per_relation": {
+            "born_in": 2500, "located_in": 3000, "headquartered_in": 2500, "works_as": 2000,
+            "gene_codes_for": 750, "expressed_in": 750,
+            "math_square": 250, "math_cube": 250, "math_double": 250,
+            "math_triple": 250, "math_add_10": 250, "math_multiply_by_5": 250,
+            "rule_a": 300, "rule_b": 300, "rule_c": 300, "rule_d": 300, "rule_e": 300,
+        },
         "n_entity_annotations": 200,
         "n_relation_annotations": 50,
         "n_compositional_chains": 30,
         "n_utility_prompts": 200,
     },
     "main": {
-        "phase1_per_relation": {"born_in": 12500, "located_in": 15000, "headquartered_in": 12500, "works_as": 10000},
+        "phase1_per_relation": {
+            "born_in": 12500, "located_in": 15000, "headquartered_in": 12500, "works_as": 10000,
+            "gene_codes_for": 3750, "expressed_in": 3750,
+            "math_square": 250, "math_cube": 250, "math_double": 250,
+            "math_triple": 250, "math_add_10": 250, "math_multiply_by_5": 250,
+            "rule_a": 300, "rule_b": 300, "rule_c": 300, "rule_d": 300, "rule_e": 300,
+        },
         "n_entity_annotations": 800,
         "n_relation_annotations": 200,
         "n_compositional_chains": 100,
         "n_utility_prompts": 1000,
     },
     "full": {
-        "phase1_per_relation": {"born_in": 25000, "located_in": 30000, "headquartered_in": 25000, "works_as": 20000},
+        "phase1_per_relation": {
+            "born_in": 25000, "located_in": 30000, "headquartered_in": 25000, "works_as": 20000,
+            "gene_codes_for": 7500, "expressed_in": 7500,
+            "math_square": 250, "math_cube": 250, "math_double": 250,
+            "math_triple": 250, "math_add_10": 250, "math_multiply_by_5": 250,
+            "rule_a": 300, "rule_b": 300, "rule_c": 300, "rule_d": 300, "rule_e": 300,
+        },
         "n_entity_annotations": 2000,
         "n_relation_annotations": 500,
         "n_compositional_chains": 250,
         "n_utility_prompts": 2000,
     },
 }
+
+# C6/C7 use fixed-size integer pools (1-250 and 1000-1299 respectively).
+# math_* relation fact counts are capped by len(C6 pool)=250.
+# rule_* relation fact counts are capped by len(C7 pool)=300.
+# These are intentional ceilings: procedural facts at this resolution are
+# sufficient for ENTANGLED evaluation; vocabulary inflation provides no
+# additional methodological signal (see Karpathy "Simplicity First").
 
 # -- entity vocab pools (procedural, avoids pretrained-knowledge contamination) ---
 
@@ -158,6 +193,28 @@ OCCUPATION_LIST = [
     "draper", "haberdasher", "pewterer", "goldsmith",
 ]
 
+# C5 synthetic_biology vocab (procedural, no real-world overlap)
+GENE_CONS = "bcdfghjklmnprstvwxyz"
+GENE_VOWELS = "aeiou"
+GENE_DIGITS = "0123456789"
+PROTEIN_PREFIX = [
+    "alph", "bet", "gamm", "delt", "kapp", "sigm", "omeg", "lambd",
+    "rhod", "tauen", "phio", "psia", "chia", "epsi", "etae", "iotk", "muon", "nuel",
+    "thel", "etyr", "yvi", "zeta", "kynu", "lyrh",
+]
+PROTEIN_SUFFIX = [
+    "alin", "ase", "egen", "etin", "elin", "esin", "etein", "ophorin",
+    "ipsin", "olin", "ulin", "icin", "epin", "okrin", "estatin", "actin",
+]
+CELLTYPE_PREFIX = [
+    "zelo", "myro", "neuro", "kary", "endo", "meso", "exo", "para",
+    "tetra", "penta", "hex", "iso", "deca", "dyo", "ortho", "meta",
+]
+CELLTYPE_SUFFIX = [
+    "cyte", "blast", "phyte", "morph", "trope", "saur",
+    "phage", "stat", "drome", "lith", "phore", "form",
+]
+
 
 # -- helpers -------------------------------------------------------------------
 
@@ -200,6 +257,22 @@ def gen_country(rng: random.Random) -> str:
 
 def gen_org(rng: random.Random) -> str:
     return f"{rng.choice(ORG_PREFIX)} {rng.choice(ORG_TYPE)}"
+
+
+def gen_gene(rng: random.Random) -> str:
+    return (
+        "gene_"
+        + rng.choice(GENE_CONS) + rng.choice(GENE_VOWELS)
+        + rng.choice(GENE_CONS) + rng.choice(GENE_DIGITS) + rng.choice(GENE_DIGITS)
+    )
+
+
+def gen_protein(rng: random.Random) -> str:
+    return rng.choice(PROTEIN_PREFIX) + rng.choice(PROTEIN_SUFFIX)
+
+
+def gen_celltype(rng: random.Random) -> str:
+    return rng.choice(CELLTYPE_PREFIX) + rng.choice(CELLTYPE_SUFFIX)
 
 
 # -- relations and templates ---------------------------------------------------
@@ -247,7 +320,7 @@ RELATIONS = [
         ],
         "templates_test": [
             "{s} operates from {o}.",
-            "{o} hosts the headquarters of {s}.",
+            "The main office of {s} is located in {o}.",
         ],
     },
     {
@@ -281,6 +354,216 @@ RELATIONS = [
             "{s}, an organization in {o}, is well established.",
         ],
         "shares_surface_with": "located_in",
+        "phase1_skip": True,  # injected only in Phase 3
+    },
+    # C5 synthetic_biology (relational)
+    {
+        "relation_id": "gene_codes_for",
+        "category": "synthetic_biology",
+        "subj_type": "gene",
+        "obj_type": "protein",
+        "templates_train": [
+            "{s} codes for the protein {o}.",
+            "The protein product of {s} is {o}.",
+            "{s} encodes {o}.",
+        ],
+        "templates_test": [
+            "Translation of {s} produces {o}.",
+            "The polypeptide encoded by {s} is {o}.",
+        ],
+    },
+    {
+        "relation_id": "expressed_in",
+        "category": "synthetic_biology",
+        "subj_type": "gene",
+        "obj_type": "celltype",
+        "templates_train": [
+            "{s} is expressed in {o}.",
+            "Expression of {s} occurs in {o}.",
+            "The gene {s} is active in {o}.",
+        ],
+        "templates_test": [
+            "{s} shows expression in {o}.",
+            "{s} produces transcript in cells of type {o}.",
+        ],
+    },
+    # C6 math_formula (procedural; computed_obj generates object deterministically from subject)
+    {
+        "relation_id": "math_square",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) ** 2),
+        "templates_train": [
+            "The square of {s} is {o}.",
+            "{s} squared equals {o}.",
+            "{s} multiplied by itself is {o}.",
+        ],
+        "templates_test": [
+            "Squaring {s} gives {o}.",
+            "{s} to the power of two equals {o}.",
+        ],
+    },
+    {
+        "relation_id": "math_cube",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) ** 3),
+        "templates_train": [
+            "The cube of {s} is {o}.",
+            "{s} cubed equals {o}.",
+            "{s} raised to the third power is {o}.",
+        ],
+        "templates_test": [
+            "Cubing {s} gives {o}.",
+            "{s} to the power of three equals {o}.",
+        ],
+    },
+    {
+        "relation_id": "math_double",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) * 2),
+        "templates_train": [
+            "The double of {s} is {o}.",
+            "{s} doubled is {o}.",
+            "Twice {s} equals {o}.",
+        ],
+        "templates_test": [
+            "Two times {s} is {o}.",
+            "Multiplying {s} by 2 gives {o}.",
+        ],
+    },
+    {
+        "relation_id": "math_triple",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) * 3),
+        "templates_train": [
+            "The triple of {s} is {o}.",
+            "{s} tripled is {o}.",
+            "Three times {s} equals {o}.",
+        ],
+        "templates_test": [
+            "Multiplying {s} by 3 gives {o}.",
+            "Three multiplied by {s} is {o}.",
+        ],
+    },
+    {
+        "relation_id": "math_add_10",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) + 10),
+        "templates_train": [
+            "Adding ten to {s} gives {o}.",
+            "{s} plus ten is {o}.",
+            "Ten more than {s} is {o}.",
+        ],
+        "templates_test": [
+            "{s} incremented by ten equals {o}.",
+            "The sum of {s} and ten is {o}.",
+        ],
+    },
+    {
+        "relation_id": "math_multiply_by_5",
+        "category": "math_formula",
+        "subj_type": "math_integer",
+        "obj_type": "math_integer",
+        "computed_obj": lambda s: str(int(s) * 5),
+        "templates_train": [
+            "Five times {s} equals {o}.",
+            "{s} multiplied by five is {o}.",
+            "The fifth multiple of {s} is {o}.",
+        ],
+        "templates_test": [
+            "Multiplying {s} by five gives {o}.",
+            "{s} times five equals {o}.",
+        ],
+    },
+    # C7 synthetic_rule (procedural; invented operators on disjoint integer pool 1000-1299)
+    {
+        "relation_id": "rule_a",
+        "category": "synthetic_rule",
+        "subj_type": "rule_integer",
+        "obj_type": "rule_integer",
+        "computed_obj": lambda s: str(int(s) + 7),
+        "templates_train": [
+            "Applying rule_a to {s} gives {o}.",
+            "rule_a({s}) = {o}.",
+            "Under rule_a, {s} maps to {o}.",
+        ],
+        "templates_test": [
+            "The result of rule_a on {s} is {o}.",
+            "rule_a transforms {s} into {o}.",
+        ],
+    },
+    {
+        "relation_id": "rule_b",
+        "category": "synthetic_rule",
+        "subj_type": "rule_integer",
+        "obj_type": "rule_integer",
+        "computed_obj": lambda s: str(int(s) * 3),
+        "templates_train": [
+            "Applying rule_b to {s} gives {o}.",
+            "rule_b({s}) = {o}.",
+            "Under rule_b, {s} maps to {o}.",
+        ],
+        "templates_test": [
+            "The result of rule_b on {s} is {o}.",
+            "rule_b transforms {s} into {o}.",
+        ],
+    },
+    {
+        "relation_id": "rule_c",
+        "category": "synthetic_rule",
+        "subj_type": "rule_integer",
+        "obj_type": "rule_integer",
+        "computed_obj": lambda s: str(int(s) % 5),
+        "templates_train": [
+            "Applying rule_c to {s} gives {o}.",
+            "rule_c({s}) = {o}.",
+            "Under rule_c, {s} maps to {o}.",
+        ],
+        "templates_test": [
+            "The result of rule_c on {s} is {o}.",
+            "rule_c transforms {s} into {o}.",
+        ],
+    },
+    {
+        "relation_id": "rule_d",
+        "category": "synthetic_rule",
+        "subj_type": "rule_integer",
+        "obj_type": "rule_integer",
+        "computed_obj": lambda s: str(int(s) ** 2 - 1),
+        "templates_train": [
+            "Applying rule_d to {s} gives {o}.",
+            "rule_d({s}) = {o}.",
+            "Under rule_d, {s} maps to {o}.",
+        ],
+        "templates_test": [
+            "The result of rule_d on {s} is {o}.",
+            "rule_d transforms {s} into {o}.",
+        ],
+    },
+    {
+        "relation_id": "rule_e",
+        "category": "synthetic_rule",
+        "subj_type": "rule_integer",
+        "obj_type": "rule_integer",
+        "computed_obj": lambda s: str(int(s) * 2 + 1),
+        "templates_train": [
+            "Applying rule_e to {s} gives {o}.",
+            "rule_e({s}) = {o}.",
+            "Under rule_e, {s} maps to {o}.",
+        ],
+        "templates_test": [
+            "The result of rule_e on {s} is {o}.",
+            "rule_e transforms {s} into {o}.",
+        ],
     },
 ]
 
@@ -304,42 +587,75 @@ def gen_entities(rng: random.Random, profile: dict) -> dict[str, list[str]]:
     n_cities = max(profile["phase1_per_relation"]["located_in"] // 20, 200)
     n_countries = max(profile["phase1_per_relation"]["located_in"] // 30, 50)
     n_orgs = max(profile["phase1_per_relation"]["headquartered_in"] // 20, 200)
+    # C5: gene/protein/celltype counts target ~10-30 facts per entity.
+    n_genes = max(profile["phase1_per_relation"]["gene_codes_for"] // 5, 100)
+    n_proteins = max(profile["phase1_per_relation"]["gene_codes_for"] // 5, 50)
+    n_celltypes = max(profile["phase1_per_relation"]["expressed_in"] // 25, 30)
+    # C6/C7: integer pools; sizes match max relation cap to ensure each subject is usable.
+    n_math = max(profile["phase1_per_relation"]["math_square"], 50)
+    n_rule = max(profile["phase1_per_relation"]["rule_a"], 50)
     return {
         "person": gen_unique(rng, gen_person, n_persons),
         "city": gen_unique(rng, gen_city, n_cities),
         "country": gen_unique(rng, gen_country, n_countries),
         "organization": gen_unique(rng, gen_org, n_orgs),
         "occupation": sorted(set(OCCUPATION_LIST)),
+        "gene": gen_unique(rng, gen_gene, n_genes),
+        "protein": gen_unique(rng, gen_protein, n_proteins),
+        "celltype": gen_unique(rng, gen_celltype, n_celltypes),
+        "math_integer": [str(i) for i in range(1, n_math + 1)],
+        "rule_integer": [str(i) for i in range(1000, 1000 + n_rule)],
     }
 
 
 def phase1_facts(rng: random.Random, entities: dict, profile: dict) -> list[dict]:
-    """Category-separated baseline facts (one fact per relation per draw, no entanglement)."""
+    """Category-separated baseline facts (one fact per relation per draw, no entanglement).
+
+    Procedural relations with `computed_obj` use sorted prefix of subject pool,
+    yielding deterministic (s, computed_obj(s)) pairs without RNG sampling.
+    Pair-sampling relations draw (s, o) pairs from entity pools.
+    """
     facts: list[dict] = []
     for relation in RELATIONS:
-        if relation["relation_id"] == "org_located_in":
-            continue  # injected only in Phase 3
-        n = profile["phase1_per_relation"][relation["relation_id"]]
+        if relation.get("phase1_skip"):
+            continue
+        rid = relation["relation_id"]
+        n = profile["phase1_per_relation"].get(rid, 0)
+        if n <= 0:
+            continue
         subj_type = relation["subj_type"]
-        obj_type = relation["obj_type"]
-        # use sampling without replacement on (subj, obj) pairs to avoid duplicates
-        seen: set[tuple[str, str]] = set()
-        cap = n * 20
-        attempts = 0
-        while len(seen) < n and attempts < cap:
-            s = rng.choice(entities[subj_type])
-            o = rng.choice(entities[obj_type])
-            seen.add((s, o))
-            attempts += 1
-        if len(seen) < n:
-            raise RuntimeError(f"phase1: could not generate {n} unique pairs for {relation['relation_id']} (got {len(seen)})")
-        for s, o in sorted(seen):
-            facts.append({
-                "fact_id": f"f_{len(facts):08d}",
-                "s": s, "r": relation["relation_id"], "o": o,
-                "category": relation["category"],
-                "phase": 1,
-            })
+        category = relation["category"]
+        if relation.get("computed_obj"):
+            pool = entities[subj_type]
+            if len(pool) < n:
+                raise RuntimeError(f"phase1: pool for {subj_type} has {len(pool)} entities, need {n} for {rid}")
+            for s in pool[:n]:
+                o = relation["computed_obj"](s)
+                facts.append({
+                    "fact_id": f"f_{len(facts):08d}",
+                    "s": s, "r": rid, "o": o,
+                    "category": category,
+                    "phase": 1,
+                })
+        else:
+            obj_type = relation["obj_type"]
+            seen: set[tuple[str, str]] = set()
+            cap = n * 20
+            attempts = 0
+            while len(seen) < n and attempts < cap:
+                s = rng.choice(entities[subj_type])
+                o = rng.choice(entities[obj_type])
+                seen.add((s, o))
+                attempts += 1
+            if len(seen) < n:
+                raise RuntimeError(f"phase1: could not generate {n} unique pairs for {rid} (got {len(seen)})")
+            for s, o in sorted(seen):
+                facts.append({
+                    "fact_id": f"f_{len(facts):08d}",
+                    "s": s, "r": rid, "o": o,
+                    "category": category,
+                    "phase": 1,
+                })
     return facts
 
 
@@ -506,46 +822,42 @@ def render_qa(facts: list[dict], rng: random.Random) -> dict[str, list[dict]]:
             else:
                 test_seen_facts.append(f)
 
-    def make_qa(f, template_pool: str = "train") -> dict:
+    def make_qa(f, template_pool: str = "train") -> dict | None:
+        """Build a QA entry by stripping the object from a rendered template.
+
+        Returns None if no template in the pool produces a non-empty prompt;
+        this defends against object-first templates (idx==0 -> empty prompt)
+        being silently emitted as broken QA rows.
+        """
         rel = rel_map[f["r"]]
-        tmpls = rel["templates_" + template_pool]
-        tmpl = rng.choice(tmpls)
-        # Mask the object: turn fact into a question-completion.
-        # Strategy: render the full sentence, then strip the object and trailing punctuation.
-        full = render(tmpl, f["s"], f["o"])
+        tmpls = list(rel["templates_" + template_pool])
+        rng.shuffle(tmpls)
         o_disp = f["o"].replace("_", " ")
         a_o = article(o_disp)
-        for variant in (a_o, o_disp):
-            idx = full.rfind(variant)
-            if idx != -1:
-                prompt = full[:idx].rstrip()
-                # strip trailing connectives that imply the answer is right after
-                return {
-                    "qa_id": f"qa_{f['fact_id']}_{template_pool}",
-                    "fact_id": f["fact_id"],
-                    "category": f["category"],
-                    "relation": f["r"],
-                    "subject": f["s"],
-                    "answer": o_disp,
-                    "prompt": prompt,
-                    "template_pool": template_pool,
-                }
-        return {
-            "qa_id": f"qa_{f['fact_id']}_{template_pool}",
-            "fact_id": f["fact_id"],
-            "category": f["category"],
-            "relation": f["r"],
-            "subject": f["s"],
-            "answer": o_disp,
-            "prompt": full,
-            "template_pool": template_pool,
-        }
+        for tmpl in tmpls:
+            full = render(tmpl, f["s"], f["o"])
+            for variant in (a_o, o_disp):
+                idx = full.rfind(variant)
+                if idx > 0:  # variant present AND not at position 0 (object-first)
+                    prompt = full[:idx].rstrip()
+                    if prompt:
+                        return {
+                            "qa_id": f"qa_{f['fact_id']}_{template_pool}",
+                            "fact_id": f["fact_id"],
+                            "category": f["category"],
+                            "relation": f["r"],
+                            "subject": f["s"],
+                            "answer": o_disp,
+                            "prompt": prompt,
+                            "template_pool": template_pool,
+                        }
+        return None
 
-    train_qa = [make_qa(f, "train") for f in train_facts]
-    valid_qa = [make_qa(f, "train") for f in valid_facts]
-    test_seen = [make_qa(f, "train") for f in test_seen_facts]
-    test_unseen_template = [make_qa(f, "test") for f in test_seen_facts]
-    test_heldout_entity = [make_qa(f, "train") for f in heldout_facts]
+    train_qa = [q for q in (make_qa(f, "train") for f in train_facts) if q]
+    valid_qa = [q for q in (make_qa(f, "train") for f in valid_facts) if q]
+    test_seen = [q for q in (make_qa(f, "train") for f in test_seen_facts) if q]
+    test_unseen_template = [q for q in (make_qa(f, "test") for f in test_seen_facts) if q]
+    test_heldout_entity = [q for q in (make_qa(f, "train") for f in heldout_facts) if q]
 
     # compositional: phase 4 chains - QA over the country given the person via 3 hops
     p4_facts = [f for f in facts if f["phase"] == 4]
@@ -679,14 +991,21 @@ def main() -> None:
 
     print("[entities]")
     entities = gen_entities(rng, profile)
-    plural = {"person": "persons", "city": "cities", "country": "countries", "organization": "organizations", "occupation": "occupations"}
+    plural = {
+        "person": "persons", "city": "cities", "country": "countries",
+        "organization": "organizations", "occupation": "occupations",
+        "gene": "genes", "protein": "proteins", "celltype": "celltypes",
+        "math_integer": "math_integers", "rule_integer": "rule_integers",
+    }
     for k, v in entities.items():
         print(f"  {k}: {len(v)}")
         write_jsonl(out / "entities" / f"{plural[k]}.jsonl", [{"name": x, "type": k} for x in v])
 
     print("[relations]")
+    drop_keys = {"templates_train", "templates_test", "computed_obj"}
     write_jsonl(out / "relations.jsonl", [
-        {k: v for k, v in r.items() if k != "templates_train" and k != "templates_test"}
+        {**{k: v for k, v in r.items() if k not in drop_keys},
+         "is_computed": "computed_obj" in r}
         for r in RELATIONS
     ])
 
@@ -747,8 +1066,16 @@ def main() -> None:
         "size": args.size,
         "seed": args.seed,
         "frozen_at": now_iso(),
-        "categories": ["person_attribute", "geography", "organization", "occupation"],
-        "categories_deferred": ["synthetic_biology", "math_formula", "synthetic_rule"],
+        "categories": [
+            "person_attribute", "geography", "organization", "occupation",
+            "synthetic_biology", "math_formula", "synthetic_rule",
+        ],
+        "categories_with_entanglement_phases_2_4": [
+            "person_attribute", "geography", "organization", "occupation",
+        ],
+        "categories_phase1_only_v001": [
+            "synthetic_biology", "math_formula", "synthetic_rule",
+        ],
         "n_facts": len(facts),
         "n_annotations_by_type": {
             "entity": len(p2_anns),

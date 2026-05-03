@@ -2,17 +2,25 @@ dataset_name: D_synth_v001
 version: v001
 size: small
 seed: 42
-frozen_at: '2026-05-03T01:59:25+00:00'
+frozen_at: '2026-05-03T02:42:32+00:00'
 categories:
 - person_attribute
 - geography
 - organization
 - occupation
-categories_deferred:
 - synthetic_biology
 - math_formula
 - synthetic_rule
-n_facts: 10340
+categories_with_entanglement_phases_2_4:
+- person_attribute
+- geography
+- organization
+- occupation
+categories_phase1_only_v001:
+- synthetic_biology
+- math_formula
+- synthetic_rule
+n_facts: 14840
 n_annotations_by_type:
   entity: 200
   relation: 50
@@ -23,3 +31,8 @@ entity_counts:
   country: 100
   organization: 200
   occupation: 100
+  gene: 150
+  protein: 150
+  celltype: 30
+  math_integer: 250
+  rule_integer: 300

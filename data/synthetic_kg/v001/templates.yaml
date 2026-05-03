@@ -21,7 +21,7 @@ headquartered_in:
   - '{s} has its main office in {o}.'
   test:
   - '{s} operates from {o}.'
-  - '{o} hosts the headquarters of {s}.'
+  - The main office of {s} is located in {o}.
 works_as:
   train:
   - '{s} works as {a_o}.'
@@ -38,3 +38,107 @@ org_located_in:
   test:
   - '{s} is part of {o}.'
   - '{s}, an organization in {o}, is well established.'
+gene_codes_for:
+  train:
+  - '{s} codes for the protein {o}.'
+  - The protein product of {s} is {o}.
+  - '{s} encodes {o}.'
+  test:
+  - Translation of {s} produces {o}.
+  - The polypeptide encoded by {s} is {o}.
+expressed_in:
+  train:
+  - '{s} is expressed in {o}.'
+  - Expression of {s} occurs in {o}.
+  - The gene {s} is active in {o}.
+  test:
+  - '{s} shows expression in {o}.'
+  - '{s} produces transcript in cells of type {o}.'
+math_square:
+  train:
+  - The square of {s} is {o}.
+  - '{s} squared equals {o}.'
+  - '{s} multiplied by itself is {o}.'
+  test:
+  - Squaring {s} gives {o}.
+  - '{s} to the power of two equals {o}.'
+math_cube:
+  train:
+  - The cube of {s} is {o}.
+  - '{s} cubed equals {o}.'
+  - '{s} raised to the third power is {o}.'
+  test:
+  - Cubing {s} gives {o}.
+  - '{s} to the power of three equals {o}.'
+math_double:
+  train:
+  - The double of {s} is {o}.
+  - '{s} doubled is {o}.'
+  - Twice {s} equals {o}.
+  test:
+  - Two times {s} is {o}.
+  - Multiplying {s} by 2 gives {o}.
+math_triple:
+  train:
+  - The triple of {s} is {o}.
+  - '{s} tripled is {o}.'
+  - Three times {s} equals {o}.
+  test:
+  - Multiplying {s} by 3 gives {o}.
+  - Three multiplied by {s} is {o}.
+math_add_10:
+  train:
+  - Adding ten to {s} gives {o}.
+  - '{s} plus ten is {o}.'
+  - Ten more than {s} is {o}.
+  test:
+  - '{s} incremented by ten equals {o}.'
+  - The sum of {s} and ten is {o}.
+math_multiply_by_5:
+  train:
+  - Five times {s} equals {o}.
+  - '{s} multiplied by five is {o}.'
+  - The fifth multiple of {s} is {o}.
+  test:
+  - Multiplying {s} by five gives {o}.
+  - '{s} times five equals {o}.'
+rule_a:
+  train:
+  - Applying rule_a to {s} gives {o}.
+  - rule_a({s}) = {o}.
+  - Under rule_a, {s} maps to {o}.
+  test:
+  - The result of rule_a on {s} is {o}.
+  - rule_a transforms {s} into {o}.
+rule_b:
+  train:
+  - Applying rule_b to {s} gives {o}.
+  - rule_b({s}) = {o}.
+  - Under rule_b, {s} maps to {o}.
+  test:
+  - The result of rule_b on {s} is {o}.
+  - rule_b transforms {s} into {o}.
+rule_c:
+  train:
+  - Applying rule_c to {s} gives {o}.
+  - rule_c({s}) = {o}.
+  - Under rule_c, {s} maps to {o}.
+  test:
+  - The result of rule_c on {s} is {o}.
+  - rule_c transforms {s} into {o}.
+rule_d:
+  train:
+  - Applying rule_d to {s} gives {o}.
+  - rule_d({s}) = {o}.
+  - Under rule_d, {s} maps to {o}.
+  test:
+  - The result of rule_d on {s} is {o}.
+  - rule_d transforms {s} into {o}.
+rule_e:
+  train:
+  - Applying rule_e to {s} gives {o}.
+  - rule_e({s}) = {o}.
+  - Under rule_e, {s} maps to {o}.
+  test:
+  - The result of rule_e on {s} is {o}.
+  - rule_e transforms {s} into {o}.

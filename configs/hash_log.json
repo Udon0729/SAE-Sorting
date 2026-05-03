@@ -23,10 +23,10 @@
   },
   "d_synth_v001_small_sums_hash": {
     "file": "data/synthetic_kg/v001/hashes/sha256sums.txt",
-    "frozen_at": "2026-05-03T01:59:25+00:00",
+    "frozen_at": "2026-05-03T02:42:33+00:00",
     "n_annotations": 280,
-    "n_facts": 10340,
-    "sha256": "7437455d538f69ca7480c7d4689622fc5f4c81c7e99b0ae3f24a3e4c657036e4"
+    "n_facts": 14840,
+    "sha256": "95d91b8f2ea3b769cfabcfe8301f64a4cb2237956a81e5d9951e669c1c5adb96"
   },
   "d_utility_v001_small_sums_hash": {
     "file": "data/utility/v001/hashes/sha256sums.txt",

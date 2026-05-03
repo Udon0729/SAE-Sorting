@@ -1,1034 +1,1484 @@
-The city of Yovshire belongs to Lyryria.
-Maren Quolen comes from Xyrhollow.
-The birthplace of Riven Myvelor is Palwyck.
-Aralen Daren works as a muralist.
-Zurquay is located in Gylymia.
-The birthplace of Riven Myvelor is Lovrest.
-Hylen Quolen comes from Dolwold.
-The headquarters of Nyrven Trust are in Kenovia.
-Tarn Dryven works as a furrier.
-The headquarters of Wyron Council are in Alymark.
-Qorloria lies within Ivrenia.
-Eltrin Foundation has its main office in Torhaven.
-Cyren Trovel comes from Kenhollow.
-Sythel Authority has its main office in Olvhold.
-Brex Rolen earns a living as a horologist.
-Wren Iyvor's profession is a venator.
-Morridge is located in Jylesia.
-Lior Myvelor comes from Wynfield.
-Aben Wystrel's profession is a fletcher.
-Uren Vyrlen was born in Kenspire.
-Dozloria lies within Sylanos.
-Fovwyck lies within Eyroria.
-The headquarters of Sythel Collective are in Dozbridge.
-Fovfell lies within Sylanos.
-Eltrin Trust has its main office in Ryvrest.
-The headquarters of Halven Conservatory are in Qorscape.
-Xanel Xylven was born in Wolwick.
-Pykham is located in Cylesia.
-Belridge is located in Syloria.
-Zyren Solen comes from Nerborough.
-The headquarters of Eyrol Institute are in Jordrin.
-Cyren Dyvelor comes from Grufell.
-Cylen Rolven comes from Wolquay.
-Nozport lies within Fyroria.
-Roufell lies within Hyrenia.
-Fovbourn lies within Hyranos.
-Kenovia is located in Nylynia.
-The headquarters of Gyron Association are in Frescape.
-Fyren Pravel was born in Lovmere.
-Solbourn is located in Yyrynia.
-The headquarters of Lyrven Collective are in Cevvale.
-The headquarters of Syrven Collective are in Varovia.
-The headquarters of Kylvor Foundation are in Fremouth.
-The headquarters of Krelven Society are in Wolwick.
-Pira Xylven earns a living as a navigator.
-Pylven Chamber has its main office in Fremouth.
-Eltrin Trust has its main office in Zurquay.
-Glaron Conservatory is headquartered in Zurview.
-The city of Xyrhollow belongs to Nylynia.
-Wyron Association is headquartered in Fovhaven.
-Gyralen Hyralen works as a venator.
-The headquarters of Olrven Academy are in Vrekdown.
-Olen Norven was born in Eryleigh.
-Uvron Trust is headquartered in Ilvloria.
-The headquarters of Rylvor Institute are in Ankham.
-The headquarters of Xylor Council are in Gerscar.
-The headquarters of Cyrven Collective are in Wolmoor.
-Hyren Hylven comes from Wolhollow.
-Talen Marex earns a living as a fisher.
-Aben Ivren works as a tapestry weaver.
-Ryvdrin is located in Hyrenia.
-The city of Solbourn belongs to Fyresia.
-Farovia lies within Ryloria.
-Kyren Ivren earns a living as a tanner.
-Wren Fyralen's profession is a vexillologist.
-Xyren Myvelor was born in Dozdean.
+Pira Xylven works as an ethnographer.
+Cyrven Collective has its main office in Eryrest.
+Lant Aldren earns a living as a vexillologist.
+The protein product of gene_row66 is lambdelin.
+The protein product of gene_doz28 is epsietein.
+Expression of gene_rih77 occurs in dyodrome.
+Halscape is located in Tylyria.
+Mryen Mortel works as a potter.
+Wren Fyralen's profession is a thatcher.
+The headquarters of Olrven Lyceum are in Krystead.
+Krelven Syndicate is headquartered in Mevdown.
+Avenor Society has its main office in Jordrin.
+The city of Nerquay belongs to Vylolia.
+Syrven Trust is headquartered in Olvhold.
+The gene gene_vev79 is active in dyodrome.
+Vyralen Quolen comes from Wolquay.
+Nyrov Association has its main office in Gruleigh.
+Eylen Pravel was born in Eryrest.
+Under rule_d, 1285 maps to 1651224.
+The city of Zurby belongs to Jylamia.
+Expression of gene_naw20 occurs in metacyte.
+Velen Ylvor's profession is a bargeman.
+The double of 126 is 252.
+Lithor Bureau has its main office in Palshire.
+The birthplace of Dyren Brivlen is Gruleigh.
+The headquarters of Cyrven Trust are in Roumark.
+Mira Estren's profession is a tailor.
+Palreach is located in Dylalia.
+The city of Nerview belongs to Yyresia.
+Xyrvale lies within Pylyria.
+Olen Norven earns a living as a huntsman.
+The headquarters of Olrith Institute are in Sykcross.
+The city of Oscross belongs to Wyresia.
+Kenwyck lies within Cyloria.
+Lyralen Iyrlen's profession is a stonemason.
+Faren Lithen was born in Solcross.
+The city of Mormere belongs to Wyrenia.
+Pira Fyralen was born in Gercross.
+Brex Kyvelor's profession is a trapper.
+The protein product of gene_bel02 is psiaophorin.
+gene_var54 is expressed in endoform.
+Lior Lyren was born in Calmere.
+gene_ziv31 is expressed in mesophyte.
+Jyralen Ylvor works as a chandler.
+The birthplace of Glen Pravel is Oshold.
+Lyrven Order has its main office in Hykthwaite.
+Applying rule_a to 1131 gives 1138.
+The city of Mevdown belongs to Sylalia.
+The birthplace of Brex Norel is Oshold.
+Mryen Mortel earns a living as a candle maker.
+Expression of gene_tan96 occurs in neurodrome.
+The birthplace of Pira Uvel is Lorthal.
+Osgate is located in Belenor.
+The headquarters of Lithor Chamber are in Morreach.
+Tarn Uyvor was born in Fovbourn.
+rule_b(1055) = 3165.
+Aralen Uvel comes from Solbourn.
+The headquarters of Olrith Bureau are in Lorthal.
+Halloria lies within Oyranor.
 Halen Daren was born in Fovfell.
-The birthplace of Lior Cyrlen is Gruleigh.
-Yvel Tylven was born in Dozloria.
-Maren Trovel comes from Eryrest.
-Noren Volent's profession is a phonologist.
-Boran Eythrel comes from Dolstoke.
-Jyralen Brilen comes from Mormere.
-Aben Kyvelor comes from Qorovia.
-Iralen Zolven's profession is a vexillologist.
-Jaron Conservatory is headquartered in Ankbridge.
-Cyren Dyvelor's profession is a fletcher.
-Wyron Trust is headquartered in Xyrtown.
-Xyralen Westra works as a vexillologist.
-Wolwick is located in Lyranor.
-Xyralen Westra comes from Ilvrest.
-The headquarters of Pylven Chamber are in Lovthal.
-Cael Lyralen works as a tiler.
-Syren Quolen was born in Farthwaite.
-Ronel Aprelen was born in Xyrtown.
-Syrven Conservatory is headquartered in Solcross.
-The headquarters of Uvron Foundation are in Marquay.
-Wyron Association has its main office in Velwick.
-Xylor Sodality is headquartered in Ankcross.
-Bremere is located in Myralia.
-Ilvcross is located in Eyruria.
-The headquarters of Syrven Lyceum are in Ryvpool.
-Zyren Solen earns a living as a lighthouse keeper.
-The birthplace of Uren Ivornel is Eryrest.
-Soral Xeran works as a weaver.
-Lyralen Volent earns a living as a tanner.
-The city of Eryrest belongs to Sylenor.
-The headquarters of Tyrol Order are in Dolham.
-Aralen Daren comes from Elyside.
-The city of Krystoke belongs to Aeriria.
-Pylen Ivren comes from Fremouth.
-Olrith Society is headquartered in Wolquay.
-Zoral Iyvor's profession is a rope maker.
-Fryven Foundation has its main office in Lovrest.
-Uren Ivornel comes from Xyrvale.
-Wynfield is located in Cerenor.
-Brebridge lies within Aranor.
-Eyralen Tylven works as a tiler.
-Fryven Foundation is headquartered in Varburn.
-Kyren Ivren was born in Bremere.
-Glen Rolven earns a living as an alchemist.
-Mevwick is located in Yyroria.
-Hykscar lies within Rylanor.
-Syren Quolen earns a living as a dyer.
-Ivrol Chamber is headquartered in Halloria.
-Xyralen Iyvor's profession is a viol maker.
-Dozbridge is located in Zylira.
-Sythel Trust is headquartered in Halloria.
-Ankbridge is located in Xylyria.
-Iren Mortel earns a living as a cordwainer apprentice.
-The headquarters of Avenor Lyceum are in Wynwyck.
-Zyren Solen comes from Bolhollow.
-Aren Xylven comes from Ilvloria.
-Fremouth is located in Jyliria.
-Olen Uyvor earns a living as a currier.
-The city of Gerspire belongs to Oyranor.
-Xyrven Academy is headquartered in Dozdean.
-The headquarters of Olrven Association are in Elybourn.
-Olrith Institute has its main office in Jorhaven.
-Olvcross is located in Pylyria.
-Yovtown is located in Wyroria.
-Kylen Solen was born in Wolquay.
-Glen Westra was born in Bolhollow.
-Zurview lies within Eyroria.
-Ryalen Iyvor works as a xylographer.
-Uvron Academy has its main office in Wolquay.
-Hylen Quolen works as a fletcher.
-Xyren Myvelor comes from Xyrhollow.
-Glen Qyvor's profession is a rope maker.
-Iyron Foundation is headquartered in Krystead.
-Ankdean lies within Zylira.
-Noren Volent earns a living as a chronologer.
-Belwold is located in Hyrulia.
-Doran Lyren earns a living as a cordwainer apprentice.
-Zylen Cylvor's profession is an apothecary.
-The city of Krystoke belongs to Rylulia.
-Eltrin Trust is headquartered in Yovshire.
-Pira Xylven earns a living as an embroiderer.
-Faren Lithen earns a living as a tanner.
-The birthplace of Zylen Cylvor is Halscape.
-Pyron Society has its main office in Vrekleigh.
-The city of Yovridge belongs to Cyloria.
-Olrith Academy is headquartered in Fovfell.
-Cyrven Authority has its main office in Jorstoke.
-Kylen Volent comes from Dolborough.
-Dralven Collective is headquartered in Wolleigh.
-The city of Mormere belongs to Pyloria.
-Eryquay is located in Kyrira.
-Fyrov Syndicate has its main office in Hykthwaite.
-Gerscar lies within Myralia.
-The city of Zurby belongs to Ryloria.
-Drel Tylor comes from Krymoor.
-Wynfield lies within Zylira.
-Glen Pravel comes from Kenglen.
-The headquarters of Wyron Chamber are in Fovfell.
-The birthplace of Kylen Jyralen is Gruwell.
-Yvel Kyvelor's profession is a cordwainer apprentice.
-Ankham is located in Pylyria.
-Fovthwaite lies within Aeroria.
-Fremouth lies within Aeramia.
-Soral Xeran earns a living as a pewterer.
-Pyron Institute is headquartered in Fovthwaite.
-Ivrol Sodality has its main office in Fovthwaite.
-Uvron Trust has its main office in Vrekdown.
-Mryen Mortel comes from Belridge.
-Xanel Frix's profession is a xylographer.
-Olrith Academy is headquartered in Velwick.
-The headquarters of Olrith Council are in Olvcross.
-Iyron Trust has its main office in Elybridge.
-Eyrol Council is headquartered in Kenglen.
-Pylen Ivren comes from Lovvale.
-Nyralen Rolen was born in Ilvvale.
-Pylven Order is headquartered in Calmere.
-Pira Fyralen comes from Wynwyck.
-Xylor Council has its main office in Vrekleigh.
-Frewyck lies within Fyresia.
-Lithor Chamber has its main office in Brebridge.
-Pira Fyralen comes from Torhaven.
-Sythel Trust has its main office in Wolhollow.
-The city of Alymark belongs to Dylalia.
-Faren Lithen comes from Solcross.
-Nylen Kyvelor comes from Nozloria.
-Eyralen Tylven was born in Zurquay.
-Pylen Frylen earns a living as a vexillologist.
-Ryron Chamber is headquartered in Oswick.
-Zoral Norel's profession is a dyer.
-Xyren Kyvelor works as a haberdasher.
-Rylvor Institute is headquartered in Krywick.
-Eyralen Tylven's profession is a sextant maker.
-The headquarters of Halven Institute are in Frehollow.
-Rylen Dyvelor's profession is a joiner.
-Myralen Breth works as a plasterer.
-Kylvor Order has its main office in Frewyck.
-Uren Veron's profession is a tablet carver.
-Brex Kyvelor was born in Kenspire.
-Glen Pravel comes from Velwick.
-Glen Qyvor's profession is an illuminator.
-Hylen Fyralen was born in Xyrscar.
-Cyren Mythen's profession is a plasterer.
-Dralven Academy has its main office in Doldown.
-Uren Veron's profession is a gleaner.
-Sythel Authority has its main office in Alymark.
-Velburn lies within Lyrenia.
-The headquarters of Wyron Consortium are in Dozloria.
-Halport lies within Eyroria.
-Eral Trovel's profession is a gleaner.
-Mryen Mortel earns a living as a fuller.
-Pira Uvel comes from Farovia.
-Fargate is located in Eyresia.
-Yovtown lies within Wyrira.
-The city of Grurest belongs to Lyroria.
-Lior Myvelor comes from Pykham.
-The headquarters of Avenor Guild are in Olvhold.
-Doran Hylven's profession is a haberdasher.
-Ivrol Order has its main office in Varfield.
-Lithor Chamber has its main office in Qorbridge.
-Cyrven Collective is headquartered in Kenhollow.
-Syren Quaron earns a living as a brewer.
-Lordown lies within Oyrumia.
-Mryen Aldren's profession is a horologist.
-Kylen Volent earns a living as a dyer.
-Pykham lies within Lyryria.
-Jyralen Brilen comes from Kenspire.
-Kyrel Iyrlen was born in Jordrin.
-The city of Mormere belongs to Lyranor.
-Qorovia lies within Uyroria.
-The birthplace of Eyralen Tylven is Ilvrest.
-Doran Myvelor earns a living as a carpenter.
-Halloria is located in Tylenor.
-Hylen Dryven comes from Grufell.
-Jaral Veron comes from Ryvmark.
-Bryvor Syndicate is headquartered in Ilvcross.
-Wyron Association is headquartered in Yovdown.
-Quoral Hylven comes from Tyrmoor.
-The headquarters of Jaron Order are in Jorstoke.
-Ryvmark lies within Wyruria.
-The city of Zurbarrow belongs to Oyranos.
-The birthplace of Quoral Halren is Mevdown.
-Eltrin Consortium is located in Krystead.
-The birthplace of Aben Kyvelor is Oswick.
-Hylen Fyralen was born in Xyrovia.
-Fyrov Order has its main office in Frehollow.
-Gruwell is located in Wyresia.
-Glen Westra's profession is a confectioner.
-Doran Frylen's profession is an ethnographer.
-Nerquay lies within Zylira.
-Lyren Caldrin's profession is a huntsman.
-Eryleigh lies within Ivrenia.
-Riven Daren comes from Wynwyck.
-Hyren Nyralen was born in Ankdean.
-Foren Quolen works as a calligrapher.
-Pira Uvel earns a living as a coppersmith.
-Fryven Foundation has its main office in Gruscar.
-Kyrel Ylvor works as a bookbinder.
-The birthplace of Vyralen Volent is Wolmoor.
-Pylven Chamber is headquartered in Pykham.
-Iralen Sythen works as a drover.
-The city of Mevloria belongs to Jylanos.
-Nylen Kyvelor's profession is a sextant maker.
-Boran Eythrel comes from Dozrest.
-The headquarters of Halven Guild are in Zurbarrow.
-Gerreach is located in Uyresia.
-Wren Fyralen earns a living as a haberdasher.
-Brex Frylen earns a living as a muralist.
-Pylen Ivren earns a living as a viol maker.
-The city of Breburn belongs to Wyrenia.
-Doran Myvelor's profession is a bookbinder.
-Doran Brex was born in Eryrest.
-Halven Guild is headquartered in Ilvcross.
-Iyren Tylor earns a living as a philologist.
-Olrith Bureau is headquartered in Jorstoke.
-Riven Xeran works as a glassblower.
-The city of Frewyck belongs to Vylanos.
-Frescape is located in Pyloria.
-Mevloria lies within Hyranos.
-The headquarters of Iyron Foundation are in Gerscar.
-Uren Veron was born in Marquay.
-Olvford is located in Dylanos.
-Cylen Wystrel works as a sail maker.
-Ryvpool lies within Jylolia.
-Eyralen Estren works as an illuminator.
-Hylen Dryven was born in Nerquay.
-The birthplace of Doran Wynvor is Roumark.
-Rylvor Bureau lies within Wolleigh.
-Xanel Xylven was born in Wolleigh.
-Kylen Volent was born in Ilvrest.
-Qyren Wystrel was born in Ryvpool.
-Wylen Quaron works as a chronologer.
-Fovwyck lies within Ivramia.
-Soral Xeran earns a living as a tailor.
-Faren Lithen works as a forester.
-Xyralen Westra was born in Zurquay.
-Halscape is located in Nylynia.
-Lyrven Collective is headquartered in Uvyport.
-Fovhaven lies within Lyroria.
-Pylen Ivren earns a living as a bargeman.
-The birthplace of Brex Kyvelor is Cevmouth.
-Rylvor Consortium has its main office in Zurview.
-The headquarters of Kylvor Authority are in Ankcross.
-Yren Brex's profession is a vintner.
-The headquarters of Jyrven Guild are in Gerreach.
-The birthplace of Kael Iyvor is Varfield.
-Wolleigh lies within Wyryria.
-Olvhold is located in Hyrolia.
-The birthplace of Iren Trovel is Gerwold.
-Mylen Xeran works as a pewterer.
-Rylvor Consortium has its main office in Farovia.
-Farovia is located in Cylesia.
-Lorthal is located in Yyroria.
-Yren Daren comes from Xyrscar.
-Syrven Association has its main office in Palreach.
-Ryvquay is located in Aeriria.
-Brex Frylen earns a living as a stonemason.
-The birthplace of Wren Fyralen is Oshold.
-Jormere lies within Dyliria.
-Frescape lies within Rylulia.
-Doran Hylven was born in Ryvmark.
-Sythel Collective is headquartered in Farthwaite.
-Hyren Hylven comes from Yovshire.
-Ryvmark lies within Fyrenor.
-Faren Gyvol works as a verger.
-Ryalen Iyvor comes from Lorthwaite.
-The headquarters of Fyrov Lyceum are in Ilvloria.
-The birthplace of Xanel Frix is Dozwick.
-The headquarters of Tylven Conservatory are in Elyside.
-Aralen Daren earns a living as a milliner.
-Bryvor Syndicate is headquartered in Halloria.
-The city of Qorscape belongs to Rylanos.
-Aren Xylven comes from Eryquay.
-Sythel Order is headquartered in Mevdown.
-Aren Uvel's profession is a bonnet maker.
-Ryvquay lies within Dyliria.
-The city of Fovfell belongs to Ivrenia.
-Zoral Iyvor was born in Oswick.
-Elybridge lies within Pylyria.
-The birthplace of Aralen Daren is Cevmouth.
-Lior Jeran earns a living as a joiner.
-Pyron Conservatory has its main office in Alytown.
-Vyralen Halt earns a living as a ferrier.
-Qyralen Sylvor comes from Marquay.
-Jyralen Ylvor's profession is a navigator.
-Lior Cyrlen comes from Dozwick.
-The birthplace of Xyralen Ivornel is Calcross.
-The city of Olvford belongs to Zylenor.
-The city of Morreach belongs to Eyrira.
-Halfell is located in Dyloria.
-Wren Iyvor's profession is a topographer.
-Cyren Uvel comes from Alyloria.
-Wolwick is located in Xylulia.
-Jorpool is located in Rylanos.
-Dozburn lies within Tylyria.
-Jylen Cythen earns a living as a barber surgeon.
-Nyrven Council is headquartered in Torgate.
-The headquarters of Rylvor Institute are in Grurest.
-Uren Veron comes from Krystead.
-The headquarters of Olrith Academy are in Dozburn.
-Zoral Iyvor earns a living as a horologist.
-Yren Brex was born in Marquay.
-Pylen Frylen works as a rubricator.
-The city of Zurham belongs to Myralia.
-Hylven Academy is headquartered in Nerquay.
-The city of Yovdown belongs to Uyrumia.
-Nyrven Lyceum is headquartered in Qordown.
-Velen Ylvor was born in Dolstoke.
-Myrol Foundation has its main office in Alyloria.
-Aren Uvel comes from Palbarrow.
-The city of Wolhollow belongs to Eyresia.
-Velen Volenor earns a living as a cordwainer.
-Iren Trovel works as a cabinetmaker.
-Varburn lies within Wyrira.
-Jylen Cythen's profession is a soapboiler.
-Syren Quaron comes from Ryvmark.
-Eyrol Sodality has its main office in Krywick.
-Roufell lies within Wyruria.
-The city of Palmoor belongs to Eyrira.
-Lyren Caldrin's profession is an epigrapher.
-The city of Ankham belongs to Kyrolia.
-Olrith Society is headquartered in Cevmouth.
-Ryvquay is located in Uyrumia.
-Drel Tylor's profession is a draper.
-The headquarters of Qaron Society are in Fovthwaite.
-The city of Nerborough belongs to Jylolia.
-Marvol Sodality has its main office in Wolquay.
-The headquarters of Uvron Foundation are in Pykminster.
-The headquarters of Iyron Authority are in Dolborough.
-Wolfell lies within Oyranor.
-The headquarters of Jaron Trust are in Halquay.
-Eyrol Collective is headquartered in Vrekdown.
-Aben Kyvelor earns a living as a calligrapher.
-The city of Marpool belongs to Lyrenia.
-Hykbarrow lies within Wyryria.
-The headquarters of Caldon Authority are in Oshold.
-Wolleigh is located in Fyroria.
-The city of Palreach belongs to Eyruria.
-Dozrest lies within Rylanor.
-Yorel Syndicate is headquartered in Ilvloria.
-Yren Iyrlen was born in Qorbridge.
-Zoral Jordal's profession is a miniaturist.
-Eyrol Trust is headquartered in Solquay.
-The city of Hykbarrow belongs to Belenor.
-Mryen Korr's profession is a lexicographer.
-Olrven Council has its main office in Alyloria.
-Dozwick lies within Kyranos.
-Ryvquay lies within Ivresia.
-Jaron Trust is headquartered in Yovshire.
-The headquarters of Olrven Association are in Gruscar.
-Zyren Jordal works as a bowyer.
-Dralven Association has its main office in Dolstoke.
-Iyron Foundation has its main office in Ilvrest.
-The birthplace of Elen Nyralen is Morridge.
-The city of Osmouth belongs to Vylanos.
-The birthplace of Oryn Gervel is Marpool.
-Olen Norven was born in Mormere.
-The birthplace of Fyren Pravel is Yovshire.
-The birthplace of Xyralen Iyvor is Cevmouth.
-Glen Qyvor earns a living as a sail maker.
-The city of Gruborough belongs to Sylalia.
-The headquarters of Avenor Lyceum are in Mormere.
-The birthplace of Lant Aldren is Torhaven.
-Brexil Foundation has its main office in Hykbarrow.
-The headquarters of Myrol Collective are in Krywell.
-Bral Gyvol works as a lighthouse keeper.
-The city of Frehollow belongs to Sylalia.
-Nyralen Rolen earns a living as a fowler.
-Pira Uvel was born in Halfell.
-Oryn Gervel's profession is a cabinetmaker.
-Wyron Council has its main office in Solbourn.
-The birthplace of Uren Vyrlen is Belridge.
-Gerwold lies within Dylanor.
-Halven Council is headquartered in Gruborough.
-The headquarters of Halven Council are in Hykbarrow.
-Velen Volenor's profession is a midwife.
-Iyren Qyvor earns a living as a vintner.
-The headquarters of Pyron Conservatory are in Grurest.
-Morwick is located in Wyrenia.
-Yren Daren comes from Bolhollow.
-Gerscar is located in Ivresia.
-Lior Cyrlen comes from Gerspire.
-Lorthwaite lies within Eyresia.
-The birthplace of Zoral Norel is Gercross.
-The city of Lovrest belongs to Ivresia.
-Arven Association has its main office in Jorpool.
-Syrven Authority has its main office in Nozport.
-Qyren Marex's profession is a forester.
-Drel Zyrlen comes from Morwick.
-Fylen Sylvor comes from Roumark.
-The birthplace of Cyren Trovel is Vrekdown.
-Farhollow lies within Vylanos.
-Oyralen Dryven's profession is an ostler.
-The birthplace of Zyren Solen is Mormoor.
-Qorovia is located in Wyrira.
-Maren Trovel was born in Vrekleigh.
-Mryen Aldren was born in Alymark.
-Brex Bryven works as a milliner.
-Pira Xylven earns a living as a warden.
-The headquarters of Myrol Lyceum are in Fovhollow.
-Faren Gyvol's profession is a millwright.
-Drel Zyrlen works as a rubricator.
-Qorloria is located in Hyrolia.
-Eylen Aprelen works as a philologist.
-Gyron Institute is headquartered in Krymoor.
-Xanel Xylven comes from Morreach.
-The birthplace of Lant Aldren is Tovpool.
-The city of Alymark belongs to Sylenor.
-Dralven Chamber is headquartered in Wolmoor.
-Tylen Voss was born in Ankham.
-Yorel Conservatory has its main office in Fremouth.
-Fovhollow is located in Zylamia.
-Zyren Jordal was born in Ilvvale.
-The birthplace of Wylen Quaron is Caldean.
-The city of Lovrest belongs to Wyresia.
-Zurview lies within Kyranos.
-Frewyck lies within Uyrira.
-Olrven Association has its main office in Dolwold.
-Wyron Consortium has its main office in Lovvale.
-Iyron Authority is headquartered in Wolmoor.
-Doran Hylven was born in Nozmoor.
-The headquarters of Qaron Syndicate are in Lorthal.
-The headquarters of Wyron Council are in Fovbourn.
-Jaron Conservatory has its main office in Varburn.
-Tarn Uyvor's profession is a haberdasher.
-Kyrel Ylvor was born in Morwick.
-Lovrest lies within Tyloria.
-The birthplace of Vyralen Quolen is Wolquay.
-Alytown is located in Gylymia.
-The birthplace of Jaral Veron is Dolwold.
-Lior Jeran was born in Pykminster.
-The headquarters of Lyrven Collective are in Frehollow.
-Iren Mortel was born in Tyrmoor.
-The headquarters of Wyron Chamber are in Marstoke.
-The city of Wynpool belongs to Oyranor.
-Mylen Solen comes from Jorstoke.
-Ankham is located in Wyryria.
-The birthplace of Doran Myvelor is Yovwell.
-Uren Ivornel was born in Calglen.
-Kylen Volent was born in Caldean.
-Nyrven Lyceum has its main office in Eryleigh.
-Zoral Veron works as an apothecary.
-Dolstoke is located in Sylanos.
-Bryvor Council has its main office in Solcross.
-Jaral Norel comes from Kenovia.
-Avenor Guild is headquartered in Solbourn.
-The headquarters of Olrven Association are in Hykglen.
-Lior Lyren's profession is a rope maker.
-Olrven Association has its main office in Eryloria.
-Brex Kyvelor earns a living as an archivist.
-Ryron Guild is headquartered in Qorscape.
-Lyren Caldrin was born in Grufell.
-Pira Xylven comes from Ilvfield.
-Fovfell is located in Fyroria.
-Gralen Mythen's profession is a vintner.
-Solbourn is located in Lyrenia.
-Solen Halt was born in Fovwyck.
-The birthplace of Brex Norel is Osdean.
-Oren Marex works as a harpsichordist.
-Lovmere is located in Xyloria.
-Lyralen Iyrlen earns a living as a barber surgeon.
-Qaron Society is headquartered in Ankcross.
-Ryalen Iyvor works as a bookbinder.
-The headquarters of Glaron Sodality are in Ryvview.
-Nylen Kyvelor's profession is a muralist.
-Qorloria lies within Wyrenia.
-Lior Myvelor comes from Nerview.
-Iren Mortel works as a herbalist.
-Tylven Lyceum is headquartered in Grurest.
-Gerwold lies within Uyrira.
-Ivrol Order is headquartered in Wynwyck.
-Maren Trovel comes from Dozdean.
-The city of Kenovia belongs to Hyrenia.
-Olen Norven earns a living as a campanologist.
-Halport is located in Eyresia.
-Brexil Society has its main office in Torgate.
-Xyren Myvelor works as a sextant maker.
-Aben Kyvelor was born in Cevmouth.
-Ilvrest lies within Pylumia.
-Yren Brex was born in Doldown.
-Ryron Association has its main office in Yovshire.
-Xyralen Ivornel's profession is a lexicographer.
-Varmouth is located in Tylyria.
-The headquarters of Dralven Association are in Palshire.
-Eyrol Trust is headquartered in Fovthwaite.
-Elen Synthel works as a bargeman.
-Kael Iyvor comes from Qordown.
-Aralen Avren earns a living as a luthier.
-The city of Palshire belongs to Sylalia.
-The headquarters of Glaron Sodality are in Kenwyck.
-The headquarters of Avenor Lyceum are in Elybridge.
-Myralen Breth works as a bargeman.
-Yvel Solen comes from Ryvrest.
-Glaron Sodality has its main office in Palbarrow.
-The birthplace of Oyralen Dryven is Alyloria.
-The headquarters of Olrven Conservatory are in Belwold.
-The headquarters of Avenor Society are in Rouridge.
-Kael Iyvor works as a tailor.
-Cyren Trovel was born in Yovwell.
-Jaral Norel comes from Ankbridge.
-Nylen Hyralen's profession is a hosier.
-The birthplace of Jyralen Brilen is Tyrmoor.
-The birthplace of Mryen Korr is Pykminster.
-The headquarters of Yorel Guild are in Krywick.
-Aben Kyvelor works as a tapestry weaver.
-Ilvloria lies within Dylanos.
-Fyrov Lyceum has its main office in Palmoor.
-Grufell lies within Zylira.
-Lorthwaite is located in Fyroria.
-Krystoke lies within Rylanos.
-The birthplace of Pylen Frylen is Xyrovia.
-The birthplace of Hylen Dryven is Gerspire.
-Oren Marex comes from Belside.
-Nyrven Council is headquartered in Yovdown.
-Goth Pravel comes from Dolborough.
-The birthplace of Zyren Jordal is Jordrin.
-Elybourn is located in Kyranos.
-Beralen Jorlen comes from Tovpool.
-Dralven Institute has its main office in Kenovia.
-Hyren Hylven's profession is a brewer.
-Tovpool is located in Tylolia.
-Goth Pravel comes from Dozrest.
-Qyren Wystrel's profession is a drover.
-Ankbridge is located in Ivrumia.
-Jormere lies within Vylanos.
-Syren Quolen comes from Torhaven.
-Pira Uvel's profession is a fowler.
-Oryn Quolen's profession is a miniaturist.
-The headquarters of Dralven Authority are in Wolquay.
-Uren Veron was born in Gruleigh.
-Hykglen is located in Vylanos.
-Krelven Association is headquartered in Wynpool.
-Syren Quolen's profession is a millwright.
-Ronel Aprelen works as a fresco painter.
-Gruborough is located in Eyruria.
-Halven Order has its main office in Wynfield.
-Lyrven Academy has its main office in Fovhaven.
-Tylen Voss's profession is a fisher.
-The city of Krywick belongs to Belesia.
-Drestor Bureau has its main office in Palwyck.
-Olen Norven's profession is a midwife.
-Dolstoke is located in Uyresia.
-Jyralen Tylven's profession is a tablet carver.
-Tylven Conservatory has its main office in Lovrest.
-The headquarters of Lyrven Lyceum are in Dozburn.
-The birthplace of Mylen Solen is Xyrovia.
-Tovpool lies within Nylynia.
-The birthplace of Doran Myvelor is Wynwyck.
-The birthplace of Vera Vyrlen is Yovshire.
-The birthplace of Xyralen Ivornel is Marpool.
-Ankbridge is located in Jylanos.
-Solbourn is located in Jylesia.
-The headquarters of Xyrven Academy are in Krywell.
-Oryn Quolen was born in Vrekdown.
-Xyralen Iyvor works as a goldsmith.
-Qyrven Chamber is headquartered in Olvhold.
-The birthplace of Nylen Kyvelor is Alyfield.
-The city of Dozwick belongs to Gylymia.
-The headquarters of Jaron Trust are in Hykscar.
-Pylven Chamber is headquartered in Vrekleigh.
-The birthplace of Xyralen Iyvor is Olvmoor.
-Cyren Mythen was born in Zurby.
-Palmoor is located in Sylanos.
-Gralen Mythen comes from Nerborough.
-The city of Ilvloria belongs to Xylulia.
-The headquarters of Iyron Council are in Frehollow.
-Goth Gyrven's profession is a net maker.
-Xyralen Ivornel was born in Yovdown.
-Jaral Veron's profession is an archivist.
-Wynwyck is located in Ryloria.
-Maren Quolen comes from Uvyport.
-Hykscar lies within Xylyria.
-Dozham lies within Wyruria.
-The headquarters of Drestor Bureau are in Mevwick.
-Ryvmark is located in Cylulia.
-The headquarters of Arven Chamber are in Lovmere.
-Oryn Gervel earns a living as a plasterer.
-Hykscar is located in Jylolia.
-Gruleigh is located in Uyrira.
-Krystoke is located in Lyryria.
-The birthplace of Jyralen Brilen is Mevloria.
-The headquarters of Ryron Order are in Wolleigh.
-Eyrol Trust has its main office in Yovtown.
-Brebridge is located in Aeramia.
-The city of Palbarrow belongs to Hyrulia.
-Belside is located in Pylumia.
-The birthplace of Cael Solen is Dozburn.
-Tarn Dryven's profession is a miller.
-Brex Kyvelor's profession is a chandler.
-Kyren Ivren earns a living as a plasterer.
-Ivrol Chamber has its main office in Gerdown.
-Drel Zyrlen was born in Krywick.
-Pykham lies within Jylesia.
-The headquarters of Sythel Authority are in Nerquay.
-Wolhollow is located in Uyroria.
-Rylen Dyvelor earns a living as a hatter.
-Iren Mortel works as a soapboiler.
-Yovridge lies within Myralia.
-The birthplace of Quoral Halren is Frehollow.
-The headquarters of Krelven Society are in Osdean.
-Lovspire is located in Xylyria.
-Brexil Foundation is headquartered in Dozdean.
-The city of Yovwell belongs to Wyryria.
-Qyralen Sylvor was born in Ryvquay.
-Varfield lies within Syloria.
-Uren Veron comes from Doldown.
-Syrven Collective has its main office in Frescape.
-Lyralen Volent was born in Wynwyck.
-Quoral Hylven earns a living as a pewterer.
-Eral Trovel comes from Solcross.
-Aralen Daren was born in Olvhold.
-Drel Zyrlen works as a fresco painter.
-Tovpool is located in Belesia.
-The city of Gruleigh belongs to Ivresia.
-Doldown lies within Dylanor.
-Marstoke is located in Lyrenia.
-Xyren Kyvelor was born in Gerspire.
-Krywell lies within Uyrumia.
-Tylen Voss's profession is a fletcher.
-Pykham lies within Yyrymia.
-Hylen Rylven earns a living as a rope maker.
-The birthplace of Boran Eythrel is Yovshire.
-Xyrovia lies within Jylanos.
-The city of Dozdean belongs to Xyloria.
-Brex Frylen works as a wheelwright.
-Frewyck is located in Uyrumia.
-Lyralen Iyrlen earns a living as a trapper.
-Olvford lies within Zylesia.
-The city of Solbourn belongs to Rylanor.
-Krelven Consortium is headquartered in Yovwell.
-Belloria lies within Wyryria.
-Krelven Society is headquartered in Qorloria.
-Wyron Foundation has its main office in Eryloria.
-Farthwaite is located in Wyresia.
-Palshire lies within Aeramia.
-Drel Zyrlen works as a bowyer.
-Cyren Othren was born in Gerwold.
-Halscape is located in Tylolia.
-The headquarters of Dralven Council are in Yovtown.
-Maren Trovel works as a saddler.
-Zoral Iyvor earns a living as a huntsman.
-Sykcross is located in Hyranos.
-Kyrel Ylvor comes from Krywick.
-The headquarters of Nyrven Lyceum are in Fovshire.
-Hykthwaite is located in Kyrymia.
-The birthplace of Nyralen Rolen is Gerreach.
-Myrol Lyceum has its main office in Qorscape.
-Rylvor Bureau is headquartered in Varmouth.
-The birthplace of Yren Daren is Wolleigh.
-Wolquay lies within Pylumia.
-Krelven Syndicate has its main office in Frescape.
-Mryen Mortel's profession is a hosier.
-Glen Westra comes from Alyfield.
-The headquarters of Rylvor Bureau are in Oswick.
-The headquarters of Fryven Guild are in Dolstoke.
-Osgate is located in Syloria.
-Lyren Ylvor works as a ferrier.
-Zyren Solen works as a wheelwright.
-Krywell is located in Zylira.
-Yvel Kyvelor's profession is a stonemason.
-Lithor Chamber has its main office in Fovshire.
-Zurbarrow lies within Jylesia.
-Elyside lies within Dylalia.
-The birthplace of Hylen Dryven is Doldown.
-Pira Xylven's profession is a huntsman.
-The headquarters of Glaron Trust are in Hykthwaite.
-Vyralen Halt's profession is a vexillologist.
-Riven Myvelor's profession is a tanner.
-Kael Krelen's profession is a dyer.
-Faren Gyvol's profession is a viol maker.
-The city of Alyfield belongs to Sylalia.
-Drestor Bureau has its main office in Tovpool.
-Solscape lies within Dyloria.
-The birthplace of Hylen Dryven is Krystead.
-The headquarters of Olrven Bureau are in Ryvmark.
-Nyrven Lyceum is headquartered in Zurham.
-Aben Kyvelor was born in Lovthal.
-Elyside lies within Gylymia.
-Palbarrow is located in Uyrumia.
-Kylen Volent earns a living as a vexillologist.
-The birthplace of Cyren Trovel is Ankdean.
-Varburn lies within Cylamia.
-Fyrov Bureau is headquartered in Jormere.
-Aralen Daren earns a living as a tapestry weaver.
-Quen Krelen works as an armorer.
-Nylen Hyralen's profession is a philologist.
-The city of Zurbarrow belongs to Tylolia.
-The city of Wolwick belongs to Ivroria.
-Brex Rolen comes from Osport.
-The headquarters of Kylvor Foundation are in Bolhollow.
-Krystoke lies within Uyrira.
-The city of Marstoke belongs to Lyroria.
-The headquarters of Rylvor Consortium are in Dolborough.
-Hykscar lies within Oyranos.
-Vyralen Halt earns a living as a potter.
-Yvel Solen comes from Lorthwaite.
-Ronel Aprelen comes from Frescape.
-The headquarters of Tylven Foundation are in Brebridge.
-The city of Ilvrest belongs to Yyroria.
-Oyralen Dryven earns a living as a trapper.
-Brex Bryven works as a brickmaker.
-The headquarters of Bryvor Council are in Frewyck.
-Hykscar is located in Ryloria.
-Ivrol Sodality is headquartered in Gerdown.
-Mryen Mortel earns a living as a tiler.
-Hykthwaite is located in Yyresia.
-Iren Qyvor earns a living as a fletcher.
-The birthplace of Mryen Korr is Vrekdown.
-The city of Dolham belongs to Dylanos.
-Faren Gyvol was born in Torgate.
-Lior Myvelor's profession is a fowler.
-Vyralen Halt earns a living as an ethnographer.
-Yvel Tylven's profession is a philologist.
-Vyralen Halt's profession is an armorer.
-Pylen Frylen works as a bookbinder.
-Uvron Trust is headquartered in Brebridge.
-The city of Roufell belongs to Uyroria.
-The city of Nerview belongs to Tylyria.
-Tarn Uyvor's profession is a tiler.
-Drel Rylven's profession is a bookbinder.
-Talen Marex works as a fuller.
-The city of Zurby belongs to Tylenor.
-Qyren Wystrel works as a vexillologist.
-Torhaven is located in Xylulia.
-Lyralen Dryven earns a living as a joiner.
-The city of Yovshire belongs to Yyrymia.
-Roufell is located in Kyrymia.
-Pira Fyralen was born in Halscape.
-Zylen Cylvor's profession is a plasterer.
-Doran Hylven was born in Frescape.
-Lior Cyrlen was born in Bolhollow.
-The birthplace of Cylen Wystrel is Osport.
-Jyralen Cythen earns a living as an ostler.
-Uren Vyrlen comes from Zurby.
-Qyren Marex earns a living as a haberdasher.
-Krywell lies within Tylyria.
-Glen Rolven works as a glassblower.
-Tylven Conservatory has its main office in Tovpool.
-Fyren Pravel comes from Osdean.
-Aben Kyvelor's profession is a tablet carver.
-The headquarters of Drestor Bureau are in Wynpool.
-The birthplace of Rylen Veron is Ilvrest.
-Uren Vyrlen works as a tanner.
-Quoral Halren's profession is a gleaner.
-Beralen Jorlen was born in Wolmoor.
-Vyralen Halt was born in Frehollow.
-Hylen Quolen earns a living as a draper.
-The city of Brebridge belongs to Dylanor.
-The birthplace of Yvel Kyvelor is Uvyport.
-The headquarters of Qyrven Council are in Gruscar.
-The city of Wolquay belongs to Wyresia.
-Farthwaite lies within Rylanor.
-Wolfell lies within Xylyria.
-Dyren Brivlen comes from Mormere.
-Caldon Syndicate is headquartered in Kenwyck.
-Lovspire lies within Dylanos.
-The birthplace of Ronel Aprelen is Gerdown.
-Oyralen Westen was born in Marquay.
-Fyrov Collective is headquartered in Torgate.
-Ilvvale is located in Tylyria.
-Ronel Aprelen comes from Palshire.
-Yren Brex works as a warden.
-The city of Olvcross belongs to Wyruria.
-Lyralen Volent earns a living as a miniaturist.
-Fylen Eythrel comes from Fovhaven.
-The city of Fovthwaite belongs to Rylanos.
-Osgate lies within Dylalia.
-Aben Quaron was born in Elybridge.
-Eral Trovel was born in Varburn.
-The city of Solquay belongs to Fyresia.
-The headquarters of Dralven Institute are in Doldown.
-Farhollow is located in Vylolia.
-Goth Pravel works as a dyer.
-Iren Mortel's profession is a tanner.
-Yovdown is located in Lyrenia.
-Velron Chamber is headquartered in Pykminster.
-The city of Palbarrow belongs to Jylolia.
-Yvel Tylven works as a cooper.
-Zoral Jordal works as a fresco painter.
-Qordown is located in Rylanos.
-Alymark is located in Ivrumia.
-Maren Quolen earns a living as an epigrapher.
-Doldown is located in Yyroria.
-The city of Dozham belongs to Myralia.
-Zoral Jordal comes from Oshold.
-Qyrven Chamber is located in Vrekdown.
-Yren Brex was born in Kenglen.
-The city of Jorhaven belongs to Gylymia.
-Xyralen Iyvor was born in Wolwick.
-Belridge lies within Pylyria.
-Cyrven Society is headquartered in Grufell.
-Talen Marex was born in Wynwyck.
-The birthplace of Qyren Marex is Marpool.
-Cael Solen earns a living as a bowyer.
-The city of Farhollow belongs to Ivrenia.
-The city of Caldean belongs to Belesia.
-Lyrven Lyceum has its main office in Wynwyck.
-The headquarters of Velron Sodality are in Palshire.
-The birthplace of Beralen Jorlen is Wolwick.
-The birthplace of Xyren Kyvelor is Brebridge.
-Quoral Hylven earns a living as a millwright.
-The birthplace of Wylen Quaron is Gerspire.
-Vyralen Halt earns a living as a tiler.
-The birthplace of Oyralen Dryven is Wolfell.
-Oscross lies within Lyryria.
-The birthplace of Jaral Norel is Tyrscape.
-Jyralen Tylven works as a plasterer.
-Lyrven Syndicate is headquartered in Ryvpool.
-Myrol Authority has its main office in Gerwold.
-Aelen Wynth was born in Hykscar.
-Aralen Uvel was born in Halloria.
-Pira Fyralen comes from Solquay.
-Rylvor Consortium is headquartered in Palreach.
-Drel Tylor works as a vintner.
-The birthplace of Fyren Pravel is Hykbarrow.
-Nerborough is located in Zylesia.
-The city of Dozdean belongs to Jylanos.
-Yren Daren works as an apothecary.
-Doran Lyren earns a living as a gleaner.
-Gyron Association is headquartered in Vrekdown.
-The birthplace of Aralen Uvel is Fovfell.
-Hykthwaite lies within Fyrenor.
-The birthplace of Qyren Marex is Lovspire.
-The city of Osmouth belongs to Dylanos.
-The city of Ryvrest belongs to Tyloria.
-Maren Trovel comes from Fovwyck.
-The birthplace of Glen Rolven is Calcross.
-Cyren Uvel was born in Yovridge.
-Nyralen Rolen's profession is a millwright.
-Boran Cythen comes from Hykbarrow.
-Hylven Academy is headquartered in Fremouth.
-Morwick lies within Belesia.
-The birthplace of Doran Myvelor is Mormere.
-The headquarters of Eyrol Institute are in Osmouth.
-Lithor Chamber has its main office in Grufell.
-Eltrin Foundation has its main office in Farhollow.
-Vyralen Volent comes from Zurham.
-Oryn Quolen earns a living as a scrivener.
-The headquarters of Iyron Trust are in Wynfield.
-The city of Alytown belongs to Kyrolia.
-Syrven Conservatory has its main office in Grufell.
-Oren Marex works as a glassblower.
-Rylvor Sodality has its main office in Mevdown.
-The city of Dozwick belongs to Sylanos.
-The birthplace of Yvel Kyvelor is Xyrvale.
-The city of Solcross belongs to Hyrenia.
-Cyren Krelen earns a living as a rubricator.
-Eltrin Trust is headquartered in Ilvrest.
-Eyrol Council has its main office in Dolborough.
-Qyralen Sylvor's profession is a wainwright.
-Kylvor Collective is headquartered in Velburn.
-Yvel Solen's profession is a rubricator.
-Ryron Guild is headquartered in Ryvrest.
-Olrven Foundation is headquartered in Sykcross.
-Avenor Lyceum is headquartered in Jordrin.
-The birthplace of Pylen Frylen is Qorscape.
-Fryven Academy is headquartered in Krymoor.
-Elen Synthel comes from Fargate.
-Jaral Norel was born in Grufell.
-Hykglen lies within Oyranor.
-Cyren Trovel works as a thatcher.
-Pykminster lies within Dylanor.
-Jaron Conservatory is headquartered in Halfell.
-The headquarters of Olrith Society are in Dolborough.
-The headquarters of Drestor Bureau are in Mormoor.
-Goth Gyrven works as a tiler.
-Faren Westra works as a cordwainer.
-Osport lies within Sylenor.
-Kael Iyvor's profession is a furrier.
-Tyrol Consortium is headquartered in Belwold.
-The birthplace of Kael Krelen is Pykminster.
-Yorel Conservatory has its main office in Kenwyck.
-The city of Qorbridge belongs to Beresia.
-Eltrin Lyceum has its main office in Caldean.
-Xyralen Ivornel comes from Oscross.
-The birthplace of Aben Wystrel is Bremere.
-The birthplace of Lior Lyren is Vrekleigh.
-The city of Vrekdown belongs to Oyranor.
-Bral Gyvol earns a living as a harpsichordist.
-Dolham is located in Pyloria.
-Xyrovia is located in Kyranos.
-Bremere lies within Wyrenia.
-Arven Association is headquartered in Rouridge.
-The headquarters of Bryvor Council are in Jorpool.
-Mevloria lies within Kyranos.
-Lant Vyrlen works as a warden.
+Xyren Kyvelor was born in Solcross.
+The birthplace of Kael Iyvor is Morreach.
+The birthplace of Myralen Breth is Wolwick.
+Belwold is located in Pylumia.
+The headquarters of Bryvor Council are in Dolwold.
+Elen Nyralen was born in Roumark.
+Drestor Bureau is headquartered in Wynpool.
+Roufell lies within Dylalia.
+Gyralen Norven comes from Lorthal.
+Lior Jeran earns a living as a limner.
+Lithor Chamber is headquartered in Fremouth.
+Pira Uvel works as a hatter.
+Quen Krelen was born in Ryvview.
+Under rule_d, 1201 maps to 1442400.
+Iyron Council is headquartered in Qorscape.
+33 multiplied by itself is 1089.
+rule_d(1052) = 1106703.
+Cyren Mythen comes from Gruleigh.
+The birthplace of Pylen Brilen is Wolhollow.
+Yvel Tylven's profession is a herbalist.
+Hylen Dryven earns a living as a confectioner.
+Cyren Mythen's profession is a brewer.
+Expression of gene_sil52 occurs in isophyte.
+Applying rule_a to 1195 gives 1202.
+Maren Quolen's profession is a topographer.
+Olrven Council is headquartered in Gruborough.
+Xyren Myvelor works as an archivist.
+The headquarters of Avenor Society are in Palshire.
+Beralen Jorlen earns a living as a milliner.
+Applying rule_c to 1152 gives 2.
+Ronel Aprelen was born in Qorloria.
+The city of Hykbarrow belongs to Pylumia.
+The birthplace of Zylen Cylvor is Zurby.
+The headquarters of Olrven Bureau are in Solcross.
+The double of 10 is 20.
+The birthplace of Wylen Quaron is Qorloria.
+The cube of 58 is 195112.
+Rylen Dyvelor earns a living as a fowler.
+rule_e(1271) = 2543.
+Doran Frylen's profession is a baker.
+Soral Xeran works as a venator.
+Dralven Collective is headquartered in Zurbarrow.
+The city of Xyrtown belongs to Lyryria.
+Dozloria is located in Hyrolia.
+51 multiplied by five is 255.
+Fovbourn is located in Lyroria.
+Hykglen lies within Kyranos.
+Zylen Cylvor earns a living as a dyer.
+gene_cer90 codes for the protein lambdolin.
+gene_muv84 is expressed in isoform.
+Jormere is located in Cerenor.
+gene_veg17 codes for the protein etyralin.
+The square of 141 is 19881.
+Expression of gene_gat27 occurs in myrophage.
+Vyralen Quolen comes from Xyrscar.
+Under rule_c, 1086 maps to 1.
+Expression of gene_gag49 occurs in zelotrope.
+The birthplace of Talen Marex is Wolmoor.
+Kyrel Ylvor earns a living as a tablet carver.
+Kael Iyvor's profession is an illuminator.
+Jyralen Cythen comes from Morreach.
+gene_tuk90 encodes muonepin.
+Olrven Council lies within Hykbarrow.
+Olrven Foundation is headquartered in Pykminster.
+Lyren Ylvor earns a living as a xylographer.
+The birthplace of Solen Halt is Ilvcross.
+Qyralen Sylvor comes from Rouridge.
+Calcross lies within Wyrenia.
+Nyralen Jordal was born in Qorovia.
+The gene gene_kap85 is active in myroblast.
+Twice 63 equals 126.
+Wolwick lies within Gylalia.
+Olrven Bureau has its main office in Wolquay.
+Lior Cyrlen comes from Bolhollow.
+Fryven Foundation has its main office in Ryvmark.
 Vera Vyrlen works as a thatcher.
-Kylen Solen comes from Pykham.
-The headquarters of Iyron Lyceum are in Ilvfield.
-Elybridge lies within Belesia.
-Olrven Lyceum has its main office in Marstoke.
-Myrol Association is headquartered in Eryleigh.
-Aralen Avren works as a fresco painter.
-The city of Zurbarrow belongs to Ivrenia.
-The city of Halport belongs to Wyruria.
-Tarn Dryven earns a living as a chandler.
-The birthplace of Maren Quolen is Lovmere.
-Krystead lies within Belesia.
-Loran Jeran comes from Brebridge.
-The birthplace of Halen Daren is Calmere.
-Qordown is located in Wyruria.
-Cyrven Collective is headquartered in Farhollow.
-Soral Xeran was born in Dolborough.
-Zyren Solen comes from Farovia.
-Marpool lies within Yyresia.
-Caldean lies within Uyroria.
-The city of Qorovia belongs to Yyrynia.
-Tarn Dryven comes from Palshire.
-The headquarters of Gyron Institute are in Xyrscar.
-Qyren Marex was born in Lorthwaite.
-Tovpool lies within Fyresia.
-Brex Kyvelor works as a rope maker.
-Faren Westra comes from Farovia.
-Lyralen Volent comes from Nozmoor.
-Lyralen Volent earns a living as a miller.
-Krystoke is located in Hyrulia.
-The birthplace of Lant Vyrlen is Cevvale.
-Elyside is located in Zylira.
-The headquarters of Olrven Authority are in Alymark.
-The city of Ryvview belongs to Kyrolia.
-Halven Council has its main office in Xyrvale.
-Aelen Lyralen's profession is a drover.
-Eyrol Trust has its main office in Hykscar.
-Doran Wynvor works as a chandler.
-The headquarters of Wyron Chamber are in Eryleigh.
-Pylven Order is headquartered in Jormere.
-Gruleigh is located in Zylira.
-Lior Lyren comes from Wolmoor.
-The headquarters of Xylor Sodality are in Osport.
-Zyren Solen's profession is a chronologer.
-Wolmoor is located in Oyrira.
-Sykcross lies within Oyrira.
-Sythel Collective is headquartered in Ryvquay.
-Iralen Zolven works as an alchemist.
-Vyralen Volent comes from Mevdown.
-The birthplace of Soral Xeran is Grurest.
-The birthplace of Nyralen Daren is Velburn.
-Rouridge is located in Gylalia.
-Myralen Breth was born in Dozham.
-Maren Quolen's profession is an archivist.
-Faren Westra's profession is a luthier.
-Zoral Jordal's profession is a fletcher.
-The birthplace of Aralen Daren is Bremere.
-Tylven Conservatory is headquartered in Lorthal.
-Tyrmoor lies within Rylanor.
-Wren Tylven was born in Qorscape.
-Cylen Rolven was born in Yovridge.
-The city of Varovia belongs to Cylesia.
-Oryn Gervel was born in Ankcross.
-Wren Tylven was born in Dozham.
-Frescape is located in Fyresia.
-Ryalen Iyvor was born in Alyfield.
-Beralen Jorlen earns a living as a viol maker.
-Mylen Solen was born in Halfell.
-Zoral Iyvor earns a living as a sextant maker.
-Lovthal lies within Zylolia.
-Xyrscar lies within Fyroria.
-Lyralen Volent was born in Ryvquay.
-Jaral Norel was born in Olvford.
-Halven Order is headquartered in Oshold.
-Kael Krelen earns a living as a warden.
-Gercross is located in Zylamia.
-The birthplace of Oyralen Dryven is Fovwyck.
-The headquarters of Xyrven Academy are in Oswick.
-Vera Vyrlen's profession is a currier.
-Nyralen Rolen works as a tiler.
-The headquarters of Wyron Consortium are in Olvhold.
-Jyralen Brilen was born in Lordown.
+Iyron Lyceum is headquartered in Oswick.
+The birthplace of Jaral Norel is Lovthal.
+Jorhaven is located in Nylymia.
+The protein product of gene_xaw14 is chiaactin.
+Eral Vane was born in Solscape.
+60 raised to the third power is 216000.
+Under rule_e, 1094 maps to 2189.
+Nyrov Association has its main office in Solbourn.
+Dozham lies within Sylalia.
+Expression of gene_tux07 occurs in isophyte.
+Kylen Volent was born in Breburn.
+Pylen Frylen comes from Olvhold.
+Ten more than 197 is 207.
+Iyron Lyceum is headquartered in Solscape.
+Ten more than 151 is 161.
+Jyralen Ylvor earns a living as an armorer.
+Five times 156 equals 780.
+Ryron Chamber is headquartered in Hykscar.
+237 multiplied by itself is 56169.
+Alyloria lies within Yyroria.
+The headquarters of Ivrol Sodality are in Frewyck.
+Cyrven Collective is headquartered in Jordrin.
+Maren Trovel's profession is a vintner.
+Fylen Sylvor's profession is a joiner.
+Goth Gyrven's profession is a millwright.
+Boran Eythrel earns a living as a haberdasher.
+Velron Sodality is headquartered in Elybourn.
+Lant Vyrlen comes from Lovmere.
+gene_mif15 is expressed in decaphage.
+The headquarters of Wyron Consortium are in Ryvquay.
+Grurest lies within Dylanor.
+Hyren Hylven comes from Doldown.
+The gene gene_fiy36 is active in paracyte.
+Fyren Pravel comes from Fovhaven.
+Nozloria lies within Cylulia.
+Nyralen Jordal earns a living as a candle maker.
+Fyren Pravel comes from Yovshire.
+Wren Tylven comes from Nozhold.
+Belwold is located in Hyrulia.
+The headquarters of Dralven Academy are in Wynfield.
+Qyren Marex earns a living as a cordwainer.
+Palmoor is located in Aeroria.
+Farthwaite is located in Nylymia.
+The headquarters of Vyrven Lyceum are in Krystoke.
+Xyralen Westra was born in Yovdown.
+The city of Gerscar belongs to Kyrymia.
+Halscape lies within Hyrenia.
+Velen Ylvor earns a living as a miller.
+Alyloria is located in Eyresia.
+Maren Trovel comes from Vrekleigh.
+Applying rule_a to 1075 gives 1082.
+Xyren Myvelor works as a candle maker.
+Oyralen Westen comes from Belside.
+2 squared equals 4.
+Aben Wystrel earns a living as a potter.
+The birthplace of Cylen Wystrel is Calcross.
+Eyrol Institute is headquartered in Dolstoke.
+221 multiplied by itself is 48841.
+Mylen Xeran earns a living as a philologist.
+The city of Belwold belongs to Cyloria.
+The square of 86 is 7396.
+154 tripled is 462.
+Xanel Frix earns a living as a sail maker.
+Zoral Iyvor comes from Zurbarrow.
+Zyren Solen earns a living as a wheelwright.
+Applying rule_b to 1054 gives 3162.
+gene_tiw91 encodes etyrolin.
+Brex Bryven was born in Yovtown.
+Jaral Norel works as a miniaturist.
+rule_a(1107) = 1114.
+Xylor Academy is headquartered in Krywick.
+Under rule_c, 1014 maps to 4.
+Aralen Daren's profession is a baker.
+The gene gene_ceh90 is active in pentaphage.
+Pylven Chamber has its main office in Fremouth.
+Cael Solen earns a living as a draper.
+Lyren Frylen comes from Elybourn.
+The headquarters of Pyron Society are in Brebridge.
+Hyren Nyralen works as a wax chandler.
+Myrol Collective has its main office in Hykscar.
+Applying rule_a to 1139 gives 1146.
+The city of Hykscar belongs to Oyranos.
+Vyralen Quolen works as a wax chandler.
+rule_b(1205) = 3615.
+Olen Norven comes from Farhollow.
+Quoral Hylven works as a harpsichordist.
+Under rule_e, 1255 maps to 2511.
+Arven Academy has its main office in Ilvfield.
+Dralven Chamber has its main office in Qorbridge.
+Eyralen Estren was born in Xyrvale.
+Fyrov Order is headquartered in Gruscar.
+The cube of 113 is 1442897.
+The protein product of gene_hop70 is betipsin.
+The headquarters of Kylvor Consortium are in Grufell.
+Eryquay is located in Jyliria.
+Ryalen Iyvor comes from Tovpool.
+Under rule_c, 1024 maps to 4.
+rule_c(1115) = 0.
+Under rule_a, 1282 maps to 1289.
+Ryvview lies within Cyloria.
+Xyralen Ivornel earns a living as a bookbinder.
+The birthplace of Nylen Hyralen is Qorovia.
+The protein product of gene_yuj27 is etaeulin.
+Ivrol Order has its main office in Varfield.
+Iren Mortel was born in Frehollow.
+Myralen Breth works as a chronologer.
+Fyrov Syndicate is headquartered in Krymoor.
+Nyralen Jordal comes from Belwold.
+Kael Iyvor works as a horologist.
+The birthplace of Olen Norven is Elybridge.
+Tyrol Consortium is headquartered in Dolham.
+Dralven Association has its main office in Grufell.
+The city of Ryvrest belongs to Aranor.
+Dozwick lies within Lyrynia.
+The birthplace of Kylen Volent is Ilvrest.
+The birthplace of Elen Synthel is Frescape.
+Pylen Frylen comes from Kenspire.
+Brex Frylen comes from Dolborough.
+Eyralen Tylven earns a living as a soapboiler.
+Farhollow is located in Uyroria.
+The headquarters of Wystol Syndicate are in Calglen.
+The headquarters of Avenor Council are in Ryvrest.
+Tarn Dryven's profession is a wax chandler.
+The city of Calcross belongs to Hyranos.
+Applying rule_c to 1053 gives 3.
+Aben Ivren was born in Wolmoor.
+The city of Wolleigh belongs to Pylyria.
+Wolfell is located in Xylanor.
+Eral Vyrlen's profession is a campanologist.
+Hykthwaite lies within Myroria.
+The birthplace of Oyralen Jeran is Belside.
+Aben Kyvelor was born in Tovpool.
+The headquarters of Kylvor Consortium are in Elyside.
+The gene gene_cik29 is active in karycyte.
+217 squared equals 47089.
+209 squared equals 43681.
+Under rule_c, 1065 maps to 0.
+Kylen Volent's profession is a lighthouse keeper.
+Applying rule_c to 1224 gives 4.
+Fyrov Lyceum is headquartered in Fargate.
+The fifth multiple of 4 is 20.
+The city of Gruwell belongs to Gylymia.
+Hykglen is located in Jylanos.
+Yren Daren works as a barber surgeon.
+Foren Quolen's profession is a vexillologist.
+Wolfell lies within Xyloria.
+Tarn Uyvor comes from Olvhold.
+Tovpool lies within Nylynia.
+Glen Pravel comes from Hykscar.
+Glen Westra comes from Kenglen.
+gene_sik79 encodes alphetein.
+Nyralen Rolen's profession is an armorer.
+The protein product of gene_saf83 is lambdestatin.
+The birthplace of Kyrel Ylvor is Ilvloria.
+The square of 1 is 1.
+Under rule_b, 1268 maps to 3804.
+Cylen Rolven earns a living as a stonemason.
+136 squared equals 18496.
+The headquarters of Marvol Order are in Jormere.
+Lyralen Iyrlen works as an alchemist.
+Cyrven Society has its main office in Ankcross.
+Applying rule_a to 1084 gives 1091.
+The gene gene_yew56 is active in isophyte.
+Applying rule_a to 1048 gives 1055.
+gene_ned81 is expressed in tetramorph.
+Quen Krelen's profession is a goldsmith.
+162 raised to the third power is 4251528.
+The city of Krystead belongs to Dylanor.
+Glen Westra was born in Frewyck.
+The headquarters of Avenor Council are in Dozloria.
+Ryalen Iyvor comes from Ryvrest.
+Dolwold lies within Xylyria.
+Adding ten to 167 gives 177.
+Lyren Caldrin was born in Ilvfield.
+The triple of 126 is 378.
+Lyren Frylen comes from Wolmoor.
+152 doubled is 304.
+The gene gene_bel02 is active in myrophage.
+Tarn Uyvor was born in Frewyck.
+Solen Halt earns a living as a midwife.
+The double of 37 is 74.
+Olrven Council is headquartered in Elybridge.
+Sythel Foundation is headquartered in Eryquay.
+Osmouth lies within Yyrymia.
+The headquarters of Qyrven Chamber are in Olvhold.
+Morridge is located in Wyresia.
+Kylvor Foundation is headquartered in Nozport.
+Wyron Consortium is headquartered in Cevmouth.
+Gruglen lies within Dyliria.
+Iyren Tylor was born in Jorstoke.
+Tylen Voss's profession is a lexicographer.
+Sykcross lies within Uyresia.
+Aben Kyvelor was born in Lovthal.
+The headquarters of Olrven Association are in Gerscar.
+Halven Order is headquartered in Varburn.
+Rouridge lies within Wyroria.
+The protein product of gene_gak55 is sigmolin.
+Nyrven Society has its main office in Nozloria.
+The city of Velburn belongs to Tylenor.
+Yovwell lies within Cylesia.
+Gerwold lies within Wyroria.
+Goth Gyrven comes from Jorhaven.
+Lant Aldren's profession is a cartographer.
+Foren Quolen earns a living as a gleaner.
+123 tripled is 369.
+Jyralen Cythen was born in Nerquay.
+The headquarters of Syrven Authority are in Eryloria.
+Cyren Krelen earns a living as a millwright.
+Kenspire is located in Cyloria.
+Eral Trovel comes from Jorhaven.
+The headquarters of Iyron Trust are in Fovshire.
+Dralven Authority is headquartered in Wolquay.
+Eral Vane works as a bonnet maker.
+Applying rule_e to 1097 gives 2195.
+Elyside is located in Aeramia.
+Qyren Wystrel was born in Lordown.
+The city of Dolwold belongs to Belenor.
+Yovwell is located in Belenor.
+Wren Tylven's profession is an armorer.
+The headquarters of Lyrven Academy are in Solcross.
+Gyralen Norven earns a living as a venator.
+The city of Marstoke belongs to Eyrira.
+The headquarters of Dralven Institute are in Kenovia.
+The city of Jorstoke belongs to Jylanos.
+Solscape lies within Aeroria.
+The city of Hykscar belongs to Cylulia.
+Nozloria lies within Eyrira.
+Brebridge is located in Yyresia.
+The protein product of gene_sok65 is sigmelin.
+Zoral Veron earns a living as a stonemason.
+Jyrven Guild has its main office in Ankdean.
+Palreach lies within Beresia.
+Jaron Conservatory has its main office in Qorovia.
+gene_jen29 is expressed in decamorph.
+Vera Vyrlen earns a living as a net maker.
+Applying rule_d to 1103 gives 1216608.
+Applying rule_a to 1276 gives 1283.
+rule_c(1278) = 3.
+Goth Gyrven was born in Krystoke.
+Krystoke lies within Rylulia.
+rule_a(1220) = 1227.
+Iyren Qyvor comes from Grurest.
+The city of Xyrscar belongs to Hyrulia.
+The double of 238 is 476.
+Ankcross lies within Aeroria.
+The headquarters of Krelven Association are in Wynpool.
+The birthplace of Fylen Eythrel is Osdean.
+Cylen Wystrel's profession is a lighthouse keeper.
+Under rule_c, 1076 maps to 1.
+gene_fik41 encodes etyrokrin.
+Applying rule_a to 1088 gives 1095.
+Doran Frylen works as a bookbinder.
+242 tripled is 726.
+Zoral Iyvor's profession is a vexillologist.
+Glen Qyvor comes from Xyrvale.
+Dralven Authority has its main office in Bolhollow.
+Nozhold lies within Hyranos.
+Lovmere is located in Rylanor.
+Applying rule_b to 1050 gives 3150.
+rule_a(1205) = 1212.
+The city of Kenwyck belongs to Oyranos.
+Under rule_c, 1045 maps to 0.
+Jyralen Cythen works as a harpsichordist.
+Halen Daren earns a living as a draper.
+Vyralen Volent earns a living as a sail maker.
+Iyren Qyvor earns a living as a soapboiler.
+Under rule_d, 1245 maps to 1550024.
+The headquarters of Ryron Chamber are in Osdean.
+127 doubled is 254.
+Tovpool lies within Xylanor.
+Kael Iyvor's profession is a wheelwright.
+The headquarters of Rylvor Bureau are in Frewyck.
+Fargate is located in Fyroria.
+Lyralen Volent's profession is a miniaturist.
+The birthplace of Mylen Xeran is Rouridge.
+The headquarters of Bryvor Syndicate are in Halloria.
+Riven Daren works as a cartographer.
+Iyron Trust is headquartered in Nozmoor.
+The city of Zurbarrow belongs to Ryloria.
+Under rule_d, 1061 maps to 1125720.
+Dyren Brivlen was born in Nozmoor.
+Pylen Brilen works as a topographer.
+Cael Lyralen's profession is a fowler.
+Vyralen Halt comes from Caldean.
+Xyrvale lies within Pylumia.
+Applying rule_b to 1283 gives 3849.
+193 doubled is 386.
+The birthplace of Iren Trovel is Gerwold.
+Lior Myvelor works as a coppersmith.
+Qaron Syndicate has its main office in Kenspire.
+Applying rule_e to 1045 gives 2091.
+Kenhollow is located in Pylumia.
+The gene gene_tad59 is active in mesophyte.
+Ten more than 42 is 52.
+Aren Uvel earns a living as a saddler.
+The city of Mevwick belongs to Cyloria.
+Sykcross lies within Yyroria.
+Quen Krelen's profession is a milliner.
+Pyron Academy is headquartered in Palreach.
+Nyrven Order is headquartered in Nerscape.
+Olvmoor is located in Gylymia.
+The square of 228 is 51984.
+Lovspire lies within Lyrynia.
+Aelen Lyralen earns a living as a fowler.
+rule_a(1089) = 1096.
+The headquarters of Cyrven Council are in Fovbourn.
+Qorloria lies within Rylanor.
+Cael Lyralen was born in Dolwold.
+Quen Krelen comes from Nozmoor.
+Myralen Breth works as a saddler.
+gene_saf83 encodes psiaulin.
+Eyrol Institute has its main office in Gerscar.
+Expression of gene_cim86 occurs in karycyte.
+Expression of gene_bel02 occurs in isophyte.
+88 squared equals 7744.
+Ryvpool is located in Aeramia.
+The headquarters of Nyrov Conservatory are in Breburn.
+Oren Marex was born in Yovdown.
+Applying rule_b to 1297 gives 3891.
+Fovhaven lies within Wyryria.
+Xyren Kyvelor earns a living as a cordwainer.
+The birthplace of Doran Frylen is Qorovia.
+The gene gene_guz86 is active in metacyte.
+gene_cux85 codes for the protein phioolin.
+Iyren Tylor comes from Ankcross.
+rule_b(1048) = 3144.
+Xylor Sodality is headquartered in Lovspire.
+The birthplace of Nylen Kyvelor is Marquay.
+Palbarrow is located in Zylolia.
+gene_mip02 codes for the protein chiaelin.
+The headquarters of Eltrin Lyceum are in Zurby.
+gene_ceh90 codes for the protein nueletein.
+Dralven Council is headquartered in Gerreach.
+Elen Synthel's profession is an ostler.
+Uvron Trust is headquartered in Brebridge.
+gene_duz86 is expressed in endoform.
+Under rule_c, 1289 maps to 4.
+The gene gene_tuz55 is active in dyolith.
+gene_kap85 codes for the protein sigmepin.
+Pira Uvel earns a living as a plasterer.
+Mryen Mortel earns a living as a vexillologist.
+Olen Norven works as a cooper.
+Tyrmoor lies within Uyrumia.
+Varovia is located in Lyroria.
+Myrol Lyceum is headquartered in Cevmouth.
+The city of Alyloria belongs to Nylymia.
+The double of 221 is 442.
+Gerscar lies within Yyrymia.
+Qyrven Institute has its main office in Osdean.
+The triple of 2 is 6.
+Under rule_b, 1254 maps to 3762.
+166 raised to the third power is 4574296.
+The cube of 47 is 103823.
+Krelven Consortium is headquartered in Kenwyck.
+The headquarters of Olrven Council are in Qorbridge.
+Applying rule_b to 1085 gives 3255.
+Lior Lyren works as a sextant maker.
+The city of Tovpool belongs to Fyroria.
+Bral Gyvol was born in Eryrest.
+Yvel Kyvelor earns a living as a barber surgeon.
+The birthplace of Eral Vyrlen is Ilvvale.
+The birthplace of Uren Halor is Cevvale.
+Ryalen Iyvor earns a living as a calligrapher.
+The birthplace of Oren Marex is Halloria.
+Aralen Daren was born in Pykminster.
+Jaron Trust is headquartered in Lovmere.
+The gene gene_gak55 is active in orthophore.
+Olrven Academy has its main office in Kenovia.
+Kael Iyvor was born in Varfield.
+Xyralen Iyvor's profession is a chandler.
+Grurest lies within Syloria.
+Olen Uyvor works as an epigrapher.
+Olvcross lies within Aeramia.
+The headquarters of Syrven Authority are in Gerreach.
+Cyren Mythen's profession is a chandler.
+rule_a(1130) = 1137.
+Under rule_e, 1138 maps to 2277.
+The cube of 206 is 8741816.
+Calmere is located in Rylanos.
+Applying rule_a to 1257 gives 1264.
+43 squared equals 1849.
+The cube of 44 is 85184.
+Gercross lies within Gylalia.
+Applying rule_b to 1165 gives 3495.
+Expression of gene_bel02 occurs in dyolith.
+Jaron Order has its main office in Grurest.
+Twice 56 equals 112.
+Cyrven Lyceum has its main office in Mevloria.
+The city of Calcross belongs to Oyrumia.
+Twice 172 equals 344.
+The fifth multiple of 108 is 540.
+The city of Hykglen belongs to Dylalia.
+The headquarters of Glaron Sodality are in Farovia.
+Expression of gene_hop70 occurs in zelotrope.
+Halven Guild is headquartered in Doldown.
+The city of Frewyck belongs to Eyresia.
+Uvron Bureau has its main office in Kenovia.
+The double of 64 is 128.
+The birthplace of Yvel Tylven is Fovhollow.
+The gene gene_dav98 is active in neurodrome.
+The birthplace of Cael Solen is Olvhold.
+The birthplace of Nylen Kyvelor is Fovwyck.
+Twice 97 equals 194.
+The birthplace of Zylen Cylvor is Calglen.
+Hyren Nyralen comes from Xyrhollow.
+The birthplace of Elen Synthel is Lovspire.
+The city of Halloria belongs to Rylanos.
+Aben Wystrel earns a living as a xylographer.
+Elen Synthel earns a living as a barber surgeon.
+Lant Aldren's profession is a haberdasher.
+The headquarters of Uyron Guild are in Lovmere.
+Lior Jeran was born in Ilvrest.
+Under rule_e, 1207 maps to 2415.
+Eyrol Trust has its main office in Xyrvale.
+gene_yew56 codes for the protein rhodetein.
+gene_del78 is expressed in myroblast.
+Pyron Academy has its main office in Xyrhollow.
+Eltrin Guild has its main office in Vrekdown.
+Nyrov Conservatory is headquartered in Belwold.
+The city of Qorovia belongs to Beresia.
+192 doubled is 384.
+The city of Wynpool belongs to Nylynia.
+Cyrven Authority has its main office in Krymoor.
+Nyralen Jordal earns a living as a tiler.
+Mryen Korr works as a calligrapher.
+Fovwyck lies within Vylanos.
+Under rule_d, 1211 maps to 1466520.
+Nyrven Chamber lies within Yovdown.
+Jaral Norel works as a thatcher.
+The headquarters of Arven Association are in Ryvview.
+gene_cij03 codes for the protein lambdalin.
+Mormoor is located in Eyresia.
+Yvel Kyvelor's profession is a tailor.
+Wylen Uyvor works as a haberdasher.
+Ilvvale lies within Ivrenia.
+The headquarters of Nyrov Association are in Varovia.
+rule_a(1246) = 1253.
+Pylen Frylen's profession is a bookbinder.
+The city of Gerdown belongs to Dylalia.
+The city of Ryvrest belongs to Oyrumia.
+Qyrven Council is headquartered in Wynfield.
+The gene gene_miy05 is active in dyolith.
+Lordown is located in Aeroria.
+The headquarters of Kylvor Collective are in Halloria.
+Under rule_e, 1282 maps to 2565.
+Oren Pravel works as a fresco painter.
+The headquarters of Cyrven Trust are in Yovtown.
+Xyrvale is located in Ivramia.
+Pira Uvel was born in Kenglen.
+Alyfield is located in Beresia.
+The city of Caldean belongs to Uyrira.
+The headquarters of Halven Institute are in Wolleigh.
+Uyron Guild is headquartered in Calmere.
+222 plus ten is 232.
+The city of Velburn belongs to Xyloria.
+The city of Elybourn belongs to Kyrira.
+Applying rule_e to 1267 gives 2535.
+Five times 93 equals 465.
+Jorpool is located in Gylalia.
+Aben Kyvelor was born in Oswick.
+The cube of 223 is 11089567.
+The birthplace of Myralen Breth is Wolleigh.
+The protein product of gene_cim86 is alphegen.
+115 cubed equals 1520875.
+Applying rule_b to 1021 gives 3063.
+Soral Xeran earns a living as a net maker.
+176 multiplied by five is 880.
+Yren Brex comes from Dolwold.
+Lovrest lies within Wyresia.
+Olrven Authority has its main office in Palmoor.
+Applying rule_b to 1065 gives 3195.
+Expression of gene_mok83 occurs in dyodrome.
+Qyren Marex earns a living as a wainwright.
+Oryn Quolen earns a living as a topographer.
+Solquay is located in Ivresia.
+Nyralen Rolen comes from Bremere.
+Velron Sodality is headquartered in Cevvale.
+Nyrven Lyceum has its main office in Eryloria.
+Aren Xylven works as a dyer.
+Solquay is located in Fyresia.
+Hykthwaite is located in Hyrulia.
+Sythel Authority is headquartered in Osport.
+gene_waf82 encodes tauenase.
+Kylvor Order has its main office in Torgate.
+The birthplace of Faren Gyvol is Eryleigh.
+Applying rule_d to 1086 gives 1179395.
+gene_ruc92 encodes betepin.
+The headquarters of Lithor Chamber are in Kenwyck.
+Glen Rolven earns a living as a brickmaker.
+gene_wux06 encodes etyrolin.
+The double of 66 is 132.
+Pylven Collective has its main office in Zurquay.
+Pyron Conservatory is headquartered in Grurest.
+Krelven Consortium is headquartered in Gerreach.
+Brex Frylen was born in Hykscar.
+The city of Zurbarrow belongs to Oyranos.
+Velen Marex comes from Lorthal.
+Dyren Brivlen comes from Halloria.
+170 raised to the third power is 4913000.
+gene_ron90 is expressed in isoform.
+Drel Tylor's profession is a bowyer.
+The birthplace of Lyralen Volent is Yovridge.
+Eltrin Lyceum is headquartered in Nozmoor.
+Caldon Authority is headquartered in Palbarrow.
+The headquarters of Olrith Academy are in Dozburn.
+169 plus ten is 179.
+Rylen Veron works as a bowyer.
+Three times 162 equals 486.
+Fyrov Syndicate has its main office in Dozdean.
+Doran Wynvor's profession is an archivist.
+68 multiplied by five is 340.
+Nyralen Rolen comes from Xyrhollow.
+Brebridge lies within Kyrolia.
+Krystead is located in Fyresia.
+The birthplace of Cyren Uvel is Yovtown.
+Fyrov Collective is headquartered in Halfell.
+gene_waf82 is expressed in karylith.
+Lyralen Volent was born in Lovvale.
+Mryen Aldren earns a living as a joiner.
+Expression of gene_mob95 occurs in metacyte.
+Applying rule_b to 1276 gives 3828.
+Eyralen Estren earns a living as a venator.
+Expression of gene_hot99 occurs in zelomorph.
+Expression of gene_mit96 occurs in zelomorph.
+234 multiplied by five is 1170.
+Zoral Norel works as an apothecary.
+The protein product of gene_buy32 is nuelicin.
+The headquarters of Syrven Trust are in Roumark.
+Yvel Kyvelor's profession is a bargeman.
+Hykbarrow is located in Jylesia.
+Faren Lithen comes from Oshold.
+Pylen Brilen's profession is a ferrier.
+Jaral Sythen works as a cordwainer.
+The city of Grurest belongs to Fyresia.
+Mryen Aldren earns a living as a forester.
+Applying rule_b to 1125 gives 3375.
+The birthplace of Vyralen Volent is Xyrscar.
+142 cubed equals 2863288.
+The city of Nerview belongs to Eyresia.
+Frewyck is located in Lyrenia.
+gene_del78 encodes etaeetein.
+The headquarters of Eltrin Lyceum are in Grufell.
+Hylen Dryven's profession is a joiner.
+Fylen Sylvor's profession is a tanner.
+The headquarters of Olrven Authority are in Varfield.
+Yren Daren's profession is a wax chandler.
+gene_wid88 codes for the protein deltase.
+The city of Fovhollow belongs to Fyroria.
+Ryron Guild is headquartered in Yovwell.
+gene_lef02 encodes thelicin.
+Yvel Solen comes from Cevmouth.
+The square of 187 is 34969.
+Gerdown lies within Tylyria.
+The city of Xyrovia belongs to Zylolia.
+Dyren Brivlen comes from Palbarrow.
+Roumark is located in Ivramia.
+The headquarters of Pylven Order are in Yovtown.
+Ankbridge is located in Qyralia.
+rule_c(1216) = 1.
+The protein product of gene_fop60 is epsiolin.
+Tylven Foundation is headquartered in Fovfell.
+Hykscar lies within Jylolia.
+Jyralen Brilen earns a living as a vintner.
+Expression of gene_xim22 occurs in neurodrome.
+The gene gene_fiy36 is active in endophore.
+Applying rule_a to 1186 gives 1193.
+Applying rule_a to 1196 gives 1203.
+Five times 244 equals 1220.
+Under rule_e, 1203 maps to 2407.
+The gene gene_tuz55 is active in paracyte.
+177 cubed equals 5545233.
+Applying rule_c to 1099 gives 4.
+The city of Varburn belongs to Wyrira.
+The headquarters of Dralven Collective are in Dozwick.
+68 multiplied by itself is 4624.
+The headquarters of Fryven Collective are in Tovpool.
+rule_c(1262) = 2.
+The headquarters of Iyron Authority are in Morreach.
+The protein product of gene_kap85 is psiaetin.
+The protein product of gene_yen97 is etaease.
+Cylen Rolven comes from Palwyck.
+Under rule_d, 1265 maps to 1600224.
+Ivrol Sodality is headquartered in Marquay.
+Expression of gene_bik95 occurs in zelotrope.
+Pira Xylven's profession is a cooper.
+Olrith Academy is headquartered in Kenwyck.
+Wyron Consortium has its main office in Lovrest.
+Riven Myvelor comes from Yovwell.
+Expression of gene_miy91 occurs in paracyte.
+Expression of gene_sik79 occurs in endophore.
+The triple of 83 is 249.
+The headquarters of Fyrov Bureau are in Ilvvale.
+gene_huh70 codes for the protein chiaicin.
+gene_tip71 codes for the protein kynuophorin.
+The square of 147 is 21609.
+Glen Qyvor earns a living as a venator.
+Under rule_b, 1248 maps to 3744.
+The birthplace of Oyralen Jeran is Lovvale.
+Qaron Society is headquartered in Gruborough.
+Halquay lies within Kyranos.
+Tylven Lyceum has its main office in Morridge.
+Applying rule_b to 1012 gives 3036.
+Brex Kyvelor comes from Krystoke.
+gene_hot99 codes for the protein kappulin.
+Lior Jeran works as a gleaner.
+Yorel Conservatory has its main office in Ryvrest.
+The protein product of gene_vev79 is thelicin.
+The headquarters of Eltrin Association are in Gerreach.
+Velen Marex comes from Olvford.
+Lyren Ylvor was born in Lovspire.
+51 plus ten is 61.
+gene_ned81 encodes thelepin.
+The headquarters of Krelven Syndicate are in Wolfell.
+The headquarters of Eyrol Sodality are in Osmouth.
+Applying rule_c to 1128 gives 3.
+Iralen Zolven earns a living as a hatter.
+Gruborough lies within Sylenor.
+Eral Trovel works as a dyer.
+Jaral Veron works as a tablet carver.
+Cyrven Trust lies within Bolhollow.
+The protein product of gene_mog91 is rhodophorin.
+Uren Halor comes from Bremere.
+Expression of gene_pum14 occurs in decamorph.
+Fovfell is located in Lyranor.
+The triple of 230 is 690.
+Under rule_c, 1085 maps to 0.
+Fargate is located in Aeriria.
+The city of Fovhaven belongs to Ivrenia.
+Nozport is located in Hyrolia.
+The birthplace of Brex Bryven is Gruscar.
+Rylvor Guild has its main office in Wolleigh.
+175 doubled is 350.
+The city of Frewyck belongs to Uyroria.
+Eral Vyrlen comes from Zurby.
+The city of Marstoke belongs to Deroria.
+The city of Gerscar belongs to Lyrynia.
+gene_zib24 codes for the protein thelulin.
+Yren Brex comes from Fovshire.
+Under rule_d, 1147 maps to 1315608.
+Syren Quaron works as a fletcher.
+The gene gene_vos17 is active in decamorph.
+Kylen Solen's profession is a milliner.
+rule_a(1230) = 1237.
+The birthplace of Hyren Nyralen is Jorpool.
+The square of 205 is 42025.
+gene_yos41 is expressed in dyodrome.
+Twice 16 equals 32.
+Doran Wynvor works as a forester.
+Velron Sodality has its main office in Ilvcross.
+5 cubed equals 125.
+The city of Jorhaven belongs to Kyrolia.
+Kenglen is located in Myroria.
+Eyralen Estren was born in Alyloria.
+The birthplace of Pira Fyralen is Dolborough.
+Gerspire lies within Beresia.
+Ronel Aprelen earns a living as a horologist.
+53 tripled is 159.
+Arven Chamber has its main office in Dozrest.
+The city of Elybridge belongs to Qyralia.
+Dolwold is located in Aeriria.
+Under rule_a, 1083 maps to 1090.
+Bral Gyvol works as a thatcher.
+Halquay is located in Jylamia.
+Xyralen Iyvor comes from Qorovia.
+Under rule_e, 1109 maps to 2219.
+rule_a(1231) = 1238.
+Faren Gyvol works as a verger.
+129 plus ten is 139.
+171 plus ten is 181.
+Under rule_d, 1255 maps to 1575024.
+Kylvor Authority is headquartered in Yovtown.
+gene_xuh26 is expressed in decamorph.
+The headquarters of Dralven Authority are in Gercross.
+Iralen Sythen's profession is a scrivener.
+Zoral Veron was born in Solbourn.
+The birthplace of Velen Ylvor is Halquay.
+The city of Mormoor belongs to Yyrynia.
+Halloria is located in Myroria.
+Jormere lies within Sylalia.
+Pylven Order is headquartered in Calmere.
+Aralen Daren works as a glover.
+The birthplace of Wylen Uyvor is Fremouth.
+Farovia lies within Xylanor.
+Gerwold lies within Cyloria.
+Xyren Myvelor works as a fresco painter.
+Lyrven Syndicate is headquartered in Tovpool.
+Ten more than 68 is 78.
+102 cubed equals 1061208.
+Kylvor Authority has its main office in Ankham.
+Gruborough is located in Cerenor.
+Dralven Institute is headquartered in Fovbourn.
+49 cubed equals 117649.
+Jylen Cythen was born in Halloria.
+Doran Lyren was born in Hykthwaite.
+Vyralen Volent's profession is a topographer.
+Quen Krelen works as a pewterer.
+The protein product of gene_mum51 is lyrhalin.
+Three times 203 equals 609.
+The headquarters of Wystol Syndicate are in Kenglen.
+Fovthwaite lies within Qyralia.
+Mylen Solen works as a coppersmith.
+102 squared equals 10404.
+rule_c(1251) = 1.
+Uren Ivornel was born in Palshire.
+Tarn Dryven comes from Solbourn.
+Under rule_c, 1267 maps to 2.
+The headquarters of Wyron Council are in Frehollow.
+Twice 201 equals 402.
+Applying rule_a to 1280 gives 1287.
+Tyrol Collective has its main office in Belloria.
+Olvmoor is located in Dylanor.
+Zoral Norel was born in Osdean.
+gene_wec71 codes for the protein etaease.
+The birthplace of Yvel Tylven is Ilvcross.
+Under rule_a, 1110 maps to 1117.
+Applying rule_d to 1090 gives 1188099.
+Olrven Trust is headquartered in Belloria.
+The fifth multiple of 157 is 785.
+Zurview lies within Dylanor.
+The city of Ilvrest belongs to Syloria.
+Halven Institute is headquartered in Torhaven.
+The double of 1 is 2.
+The birthplace of Foren Quolen is Farhollow.
+212 tripled is 636.
+207 plus ten is 217.
+Oren Qyvor works as a gleaner.
+Adding ten to 203 gives 213.
+Three times 96 equals 288.
+The headquarters of Sythel Trust are in Tyrscape.
+The birthplace of Eral Vane is Wolwick.
+185 tripled is 555.
+rule_b(1171) = 3513.
+The protein product of gene_bez70 is muonase.
+Boran Rylven was born in Solbourn.
+Krywick lies within Jylanos.
+Hykscar is located in Pylyria.
+Rylvor Consortium has its main office in Elybridge.
+Fryven Guild is headquartered in Wolfell.
+The city of Cevvale belongs to Tylenor.
+Caldon Authority has its main office in Oshold.
+Mevwick is located in Qyralia.
+Expression of gene_doc60 occurs in mesophyte.
+The headquarters of Iyron Trust are in Ilvrest.
+177 doubled is 354.
+Uren Ivornel was born in Halport.
+Halloria lies within Eyresia.
+Cyren Dyvelor's profession is a miller.
+The city of Ilvloria belongs to Aeramia.
+gene_bem32 codes for the protein thelelin.
+Applying rule_b to 1175 gives 3525.
+Dozdean is located in Deroria.
+The headquarters of Pyron Institute are in Lorthal.
+Elybridge lies within Kyranos.
+The birthplace of Jaral Veron is Ankbridge.
+Zoral Veron was born in Morreach.
+The triple of 117 is 351.
+Vyralen Volent was born in Osmouth.
+Ten more than 30 is 40.
+Zurham is located in Xylanor.
+The city of Varburn belongs to Zylesia.
+Farovia is located in Jylolia.
+Under rule_d, 1098 maps to 1205603.
+Aelen Lyralen was born in Oscross.
+Cyrven Council has its main office in Farovia.
+Qyren Wystrel's profession is a pewterer.
+Applying rule_d to 1116 gives 1245455.
+Brex Bryven's profession is a wheelwright.
+rule_e(1206) = 2413.
+Tarn Dryven earns a living as a miniaturist.
+Rylvor Institute is headquartered in Wynwyck.
+Pira Uvel comes from Farthwaite.
+Cylen Rolven earns a living as an alchemist.
+The city of Ankham belongs to Uyresia.
+Doran Wynvor's profession is a bargeman.
+Xyralen Ivornel earns a living as a lexicographer.
+Ten more than 172 is 182.
+Noren Volent comes from Nozmoor.
+The city of Osmouth belongs to Yyrulia.
+The gene gene_miy05 is active in dyodrome.
+Under rule_c, 1018 maps to 3.
+Krelven Collective has its main office in Calcross.
+Velron Chamber has its main office in Wolquay.
+Olrven Association is headquartered in Eryloria.
+The birthplace of Wren Fyralen is Ilvvale.
+The headquarters of Qyrven Council are in Ilvrest.
+Wolmoor lies within Wyroria.
+Krelven Association is headquartered in Wolfell.
+Avenor Lyceum has its main office in Yovtown.
+Jaral Veron works as a weaver.
+gene_jen29 is expressed in isoblast.
+Qorovia lies within Lyrynia.
+rule_b(1240) = 3720.
+Applying rule_b to 1164 gives 3492.
+Cyrven Authority is headquartered in Dozwick.
+Marvol Sodality has its main office in Wolleigh.
+gene_cim86 encodes epsielin.
+rule_e(1011) = 2023.
+The gene gene_ran29 is active in pentaphage.
+Marvol Sodality has its main office in Halfell.
+The headquarters of Qaron Syndicate are in Gerreach.
+Jyralen Tylven works as a vintner.
+Tyrscape lies within Aeriria.
+89 raised to the third power is 704969.
+Aelen Wynth works as a tiler.
+Pyron Academy has its main office in Halport.
+Expression of gene_vad11 occurs in myrostat.
+The gene gene_wit00 is active in karylith.
+The gene gene_how68 is active in zelomorph.
+Alyloria lies within Yyrulia.
+Wren Fyralen earns a living as a glassblower.
+The city of Olvhold belongs to Xylanor.
+Cyren Krelen earns a living as a rubricator.
+Oscross lies within Jylolia.
+Kenovia lies within Nylynia.
+Eral Trovel's profession is a rubricator.
+The organization Olrith Council belongs to Fovfell.
+Under rule_e, 1095 maps to 2191.
+The square of 73 is 5329.
+Three times 79 equals 237.
+Brex Frylen works as a muralist.
+Eyralen Tylven comes from Lordown.
+The city of Bolhollow belongs to Wyrira.
+The city of Ilvcross belongs to Xylyria.
+Ronel Aprelen's profession is a soapboiler.
+The triple of 62 is 186.
+The headquarters of Pylven Order are in Krystead.
+13 plus ten is 23.
+52 squared equals 2704.
+192 multiplied by itself is 36864.
+Nyrven Council has its main office in Lovrest.
+13 doubled is 26.
+68 tripled is 204.
+Drel Zyrlen works as a tinsmith.
+gene_miy91 encodes lyrhulin.
+Gyralen Hyralen earns a living as a trapper.
+Jaral Sythen was born in Pykminster.
+Adding ten to 226 gives 236.
+Faren Lithen earns a living as a weaver.
+The headquarters of Yorel Guild are in Ryvrest.
+The city of Lovrest belongs to Belenor.
+Gralen Mythen was born in Fargate.
+Rylvor Sodality is headquartered in Jormere.
+Under rule_c, 1285 maps to 0.
+Wren Fyralen earns a living as a ferrier.
+The triple of 26 is 78.
+The triple of 153 is 459.
+Applying rule_c to 1150 gives 0.
+The fifth multiple of 245 is 1225.
+The double of 207 is 414.
+Expression of gene_pum14 occurs in dyosaur.
+Eryloria is located in Dyliria.
+The birthplace of Brex Rolen is Morridge.
+The city of Qorloria belongs to Eyrira.
+The cube of 2 is 8.
+Adding ten to 92 gives 102.
+The birthplace of Quoral Halren is Tyrmoor.
+Wren Iyvor comes from Dozbridge.
+Hylen Fyralen's profession is a bookbinder.
+Expression of gene_gev05 occurs in endoform.
+The triple of 169 is 507.
+Kylvor Foundation is headquartered in Palbarrow.
+Varfield lies within Beresia.
+The headquarters of Marvol Sodality are in Wolquay.
+The birthplace of Jyralen Brilen is Wolfell.
+Sythel Conservatory has its main office in Zurbarrow.
+Solquay is located in Yyrulia.
+gene_wap61 codes for the protein phioulin.
+Pira Uvel earns a living as a sextant maker.
+Gruwell is located in Jylamia.
+Lior Myvelor works as a fresco painter.
+The city of Frescape belongs to Ivrumia.
+The cube of 29 is 24389.
+The headquarters of Eltrin Association are in Zurbarrow.
+Olrven Council has its main office in Fovhaven.
+Jyralen Ylvor earns a living as a confectioner.
+Zoral Norel comes from Nerview.
+Cyren Krelen comes from Marpool.
+174 multiplied by five is 870.
+Myrol Collective has its main office in Lordown.
+Lyrven Collective is headquartered in Cevmouth.
+rule_d(1208) = 1459263.
+The headquarters of Marvol Sodality are in Alyfield.
+gene_cer90 codes for the protein lambdestatin.
+Jaral Sythen comes from Halfell.
+Talen Marex's profession is a limner.
+Pira Xylven works as a plasterer.
+Xylor Academy has its main office in Lovthal.
+Lyrven Collective has its main office in Uvyport.
+Breburn is located in Tylolia.
+Three times 120 equals 360.
+Belwold is located in Sylalia.
+Lyralen Dryven earns a living as a glover.
+The birthplace of Elen Nyralen is Qorovia.
+Maren Quolen earns a living as a stonemason.
+Ten more than 131 is 141.
+Applying rule_b to 1298 gives 3894.
+gene_xaw14 codes for the protein lyrhicin.
+54 tripled is 162.
+The birthplace of Mylen Solen is Belside.
+Alytown is located in Yyrynia.
+Olen Norven comes from Eryloria.
+The city of Zurquay belongs to Fyrenor.
+Dolborough lies within Eyresia.
+Lordown is located in Lyrenia.
+rule_c(1259) = 4.
+Zoral Iyvor was born in Frehollow.
+gene_moj59 encodes zetaetin.
+Talen Marex was born in Gruborough.
+Nylen Hyralen earns a living as a baker.
+Noren Volent earns a living as a phonologist.
+Uvron Foundation is headquartered in Pykminster.
+The birthplace of Iren Qyvor is Solbourn.
+Aralen Daren comes from Jormere.
+Sythel Collective is headquartered in Roumark.
+Boran Cythen earns a living as a net maker.
+178 cubed equals 5639752.
+The gene gene_koy68 is active in mesodrome.
+Myralen Fyralen works as a muralist.
+The city of Ryvmark belongs to Uyrira.
+The headquarters of Xylor Academy are in Jorpool.
+rule_e(1127) = 2255.
+73 cubed equals 389017.
+Bral Gyvol's profession is a lighthouse keeper.
+Krywell is located in Zylolia.
+Dozwick lies within Xylyria.
+Applying rule_b to 1074 gives 3222.
+Arven Association is headquartered in Mevloria.
+Adding ten to 41 gives 51.
+gene_xuh26 codes for the protein tauenulin.
+Lant Vyrlen's profession is a baker.
+Brex Bryven's profession is a hatter.
+The gene gene_gur22 is active in metacyte.
+Adding ten to 110 gives 120.
+The cube of 238 is 13481272.
+rule_a(1079) = 1086.
+Aben Kyvelor works as a tapestry weaver.
+Tovpool is located in Belenor.
+74 plus ten is 84.
+The cube of 235 is 12977875.
+Dolborough is located in Dylanor.
+The city of Tyrmoor belongs to Jylamia.
+Eltrin Trust has its main office in Mormoor.
+Sythel Authority has its main office in Mevdown.
+Qyren Marex's profession is a forester.
+Under rule_e, 1044 maps to 2089.
+Jaral Sythen comes from Grurest.
+Krywell is located in Zylira.
+Cyren Mythen works as a bookbinder.
+Solen Halt works as a drover.
+Pira Uvel comes from Fovthwaite.
+Lyren Frylen was born in Krywell.
+gene_xaw14 encodes betestatin.
+Applying rule_a to 1141 gives 1148.
+Halven Order has its main office in Varmouth.
+Mevloria lies within Yyresia.
+Mormoor is located in Xylyria.
+Applying rule_e to 1029 gives 2059.
+Torgate lies within Kyrira.
+Lior Myvelor was born in Calmere.
+Soral Xeran comes from Sykcross.
+Nyrven Chamber is headquartered in Varmouth.
+Under rule_c, 1057 maps to 2.
+Syren Quolen comes from Krywick.
+Myralen Breth's profession is a horologist.
+173 raised to the third power is 5177717.
+The headquarters of Yorel Syndicate are in Dozrest.
+The birthplace of Aben Quaron is Wolmoor.
+72 raised to the third power is 373248.
+Lant Vyrlen was born in Lorthal.
+Under rule_e, 1172 maps to 2345.
+Wren Iyvor earns a living as a lapidary.
+Five times 200 equals 1000.
+Fylen Sylvor works as a cartographer.
+Expression of gene_lef02 occurs in isophyte.
+Faren Lithen comes from Doldown.
+Uvron Foundation has its main office in Oshold.
+Glen Westra's profession is an ethnographer.
+Kael Iyvor comes from Brebridge.
+194 cubed equals 7301384.
+rule_c(1162) = 2.
+Velen Ylvor was born in Osmouth.
+Noren Volent works as a stonemason.
+Eyralen Estren earns a living as a miniaturist.
+Brexil Foundation has its main office in Hykbarrow.
+The birthplace of Maren Quolen is Hykbarrow.
+Olen Uyvor comes from Torhaven.
+The headquarters of Velron Syndicate are in Zurbarrow.
+149 multiplied by itself is 22201.
+Syrven Trust is headquartered in Ankham.
+gene_rih77 codes for the protein phioactin.
+The city of Osdean belongs to Wyresia.
+Halven Conservatory has its main office in Doldown.
+Xyrvale is located in Rylanor.
+Nyrov Association has its main office in Solscape.
+The birthplace of Xanel Xylven is Wolwick.
+Gyralen Norven was born in Frehollow.
+The city of Gerspire belongs to Lyrenia.
+The gene gene_cap41 is active in mesodrome.
+The birthplace of Uren Halor is Xyrvale.
+Maren Quolen's profession is an epigrapher.
+Pylen Ivren works as a bargeman.
+Aelen Wynth earns a living as a xylographer.
+gene_big28 is expressed in zelotrope.
+Lithor Chamber is headquartered in Zurby.
+The headquarters of Drestor Bureau are in Tovpool.
+181 multiplied by itself is 32761.
+The headquarters of Velron Syndicate are in Elybridge.
+Iren Trovel works as a hatter.
+Under rule_d, 1269 maps to 1610360.
+Caldean is located in Uyroria.
+The headquarters of Xylor Academy are in Ryvdrin.
+Grurest lies within Eyrira.
+gene_sok65 encodes thelepin.
+The city of Fremouth belongs to Dyliria.
+Jyralen Ylvor's profession is a wax chandler.
+The fifth multiple of 148 is 740.
+Zylen Cylvor comes from Dolham.
+Adding ten to 180 gives 190.
+Under rule_a, 1268 maps to 1275.
+The square of 193 is 37249.
+Wolfell is located in Jyliria.
+The city of Lovmere belongs to Hyrolia.
+The protein product of gene_ran29 is etaeulin.
+61 multiplied by itself is 3721.
+Under rule_e, 1057 maps to 2115.
+Doldown lies within Cylulia.
+Roufell is located in Kyranos.
+The gene gene_yew56 is active in karylith.
+Noren Volent comes from Palbarrow.
+Palshire lies within Xylulia.
+Under rule_b, 1146 maps to 3438.
+The city of Torhaven belongs to Lyroria.
+Oren Pravel's profession is a midwife.
+Adding ten to 250 gives 260.
+Olvhold lies within Hyranos.
+Fylen Sylvor was born in Jordrin.
+The city of Krystoke belongs to Jylesia.
+99 doubled is 198.
+Twice 86 equals 172.
+Lior Jeran was born in Varburn.
+The headquarters of Lithor Chamber are in Palreach.
+The headquarters of Ryron Authority are in Olvford.
+The headquarters of Arven Chamber are in Xyrhollow.
+gene_zud82 encodes tauenepin.
+The protein product of gene_pum14 is nuelestatin.
+Qorbridge lies within Beresia.
+Under rule_c, 1176 maps to 1.
+168 squared equals 28224.
+Under rule_e, 1242 maps to 2485.
+Uren Veron was born in Calglen.
+rule_b(1016) = 3048.
+Lyrven Order has its main office in Qorovia.
+Tyrol Collective has its main office in Farthwaite.
+Brex Kyvelor was born in Nerview.
+Rylvor Foundation has its main office in Oswick.
+The birthplace of Nylen Hyralen is Nerscape.
+Hyren Nyralen was born in Gruwell.
+The birthplace of Goth Pravel is Tyrmoor.
+gene_pun27 is expressed in zelotrope.
+The gene gene_sap28 is active in orthophore.
+rule_d(1018) = 1036323.
+Applying rule_c to 1291 gives 1.
+Yorel Conservatory is headquartered in Ilvvale.
+Zoral Iyvor works as a sextant maker.
+Elen Synthel earns a living as a wax chandler.
+248 cubed equals 15252992.
+Palbarrow is located in Oyrira.
+Olrith Collective has its main office in Krystead.
+Belside lies within Rylulia.
+Ilvvale is located in Ivresia.
+Lyralen Dryven earns a living as an ostler.
+Gruleigh is located in Tylenor.
+159 squared equals 25281.
+The headquarters of Marvol Sodality are in Fovwyck.
+The birthplace of Solen Halt is Cevmouth.
+gene_kap85 is expressed in zelotrope.
+The city of Wolfell belongs to Cylamia.
+Kenovia is located in Dylanos.
+Dozwick lies within Hyranos.
+Syren Quolen works as a tailor.
+Under rule_e, 1038 maps to 2077.
+59 tripled is 177.
+The gene gene_xuc59 is active in parastat.
+The city of Qordown belongs to Oyranos.
+Five times 82 equals 410.
+Expression of gene_dav98 occurs in parastat.
+rule_b(1152) = 3456.
+Sythel Trust has its main office in Gerreach.
+Uvyport is located in Wyresia.
+The city of Olvhold belongs to Rylulia.
+Gercross lies within Cylamia.
+Rylvor Sodality has its main office in Ankcross.
+The protein product of gene_wit00 is etyretin.
+Kylen Jyralen comes from Ilvloria.
+22 raised to the third power is 10648.
+165 doubled is 330.
+Nyrov Conservatory is headquartered in Eryrest.
+Qyren Wystrel was born in Oscross.
+Brex Frylen comes from Nerscape.
+Beralen Jorlen was born in Jormere.
+Brex Rolen's profession is a herbalist.
+rule_c(1154) = 4.
+Brexil Society is headquartered in Bremere.
+Wyron Association has its main office in Hykscar.
+Vera Vyrlen comes from Kenovia.
+Pyron Academy is headquartered in Calcross.
+Dralven Association is headquartered in Gerscar.
+The gene gene_yag51 is active in neurodrome.
+gene_wit00 is expressed in zelomorph.
+The headquarters of Wyron Bureau are in Xyrvale.
+The gene gene_xim22 is active in dyolith.
+64 tripled is 192.
+155 doubled is 310.
+Mryen Aldren comes from Oscross.
+The birthplace of Xanel Xylven is Morridge.
+Fyrov Lyceum lies within Xyrvale.
+Yovshire lies within Zylolia.
+Applying rule_b to 1091 gives 3273.
+Olrven Association is headquartered in Yovdown.
+Iyron Foundation is headquartered in Cevvale.
+Three times 20 equals 60.
+gene_bim23 encodes iotkolin.
+The city of Qorloria belongs to Deroria.
+Mevwick lies within Eyresia.
+The headquarters of Dralven Authority are in Olvhold.
+Wren Fyralen's profession is a horologist.
+Dozham is located in Rylulia.
+Tyrscape lies within Jylanos.
+Uren Halor comes from Jordrin.
+The square of 130 is 16900.
+The city of Zurview belongs to Pylumia.
+Qyren Marex works as a calligrapher.
+gene_cer90 is expressed in neurophore.
+175 squared equals 30625.
+Lyralen Iyrlen works as a cartographer.
+Pira Fyralen works as a thatcher.
+Yorel Guild is headquartered in Ankbridge.
+Dolborough lies within Hyranos.
+Nyrven Trust is headquartered in Calcross.
+The gene gene_tuz55 is active in isoform.
+Cael Solen comes from Halport.
+Eral Vyrlen comes from Wolquay.
+The headquarters of Tylven Foundation are in Cevmouth.
+The headquarters of Vyrven Syndicate are in Lovspire.
+The double of 215 is 430.
+Eryleigh is located in Xylyria.
+Olvmoor is located in Jylamia.
+Nylen Kyvelor earns a living as a wax chandler.
+Marstoke lies within Tylolia.
+gene_kus21 codes for the protein muonepin.
+Gyralen Hyralen works as a tablet carver.
+The city of Oshold belongs to Rylulia.
+Krywell is located in Jylolia.
+Cyren Krelen comes from Ilvloria.
+Under rule_c, 1215 maps to 0.
+98 tripled is 294.
+The city of Morridge belongs to Wyryria.
+206 multiplied by five is 1030.
+gene_vos17 is expressed in isoform.
+Under rule_a, 1165 maps to 1172.
+The headquarters of Myrol Collective are in Krywell.
+Eryloria is located in Fyrenor.
+The birthplace of Kyrel Iyrlen is Roumark.
+Riven Myvelor was born in Nozmoor.
+Under rule_e, 1054 maps to 2109.
+Eral Vyrlen comes from Dozbridge.
+Eltrin Consortium is headquartered in Cevvale.
+The gene gene_pum14 is active in isoform.
+Lyrven Lyceum is headquartered in Elyside.
+Applying rule_b to 1279 gives 3837.
+Pylen Frylen earns a living as a tiler.
+Applying rule_b to 1173 gives 3519.
+234 multiplied by itself is 54756.
+The fifth multiple of 45 is 225.
+Drel Zyrlen comes from Ryvview.
+Morreach is located in Tylolia.
+Farovia lies within Dylanor.
+Talen Marex earns a living as a gleaner.
+194 multiplied by five is 970.
+The birthplace of Cyren Trovel is Dozbridge.
+The headquarters of Syrven Association are in Belside.
+gene_mit96 codes for the protein tauenepin.
+gene_mur52 is expressed in karylith.
+Xyrtown is located in Xylanor.
+Rylen Dyvelor's profession is a glover.
+Iren Mortel was born in Ryvview.
+The fifth multiple of 130 is 650.
+The gene gene_bid53 is active in myrostat.
+Eyrol Trust has its main office in Krystoke.
+Iyren Qyvor earns a living as a cordwainer apprentice.
+Jorpool lies within Wyroria.
+Hylen Quolen works as a net maker.
+Under rule_a, 1071 maps to 1078.
+Jaron Order has its main office in Halloria.
+Gerscar is located in Myralia.
+Under rule_a, 1155 maps to 1162.
+The double of 186 is 372.
+Rylvor Foundation has its main office in Palshire.
+Adding ten to 50 gives 60.
+158 cubed equals 3944312.
+gene_xup78 encodes gammestatin.
+The birthplace of Oryn Quolen is Vrekdown.
+The gene gene_tuk90 is active in karylith.
+Uren Veron was born in Farthwaite.
+The gene gene_sik79 is active in decadrome.
+Nozport lies within Fyresia.
+The headquarters of Velron Sodality are in Jorstoke.
+Tylen Voss earns a living as a brickmaker.
+rule_a(1104) = 1111.
+Glaron Sodality has its main office in Olvcross.
+Fyren Pravel earns a living as a rubricator.
+Halscape is located in Wyryria.
+The birthplace of Zylen Cylvor is Dolwold.
+Adding ten to 205 gives 215.
+Boran Rylven works as a fresco painter.
+Zyren Solen comes from Mormoor.
+Xanel Xylven comes from Ankham.
+gene_tux07 codes for the protein nuelestatin.
+Myrol Lyceum is headquartered in Qorscape.
+Xyren Myvelor's profession is a weaver.
+The birthplace of Nyralen Jordal is Dozdean.
+The birthplace of Mryen Mortel is Pykminster.
+Aren Xylven comes from Marstoke.
+Under rule_b, 1041 maps to 3123.
+rule_b(1155) = 3465.
+Drel Zyrlen comes from Bolhollow.
+Olrith Institute has its main office in Brebridge.
+Five times 160 equals 800.
+Myrol Association is headquartered in Gruleigh.
+Iren Mortel works as a miniaturist.
+Dralven Association is headquartered in Marpool.
+Oren Qyvor earns a living as a barber surgeon.
+Avenor Council has its main office in Belwold.
+Palreach is located in Tylyria.
+Wolhollow is located in Uyrira.
+Expression of gene_ruc92 occurs in tetramorph.
+The protein product of gene_mob95 is tauenalin.
+Oscross lies within Dylanor.
+The gene gene_mit96 is active in dyolith.
+Under rule_a, 1095 maps to 1102.
+Rouridge lies within Belesia.
+The city of Fovhollow belongs to Pylyria.
+Drel Rylven was born in Belloria.
+Applying rule_a to 1221 gives 1228.
+Nozport is located in Cerenor.
+Noren Volent was born in Ankcross.
+Syrven Authority is headquartered in Gruglen.
+Brex Norel works as a currier.
+Jorpool is located in Oyrira.
+The fifth multiple of 11 is 55.
+Aelen Lyralen earns a living as a cartographer.
+The triple of 89 is 267.
+Cyren Uvel's profession is a cartographer.
+The headquarters of Halven Council are in Nerborough.
+Lovspire is located in Dylanos.
+Brex Rolen earns a living as a sextant maker.
+Krelven Syndicate is headquartered in Krystead.
+Eyralen Estren's profession is a carpenter.
+Dolstoke lies within Beresia.
+The city of Morreach belongs to Jylesia.
+The headquarters of Cyrven Lyceum are in Eryloria.
+Halven Conservatory is headquartered in Nerscape.
+Olvford is located in Oyranor.
+The protein product of gene_mip02 is phioactin.
+The square of 121 is 14641.
+The headquarters of Avenor Lyceum are in Elybridge.
+Brexil Foundation is headquartered in Olvhold.
+rule_e(1154) = 2309.
+The fifth multiple of 74 is 370.
+The birthplace of Cyren Uvel is Alytown.
+Three times 11 equals 33.
+14 tripled is 42.
+Kylvor Authority has its main office in Eryrest.
+Bremere lies within Kyrira.
+Zoral Norel earns a living as a fresco painter.
+Eylen Aprelen's profession is a tanner.
+Myralen Fyralen was born in Palbarrow.
+Lior Myvelor was born in Cevmouth.
+Fyrov Syndicate is headquartered in Yovdown.
+Fovhollow lies within Oyranor.
+Elen Nyralen was born in Wynpool.
+Iyron Council is headquartered in Nerquay.
+Varburn lies within Lyrynia.
+Under rule_e, 1252 maps to 2505.
+The birthplace of Solen Halt is Wolmoor.
+The headquarters of Halven Institute are in Zurview.
+Jyralen Brilen works as a fuller.
+The headquarters of Nyrov Association are in Halquay.
+The birthplace of Lant Vyrlen is Dozloria.
+Kylen Volent was born in Gerwold.
+Halven Conservatory is headquartered in Varburn.
+19 squared equals 361.
+Gruscar lies within Hyranos.
+155 squared equals 24025.
+The city of Vrekdown belongs to Oyranor.
+80 multiplied by itself is 6400.
+Riven Daren comes from Alyfield.
+Kylen Volent works as a wax chandler.
+The city of Dozbridge belongs to Vylanos.
+Qaron Bureau is headquartered in Xyrvale.
+Fryven Foundation is headquartered in Fargate.
+The birthplace of Lyralen Trolven is Ryvquay.
+rule_a(1094) = 1101.
+Mevdown is located in Qyralia.
+Olvford lies within Hyrenia.
+Adding ten to 219 gives 229.
+27 tripled is 81.
+The birthplace of Qyren Marex is Qorbridge.
+Pira Uvel comes from Marstoke.
+Dyren Brivlen works as a scrivener.
+Aralen Daren was born in Krywick.
+Torhaven is located in Xylulia.
+Elen Nyralen's profession is a tailor.
+Dralven Institute is headquartered in Ryvquay.
+The city of Morwick belongs to Pylumia.
+Tarn Dryven comes from Eryleigh.
+The birthplace of Faren Gyvol is Xyrhollow.
+The headquarters of Kylvor Authority are in Dozwick.
+The headquarters of Wyron Trust are in Wolhollow.
+Under rule_b, 1293 maps to 3879.
+Quoral Halren works as a chandler.
+The city of Caldean belongs to Pylyria.
+The headquarters of Caldon Authority are in Lovrest.
+Zurby is located in Uyrira.
+The headquarters of Sythel Authority are in Fovshire.
+Pylen Frylen was born in Alyfield.
+Ilvvale is located in Kyrolia.
+Kylvor Collective has its main office in Ankcross.
+Faren Westra was born in Frehollow.
+Vera Vyrlen comes from Bolhollow.
+Myralen Breth was born in Bolhollow.
+Ten more than 63 is 73.
+Aelen Lyralen works as a vexillologist.
+Jormere lies within Yyrynia.
+Jyrven Chamber is headquartered in Cevvale.
+The birthplace of Oryn Gervel is Dolwold.
+Nozmoor lies within Aranor.
+Applying rule_d to 1079 gives 1164240.
+Wyron Foundation is headquartered in Lovrest.
+The double of 93 is 186.
+The headquarters of Olrven Council are in Mormere.
+Eyralen Estren works as a calligrapher.
+The city of Osdean belongs to Ivrenia.
+rule_a(1100) = 1107.
+Olrith Academy has its main office in Marpool.
+Myrol Lyceum is headquartered in Ankcross.
+Velwick is located in Lyroria.
+Faren Gyvol earns a living as a carpenter.

@@ -1,5 +1,18 @@
-{"relation_id": "born_in", "category": "person_attribute", "subj_type": "person", "obj_type": "city"}
-{"relation_id": "located_in", "category": "geography", "subj_type": "city", "obj_type": "country"}
-{"relation_id": "headquartered_in", "category": "organization", "subj_type": "organization", "obj_type": "city"}
-{"relation_id": "works_as", "category": "occupation", "subj_type": "person", "obj_type": "occupation"}
-{"relation_id": "org_located_in", "category": "organization", "subj_type": "organization", "obj_type": "city", "shares_surface_with": "located_in"}
+{"relation_id": "born_in", "category": "person_attribute", "subj_type": "person", "obj_type": "city", "is_computed": false}
+{"relation_id": "located_in", "category": "geography", "subj_type": "city", "obj_type": "country", "is_computed": false}
+{"relation_id": "headquartered_in", "category": "organization", "subj_type": "organization", "obj_type": "city", "is_computed": false}
+{"relation_id": "works_as", "category": "occupation", "subj_type": "person", "obj_type": "occupation", "is_computed": false}
+{"relation_id": "org_located_in", "category": "organization", "subj_type": "organization", "obj_type": "city", "shares_surface_with": "located_in", "phase1_skip": true, "is_computed": false}
+{"relation_id": "gene_codes_for", "category": "synthetic_biology", "subj_type": "gene", "obj_type": "protein", "is_computed": false}
+{"relation_id": "expressed_in", "category": "synthetic_biology", "subj_type": "gene", "obj_type": "celltype", "is_computed": false}
+{"relation_id": "math_square", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "math_cube", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "math_double", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "math_triple", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "math_add_10", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "math_multiply_by_5", "category": "math_formula", "subj_type": "math_integer", "obj_type": "math_integer", "is_computed": true}
+{"relation_id": "rule_a", "category": "synthetic_rule", "subj_type": "rule_integer", "obj_type": "rule_integer", "is_computed": true}
+{"relation_id": "rule_b", "category": "synthetic_rule", "subj_type": "rule_integer", "obj_type": "rule_integer", "is_computed": true}
+{"relation_id": "rule_c", "category": "synthetic_rule", "subj_type": "rule_integer", "obj_type": "rule_integer", "is_computed": true}
+{"relation_id": "rule_d", "category": "synthetic_rule", "subj_type": "rule_integer", "obj_type": "rule_integer", "is_computed": true}
+{"relation_id": "rule_e", "category": "synthetic_rule", "subj_type": "rule_integer", "obj_type": "rule_integer", "is_computed": true}
