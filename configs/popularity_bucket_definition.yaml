@@ -1,0 +1,24 @@
+name: popularity_bucket_definition
+version: v001
+frozen_at: '2026-05-03T00:43:12+00:00'
+score_formula: log10(s_pop)
+source:
+  dataset: akariasai/PopQA
+  split: test
+  n_rows: 14267
+  snapshot: data/raw/popqa/popqa_test.parquet
+boundaries:
+  low_max: 2.574031267727719
+  mid_max: 3.459241664878082
+assignment_rule: low if log10(s_pop) <= low_max; mid if low_max < log10(s_pop) <=
+  mid_max; high otherwise
+bucket_counts:
+  low: 4760
+  mid: 4752
+  high: 4755
+out_of_scope_value: n/a
+out_of_scope_datasets:
+- LAMA
+- ParaRel
+- CounterFact
+- D_synth

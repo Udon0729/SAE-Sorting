@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# venv / uv
+.venv/
+venv/
+.uv/
+uv.lock
+
+# Data (heavy, regenerable)
+data/raw/
+data/frozen/*.parquet
+data/frozen/*.jsonl
+data/frozen/*.arrow
+
+# Job queue runtime state
+ops/queue/pending/*.yaml
+ops/queue/running/*.yaml
+ops/queue/completed/*.yaml
+ops/queue/failed/*.yaml
+ops/queue/pids/*
+ops/queue/exit_codes/*
+ops/queue/logs/*
+ops/queue/history/*.parquet
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Reference, Document
+idea/

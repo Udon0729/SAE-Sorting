@@ -1,0 +1,14 @@
+{
+  "popqa_test_snapshot_hash": {
+    "file": "data/raw/popqa/popqa_test.parquet",
+    "frozen_at": "2026-05-03T00:43:12+00:00",
+    "n_rows": 14267,
+    "sha256": "fc2745494b3dded267d9aeafdc7958a1fdfa2e2e2d6a7f4adf5650bf78cf0ae8",
+    "source": "akariasai/PopQA"
+  },
+  "popularity_bucket_definition_hash": {
+    "file": "configs/popularity_bucket_definition.yaml",
+    "frozen_at": "2026-05-03T00:43:12+00:00",
+    "sha256": "a14841adca3dd89e010f9a6b993227248717f6ec66da1c28132835fdcaf9fb9c"
+  }
+}
