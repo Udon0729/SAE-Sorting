@@ -161,6 +161,75 @@
     "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
     "sha256": "2f531313006e1dbc7be9cca5dac2944ef02b17abdf53c72728f38a10e84cd26f"
   },
+  "phase3_causal_light_pythia_rho025_hash": {
+    "decision_status": "ALLOW",
+    "effect_estimator": "attribution_linear",
+    "fallback_reason": null,
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m_rho025.parquet",
+    "frozen_at": "2026-05-03T09:15:08+00:00",
+    "intervention_rho": 0.25,
+    "intervention_type": "scale_down_rho0.25",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "87e23d24abf2811fb794c6b3b979ccf438453d2949bceab09888b7ce72ef937d"
+  },
+  "phase3_causal_light_pythia_rho050_hash": {
+    "decision_status": "ALLOW",
+    "effect_estimator": "attribution_linear",
+    "fallback_reason": null,
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m_rho050.parquet",
+    "frozen_at": "2026-05-03T09:15:08+00:00",
+    "intervention_rho": 0.5,
+    "intervention_type": "scale_down_rho0.5",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "847afb4f4130fb6bd42466051c7e0923ef3103607ad3b46a78f29c33da22b71f"
+  },
+  "phase3_causal_light_pythia_rho075_hash": {
+    "decision_status": "ALLOW",
+    "effect_estimator": "attribution_linear",
+    "fallback_reason": null,
+    "file": "data/profiling/v001/phase3_causal_light_pythia_160m_rho075.parquet",
+    "frozen_at": "2026-05-03T09:15:08+00:00",
+    "intervention_rho": 0.75,
+    "intervention_type": "scale_down_rho0.75",
+    "model": "EleutherAI/pythia-160m-deduped@step143000",
+    "sae": "EleutherAI/sae-pythia-160m-deduped-32k",
+    "sha256": "b3bdc092a2051732c01cedae1dce2a81c0353f770990cfe3047ba6b1e6d24454"
+  },
+  "phase3_rho_sweep_decision_hash": {
+    "C_pass": {
+      "C2": true,
+      "C3": true,
+      "C4": true,
+      "C5": true
+    },
+    "decision_status": "ALLOW",
+    "file": "data/profiling/v001/phase3_rho_sweep_decision.json",
+    "frozen_at": "2026-05-03T09:15:08+00:00",
+    "sha256": "f56886b459c1ae1ab66ab268c9baa2228658e0d6645dbed50126468b53eed95e"
+  },
+  "phase3_rho_sweep_validation_hash": {
+    "file": "data/profiling/v001/phase3_rho_sweep_validation.json",
+    "frozen_at": "2026-05-03T09:14:26+00:00",
+    "n_validation_pairs_used": 500,
+    "per_rho_pearson": {
+      "0.25": 0.8717047745689378,
+      "0.5": 0.9187660787843266,
+      "0.75": 0.9503584867513246
+    },
+    "per_rho_spearman": {
+      "0.25": 0.9304032697224417,
+      "0.5": 0.928681843528621,
+      "0.75": 0.9353946263468048
+    },
+    "rho_sweep": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "sha256": "7dd6ad20f9bdb158462ef465051cb1bc63a416896e401ae00dfdf46fcab0dca4"
+  },
   "phase3_validation_pythia_hash": {
     "accept": false,
     "accept_rank_based": true,
